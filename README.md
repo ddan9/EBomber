@@ -1,3 +1,5 @@
 # EBomber
 
-тут крч будет исправленная версия бомбера
+Edited Bomber
+
+There will be fixed version of SMSBomber
