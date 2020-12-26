@@ -17,11 +17,3 @@ Installation:
 4. ln -s ./EBomber/EBomber.sh ./EBomber.sh
 
 5. bash EBomber.sh
-
-6. write your name
-
-7. select your device
-
-8. select "install dependencies" (1)
-
-9. select what you want
