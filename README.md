@@ -12,6 +12,6 @@ Installation:
 
 3. git clone https://github.com/ddan9/EBomber
 
-4. bash $HOME/EBomber/install.sh
+4. bash ./EBomber/install.sh
 
 5. bash EBomber.sh
