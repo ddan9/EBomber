@@ -85,9 +85,11 @@ if [[ $version != "Mobile" ]] && [[ $version != "Desktop" ]]
 		echo ""
 		echo " 0 | Exit "
 		echo ""
-		echo " 1 | EBomber.py (common version) " 
+		echo " 1 | pip install -r requirements.txt (Install dependencies) "
 		echo ""
-		echo " 2 | MTS-EBomber.py (MTS Only Edition) "
+		echo " 2 | EBomber.py (common version) " 
+		echo ""
+		echo " 3 | MTS-EBomber.py (MTS Only Edition) "
 		echo ""
 
 		sleep $sleeptime
@@ -112,10 +114,14 @@ if [[ $version != "Mobile" ]] && [[ $version != "Desktop" ]]
 					;;
 
 					"1" )
-					python ./EBomber/EBomber.py
+					pip install -r ./EBomber/requirements.txt; clear; bash ./EBomber.sh
 					;;
 
 					"2" )
+					python ./EBomber/EBomber.py
+					;;
+
+					"3" )
 					python ./EBomber/MTS-EBomber.py
 					;;
 
@@ -138,10 +144,14 @@ if [[ $version != "Mobile" ]] && [[ $version != "Desktop" ]]
 					;;
 
 					"1" )
-					python3 ./EBomber/EBomber.py
+					pip install -r ./EBomber/requirements.txt; clear; bash ./EBomber.sh
 					;;
 
 					"2" )
+					python3 ./EBomber/EBomber.py
+					;;
+
+					"3" )
 					python3 ./EBomber/MTS-EBomber.py
 					;;
 
