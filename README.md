@@ -22,6 +22,6 @@ Installation:
 
 7. select your device
 
-8. select "install dependencies"
+8. select "install dependencies" (1)
 
 9. select what you want
