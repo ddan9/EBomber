@@ -16,8 +16,8 @@ def banner3():
 | |___ | |_| )| |_| || |\/| || |_| )| |___ | | \ \\
 |_____||_____||_____||_|  |_||_____||_____||_|  \_\\
 
-                    System - Linux/Android   
-                            Services - \033[32m320 
+                    Система - Linux/Android   
+                            Сервисов - \033[32m320 
                                                         """
   for char in banner2:
     sys.stdout.write(char)
@@ -73,9 +73,9 @@ def banner1an():
 | |___ | |_| )| |_| || |\/| || |_| )| |___ | | \ \\
 |_____||_____||_____||_|  |_||_____||_____||_|  \_\\
 
-                      (Distributor: ddan9)
-                       (System - Linux/Android)
-                        (Services - 320)
+                      (Дистрибьютор: ddan9)
+                       (Система - Linux/Android)
+                        (Сервисов - 320)
 """
     r=0
     while True:
@@ -163,8 +163,8 @@ def banner_atack():
   print(Fore.RED)
   print("Атака началась на ||" + str(_phone)+ "||\033[94mDDos-SMS-Attack\033[0m")
 
-message = "\033[94m \n -|| Checking ||- \033[0m \n"
-message2 = "\n press ENTER to continue ..."
+message = "\033[94m \n -|| Проверка ||- \033[0m \n"
+message2 = "\n для продолжения нажмите ENTER..."
 
 
 
@@ -190,7 +190,7 @@ def start():
   print (" \033[31m-[====================]-\033[33m \033[94m100%\033[0m")
   time.sleep(0.1)
   print(Fore.YELLOW)
-  print (" --|| Successful ||-- ")
+  print (" --|| Успешно ||-- ")
   for char in message2:
     sys.stdout.write(char)
     sys.stdout.flush()
@@ -220,6 +220,6 @@ def banner_atack2():
   print ("[====================] \033[94m100%\033[0m")
   time.sleep(2)
   print(Fore.RED)
-  print("Starting attacking || " + str(_phone)+ " || \033[94mDDos-SMS-Attack\033[0m")
+  print("Начинаем атаку на || " + str(_phone)+ " || \033[94mDDOS SMS Атака\033[0m")
 
 

