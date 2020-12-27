@@ -36,7 +36,7 @@ For manual install you need:
 
 - git
 
-- git clone https://github.com/ddan9/EBomber
+- git clone https://github.com/ddan9/EBomber into $HOME
 
 - Python3
 
