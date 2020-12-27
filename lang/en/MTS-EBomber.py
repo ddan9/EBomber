@@ -54,7 +54,7 @@ message8 = """    \n Developers:
 
 print(Fore.GREEN)
 time.sleep(1)
-E = input("\n || MTS Only Version || \n Wanna get into settings ? (1 - Yes | \033[31m2 - No\033[0m\033[32m) > \033[94m")
+E = input("\n --][ MTS Only Version ][-- \n\n Wanna get into settings? (1 - Yes | \033[31m2 - No\033[0m\033[32m) > \033[94m")
 if E == str(1):
     print(Fore.GREEN)
     print("\n          [SETTINGS] ")
@@ -66,7 +66,7 @@ if E == str(1):
     p = input("\n [>] ")
     
     if p == str(1):
-        kol2 =  input("\n Enter the time less than 20 seconds ! > ")
+        kol2 =  input("\n Enter the time less than 20 seconds! > ")
         for char in message1:
             sys.stdout.write(char)
             sys.stdout.flush()
@@ -151,7 +151,7 @@ def banner_atack():
 
 
 R = 0
-message7 = "\033[94m \n To leave out press Ctrl + C ! \033[0m"
+message7 = "\033[94m \n To leave out press Ctrl + C\033[0m"
 message5 = "\033[94m \n ЧТо бы вЫйти из прОграМмы нАжмиТе Ctrl + C иЛи на КРЕСТИК в пРавоМ верХнем угЛу. \033[0m"
 if oso == "posix":
     for char in message7:
@@ -259,7 +259,7 @@ if call == str(2):
             print('[+] MTS sent! || count - ' + str(R))
             time.sleep(3)
         except:
-            print('[-] error in sent!')
+            print('[-] Error in sent!')
 
     input()
 

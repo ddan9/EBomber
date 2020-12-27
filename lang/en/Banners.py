@@ -164,7 +164,7 @@ def banner_atack():
   print("Атака началась на ||" + str(_phone)+ "||\033[94mDDos-SMS-Attack\033[0m")
 
 message = "\033[94m \n -|| Checking ||- \033[0m \n"
-message2 = "\n press ENTER to continue ..."
+message2 = "\n press ENTER to continue..."
 
 
 
@@ -220,6 +220,6 @@ def banner_atack2():
   print ("[====================] \033[94m100%\033[0m")
   time.sleep(2)
   print(Fore.RED)
-  print("Starting attacking || " + str(_phone)+ " || \033[94mDDos-SMS-Attack\033[0m")
+  print("Starting attacking || " + str(_phone)+ " || \033[94mDDOS SMS Attack\033[0m")
 
 
