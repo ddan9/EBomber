@@ -161,7 +161,7 @@ if [[ $lang = "" ]]
 
 						sudo apt-get upgrade -y
 
-						sudo apt-get install -y python3
+						sudo apt-get install -y python3 pip3
 
 						pip3 install -r $HOME/EBomber/config/requirements
 
@@ -287,7 +287,7 @@ if [[ $lang = "" ]]
 
 						sudo apt-get upgrade -y
 
-						sudo apt-get install -y python3
+						sudo apt-get install -y python3 pip3
 
 						pip3 install -r $HOME/EBomber/config/requirements
 
