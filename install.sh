@@ -155,6 +155,8 @@ if [[ $lang = "" ]]
 
 						clear
 
+						apt-get install -y sudo
+
 						sudo apt-get update
 
 						sudo apt-get upgrade -y
@@ -249,6 +251,8 @@ if [[ $lang = "" ]]
 						sleep 10
 
 						clear
+
+						apt-get install -y sudo
 
 						apt-get update
 
