@@ -8,7 +8,7 @@ There is fixed with some changes version of SMSBomber
 
 -----------------------------------------------
 
-For smooth installation required: 
+For <u> smooth </u> nstallation required: 
 
 - PC: Linux (Ubuntu-based; Maybe just apt-based, i don't know)
 
