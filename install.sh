@@ -122,7 +122,7 @@ if [[ $lang = "" ]]
 						echo " If given a choice during installation, select and enter: y"
 						echo ""
 
-						sleep 5
+						sleep 10
 
 						clear
 
@@ -151,7 +151,7 @@ if [[ $lang = "" ]]
 						echo " If given a choice during installation, select and enter: y"
 						echo ""
 
-						sleep 5
+						sleep 10
 
 						clear
 
@@ -246,7 +246,7 @@ if [[ $lang = "" ]]
 						echo " Если во время установки вам будут давать выбор, выбирайте и вводите: y"
 						echo ""
 
-						sleep 5
+						sleep 10
 
 						clear
 
@@ -275,7 +275,7 @@ if [[ $lang = "" ]]
 						echo " Если во время установки вам будут давать выбор, выбирайте и вводите: y"
 						echo ""
 
-						sleep 5
+						sleep 10
 
 						clear
 
