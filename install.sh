@@ -155,13 +155,13 @@ if [[ $lang = "" ]]
 
 						clear
 
-						apt-get install -y sudo
+						apt install -y sudo
 
-						sudo apt-get update
+						sudo apt update
 
-						sudo apt-get upgrade -y
+						sudo apt upgrade -y
 
-						sudo apt-get install -y python3 pip3
+						sudo apt install -y python3 pip3
 
 						pip3 install -r $HOME/EBomber/config/requirements
 
@@ -251,9 +251,7 @@ if [[ $lang = "" ]]
 						sleep 10
 
 						clear
-
-						apt-get install -y sudo
-
+						
 						apt-get update
 
 						apt-get upgrade -y
@@ -282,12 +280,14 @@ if [[ $lang = "" ]]
 						sleep 10
 
 						clear
+						
+						apt install -y sudo
 
-						sudo apt-get update
+						sudo apt update
 
-						sudo apt-get upgrade -y
+						sudo apt upgrade -y
 
-						sudo apt-get install -y python3 pip3
+						sudo apt install -y python3 pip3
 
 						pip3 install -r $HOME/EBomber/config/requirements
 
