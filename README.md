@@ -1,8 +1,20 @@
 # EBomber
 
+-----------------------------------------------
+
 Edited Bomber
 
 There will be fixed version of SMSBomber
+
+-----------------------------------------------
+
+For smooth installation required: 
+
+- PC: Linux (Ubuntu based)
+
+- Mobile: Android (With termux)
+
+-----------------------------------------------
 
 Installation:
 
@@ -15,3 +27,5 @@ Installation:
 4. bash EBomber/install.sh
 
 5. bash EBomber.sh
+
+-----------------------------------------------
