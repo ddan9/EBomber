@@ -1,9 +1,5 @@
 # EBomber
 
-<html>
-
-<body>
-
 -----------------------------------------------
 
 Edited Bomber
@@ -12,7 +8,7 @@ There is fixed with some changes version of SMSBomber
 
 -----------------------------------------------
 
-For <u> smooth </u> installation required: 
+For _smooth_ installation required: 
 
 - PC: Linux (Ubuntu-based; Maybe just apt-based, i don't know)
 
@@ -51,7 +47,3 @@ For manual install you need:
 - ln -s $HOME/EBomber/start.sh $HOME/Ebomber.sh
 
 - bash EBomber.sh
-
-</body>
-
-</html>
