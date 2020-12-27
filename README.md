@@ -10,7 +10,7 @@ There will be fixed version of SMSBomber
 
 For smooth installation required: 
 
-- PC: Linux (Ubuntu-based; Maybe just apt-based, i dont know)
+- PC: Linux (Ubuntu-based; Maybe just apt-based, i don't know)
 
 - Mobile: Android (With termux)
 
@@ -31,6 +31,8 @@ Installation:
 -----------------------------------------------
 
 For manual install you need:
+
+- bash (Maybe something else, i don't know)
 
 - git
 
