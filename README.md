@@ -16,7 +16,7 @@ For ***smooth*** installation required:
 
 -----------------------------------------------
 
-Smooth installation:
+***Smooth*** installation:
 
 0. apt-get update 
 
@@ -30,7 +30,7 @@ Smooth installation:
 
 -----------------------------------------------
 
-For manual install you need:
+For ***manual*** install you need:
 
 - bash (Maybe something else, i don't know)
 
