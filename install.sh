@@ -173,7 +173,7 @@ if [[ $lang = "" ]]
 
 				fi
 
-				sleep $sleeptime
+				sleep 10
 
 				clear
 
@@ -299,7 +299,7 @@ if [[ $lang = "" ]]
 
 				fi
 
-				sleep $sleeptime
+				sleep 10
 
 				clear
 
