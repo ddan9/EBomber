@@ -8,8 +8,8 @@ There is fixed with some changes version of SMSBomber
 
 -----------------------------------------------
 
-For _smooth_ installation required: 
-
+For smooth installation required: 
+    ======
 - PC: Linux (Ubuntu-based; Maybe just apt-based, i don't know)
 
 - Mobile: Android (With termux)
