@@ -4,7 +4,7 @@
 
 Edited Bomber
 
-There will be fixed version of SMSBomber
+There is fixed with some changes version of SMSBomber
 
 -----------------------------------------------
 
@@ -16,7 +16,7 @@ For smooth installation required:
 
 -----------------------------------------------
 
-Installation:
+Smooth installation:
 
 0. apt-get update 
 
@@ -35,6 +35,8 @@ For manual install you need:
 - bash (Maybe something else, i don't know)
 
 - git
+
+- git clone https://github.com/ddan9/EBomber
 
 - Python3
 
