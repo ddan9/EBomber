@@ -10,7 +10,7 @@ There will be fixed version of SMSBomber
 
 For smooth installation required: 
 
-- PC: Linux (Ubuntu based)
+- PC: Linux (Ubuntu-based; Maybe just apt-based, i dont know)
 
 - Mobile: Android (With termux)
 
@@ -29,3 +29,17 @@ Installation:
 5. bash EBomber.sh
 
 -----------------------------------------------
+
+For manual install you need:
+
+- git
+
+- Python3
+
+- pip (from python3)
+
+- pip3 install -r $HOME/EBomber/config/requirements
+
+- ln -s $HOME/EBomber/start.sh $HOME/Ebomber.sh
+
+- bash EBomber.sh
