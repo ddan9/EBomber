@@ -4,19 +4,13 @@ spacing=" ---------------------------------------------------- "
 sleeptime=0.4 
 version=$(cat $HOME/EBomber/config/version)
 name=$(cat $HOME/EBomber/config/name)
+logo=$HOME/EBomber/config/logo.sh
 
 clear
 
 sleep $sleeptime
 
-echo ""
-echo "  _____  _____  _____  _    _  _____  _____  _____   "
-echo " |  ___||  _  ||  _  || \  / ||  _  ||  ___||  _  |  "
-echo " | |__  | |_| )| | | ||  \/  || |_| )| |__  | |_| )  "
-echo " |  __| |  _ ( | | | || \  / ||  _ ( |  __| |  _ (   "
-echo " | |___ | |_| )| |_| || |\/| || |_| )| |___ | | \ \  "
-echo " |_____||_____||_____||_|  |_||_____||_____||_|  \_\ "
-echo ""
+bash $logo
 
 sleep $sleeptime
 
