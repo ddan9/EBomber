@@ -50,6 +50,8 @@ There is fixed with some changes version of SMSBomber
 
 ```markdown
 
+- do it in docker whenever possible
+
 - bash (Maybe something else, i don't know)
 
 - git
@@ -109,6 +111,8 @@ There is fixed with some changes version of SMSBomber
 #### Для ***ручной*** установки вам нужно:
 
 ```markdown
+
+- по возможности делать в докере
 
 - bash (Может что-то другое, точно не знаю)
 
