@@ -16,7 +16,7 @@
 
 ----------------------------------------------
 
-### Description in English | [Go up](#Language-translations)
+### Description in English ### | [Go up](#Language-translations)
 
 #### Edited Bomber
 
