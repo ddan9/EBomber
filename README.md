@@ -1,6 +1,4 @@
-### EBomber
-
-<title> jopa </title> 
+### EBomber 
 
 ----------------------------------------------
 
@@ -14,17 +12,17 @@
 
 ### Description in English 
 
-> [Go up](#Language-translations)
+[Go up](#Language-translations)
 
 #### Edited Bomber
 
-> There is fixed with some changes version of SMSBomber
+There is fixed with some changes version of SMSBomber
 
 #### For ***smooth*** installation required: 
 
-> - PC: Linux (Ubuntu-based; Latest version; Maybe just apt-based, i don't know)
->  
-> - Mobile: Android (With termux)
+- PC: Linux (Ubuntu-based; Latest version; Maybe just apt-based, i don't know)
+  
+- Mobile: Android (With termux)
 
 #### ***Smooth*** installation:
 
@@ -60,27 +58,27 @@
 
 #### Authors
 
-> Creator of original: https://github.com/Ivan-Hacker-700
->
-> Creator of effects: https://vk.com/psih.odinochka
->
-> Creator of distribution: https://github.com/ddan9
+Creator of original: https://github.com/Ivan-Hacker-700
+
+Creator of effects: https://vk.com/psih.odinochka
+
+Creator of distribution: https://github.com/ddan9
 
 ----------------------------------------------
 
 ### Описание на Русском
 
-> [Наверх](#Language-translations)
+[Наверх](#Language-translations)
 
 #### Улучшенный Бомбер
  
-> Это - пофиксенная с некоторыми изменениями версия SMSBomber'а
+Это - пофиксенная с некоторыми изменениями версия SMSBomber'а
 
 #### Для ***гладкой*** установки необходимо:
 
-> - ПК: Линукс (Убунту-подобный; Последняя версия; Либо просто apt-based, точно не знаю)
->
-> - Мобильные: Андроид (С термуксом)
+- ПК: Линукс (Убунту-подобный; Последняя версия; Либо просто apt-based, точно не знаю)
+
+- Мобильные: Андроид (С термуксом)
 
 #### ***Гладкая*** установка:
 
@@ -116,8 +114,8 @@
 
 #### Авторы
 
-> Создатель оригинала: https://github.com/Ivan-Hacker-700
->
-> Создатель спец. эффектов: https://vk.com/psih.odinochka
->
-> Создатель дистрибутива: https://github.com/ddan9
+Создатель оригинала: https://github.com/Ivan-Hacker-700
+
+Создатель спец. эффектов: https://vk.com/psih.odinochka
+
+Создатель дистрибутива: https://github.com/ddan9
