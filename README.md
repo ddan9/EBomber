@@ -12,7 +12,7 @@
 
 ### Description in English 
 
-> - [Go up](#Language-translations)
+> [Go up](#Language-translations)
 
 #### Edited Bomber
 
@@ -58,17 +58,17 @@
 
 #### Authors
 
-> - Creator of original: https://github.com/Ivan-Hacker-700
+> Creator of original: https://github.com/Ivan-Hacker-700
 >
-> - Creator of effects: https://vk.com/psih.odinochka
+> Creator of effects: https://vk.com/psih.odinochka
 >
-> - Creator of distribution: https://github.com/ddan9
+> Creator of distribution: https://github.com/ddan9
 
 ----------------------------------------------
 
 ### Описание на Русском
 
-> - [Наверх](#Language-translations)
+> [Наверх](#Language-translations)
 
 #### Улучшенный Бомбер
  
@@ -114,8 +114,8 @@
 
 #### Авторы
 
-> - Создатель оригинала: https://github.com/Ivan-Hacker-700
+> Создатель оригинала: https://github.com/Ivan-Hacker-700
 >
-> - Создатель спец. эффектов: https://vk.com/psih.odinochka
+> Создатель спец. эффектов: https://vk.com/psih.odinochka
 >
-> - Создатель дистрибутива: https://github.com/ddan9
+> Создатель дистрибутива: https://github.com/ddan9
