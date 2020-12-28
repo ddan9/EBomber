@@ -10,11 +10,11 @@
 
 ----------------------------------------------
 
-### Description in English 
+## Description in English 
 
 - [go up](#Language-translations)
 
-### Edited Bomber
+#### Edited Bomber
 
 There is fixed with some changes version of SMSBomber
 
