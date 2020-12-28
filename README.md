@@ -12,7 +12,7 @@
 
 ## Description in English 
 
-[> go up <](#Language-translations)
+- [> go up <](#Language-translations) -
 
 ### Edited Bomber
 
