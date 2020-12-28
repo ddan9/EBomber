@@ -20,13 +20,20 @@
 
 [Go up](#Language-translations)
 
-> 1
+ 
+ 
+ 
+ 
+ 
 
 #### Edited Bomber
 
 There is fixed with some changes version of SMSBomber
 
-> 2
+ 
+ 
+ 
+ 
 
 #### For ***smooth*** installation required: 
 
