@@ -20,7 +20,7 @@
 
 [Go up](#Language-translations)
 
-``` ```
+~~~ ~~~
 
 #### Edited Bomber
 
