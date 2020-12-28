@@ -14,13 +14,21 @@
 
 ### Edited Bomber
 
+```
+
 There is fixed with some changes version of SMSBomber
- 
+
+```
+
 #### For ***smooth*** installation required: 
+
+```
 
 - PC: Linux (Ubuntu-based; Latest version; Maybe just apt-based, i don't know)
 
 - Mobile: Android (With termux)
+
+```
 
 #### ***Smooth*** installation:
 
