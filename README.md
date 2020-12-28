@@ -20,7 +20,7 @@
 
 ### Description in English
 
-[Go up](#Language-translations)
+[🠕 Go up](#Language-translations)
 
 <br />
 
@@ -88,7 +88,7 @@ Creator of distribution: https://github.com/ddan9
 
 ### Описание на Русском
 
-[Наверх](#Language-translations)
+[🠕 Наверх](#Language-translations)
 
 <br />
 
