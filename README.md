@@ -8,7 +8,7 @@
 
 ```
 
-<h3> Language translations </h3>
+### Language translations
 
 - [Description in English](#Description-in-English)
 
@@ -20,7 +20,9 @@
 
 <br />
 
-<h3> Description in English </h3> | [Go up](#Language-translations)
+### Description in English
+
+[Go up](#Language-translations)
 
 <br />
 
