@@ -10,7 +10,7 @@
 
 ----------------------------------------------
 
-## Description in English 
+### Description in English 
 
 - [go up](#Language-translations)
 
@@ -66,11 +66,11 @@ There is fixed with some changes version of SMSBomber
 
 ----------------------------------------------
 
-## Описание на Русском
+### Описание на Русском
 
 - [вверх](#Language-translations)
 
-### Улучшенный Бомбер
+#### Улучшенный Бомбер
  
 Это - пофиксенная с некоторыми изменениями версия SMSBomber'а
 
