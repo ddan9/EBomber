@@ -7,9 +7,9 @@
 - [Description in English](#Description-in-English)
 
 - [Описание на Русском](#Описание-на-Русском)
->
-> ----------------------------------------------
->
+
+----------------------------------------------
+
 ### Description in English 
 
 > - [Go up](#Language-translations)
@@ -58,11 +58,11 @@
 
 #### Authors
 
-- Creator of original: https://github.com/Ivan-Hacker-700
-
-- Creator of effects: https://vk.com/psih.odinochka
-
-- Creator of distribution: https://github.com/ddan9
+> - Creator of original: https://github.com/Ivan-Hacker-700
+>
+> - Creator of effects: https://vk.com/psih.odinochka
+>
+> - Creator of distribution: https://github.com/ddan9
 
 ----------------------------------------------
 
