@@ -16,7 +16,9 @@
 
 ----------------------------------------------
 
-### Description in English ### | [Go up](#Language-translations)
+### Description in English
+
+[Go up](#Language-translations)
 
 #### Edited Bomber
 
@@ -70,7 +72,9 @@ Creator of distribution: https://github.com/ddan9
 
 ----------------------------------------------
 
-### Описание на Русском | [Наверх](#Language-translations)
+### Описание на Русском
+
+[Наверх](#Language-translations)
 
 #### Улучшенный Бомбер
  
