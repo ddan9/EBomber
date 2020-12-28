@@ -1,5 +1,7 @@
 # EBomber
 
+#English
+
 -----------------------------------------------
 
  Edited Bomber
@@ -49,3 +51,5 @@ For ***manual*** install you need:
 - bash EBomber.sh
 
 -----------------------------------------------
+
+#Russian
