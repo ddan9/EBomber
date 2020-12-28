@@ -12,12 +12,12 @@
 
 ### Description in English 
 
-- [go up](#Language-translations)
+- [Go up](#Language-translations)
 
 #### Edited Bomber
 
 There is fixed with some changes version of SMSBomber
----
+
 #### For ***smooth*** installation required: 
 
 - PC: Linux (Ubuntu-based; Latest version; Maybe just apt-based, i don't know)
@@ -68,7 +68,7 @@ There is fixed with some changes version of SMSBomber
 
 ### Описание на Русском
 
-- [вверх](#Language-translations)
+- [Наверх](#Language-translations)
 
 #### Улучшенный Бомбер
  
