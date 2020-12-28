@@ -24,6 +24,10 @@ There is fixed with some changes version of SMSBomber
 
 #### ***Smooth*** installation:
 
+```bash
+
+cd
+
 0. apt-get update 
 
 1. apt-get install -y git
@@ -33,6 +37,8 @@ There is fixed with some changes version of SMSBomber
 4. bash EBomber/install.sh
 
 5. bash EBomber.sh
+
+```
 
 #### For ***manual*** install you need:
 
@@ -68,7 +74,9 @@ There is fixed with some changes version of SMSBomber
 
 #### ***Гладкая*** установка:
 
-```sh
+```bash
+
+cd
 
 0. apt-get update 
 
