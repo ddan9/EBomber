@@ -132,6 +132,10 @@ if [[ $lang = "" ]]
 						apt-get upgrade -y
 
 						apt-get install -y python
+						
+						apt-get upgrade -y
+						
+						pip install --upgrade pip
 
 						pip install -r $HOME/EBomber/config/requirements
 
@@ -166,6 +170,10 @@ if [[ $lang = "" ]]
 						sudo apt upgrade -y
 
 						sudo apt install -y python3 python3-pip
+						
+						sudo apt upgrade -y
+						
+						sudo pip3 install --upgrade pip
 
 						pip3 install -r $HOME/EBomber/config/requirements
 
@@ -179,8 +187,11 @@ if [[ $lang = "" ]]
 
 				fi
 
+				echo ""
 				echo "$spacing"
 				echo ""
+
+				sleep 5
 
 				clear
 
@@ -265,6 +276,10 @@ if [[ $lang = "" ]]
 						apt-get upgrade -y
 
 						apt-get install -y python
+						
+						apt-get upgrade -y
+						
+						pip install --upgrade pip
 
 						pip install -r $HOME/EBomber/config/requirements
 
@@ -299,7 +314,11 @@ if [[ $lang = "" ]]
 						sudo apt upgrade -y
 
 						sudo apt install -y python3 python3-pip
-
+						
+						sudo apt upgrade -y
+						
+						sudo pip3 install --upgrade pip
+						
 						pip3 install -r $HOME/EBomber/config/requirements
 
 						ln -s $HOME/EBomber/start.sh $HOME/EBomber.sh
@@ -312,8 +331,11 @@ if [[ $lang = "" ]]
 
 				fi
 			
+				echo ""
 				echo "$spacing"
 				echo ""
+
+				sleep 5
 
 				clear
 
