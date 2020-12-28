@@ -1,4 +1,9 @@
-#EBomber
+# EBomber
+
+[English req](#English)
+
+[Russian req](#Russian)
+
 
 # English
 
