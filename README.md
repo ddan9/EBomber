@@ -1,7 +1,5 @@
 # EBomber
 
--<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-
-
 ----------------------------------------------
 
 [Description in English](#Description-in-English)
@@ -10,27 +8,17 @@
 
 ----------------------------------------------
 
--<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-
-
-----------------------------------------------
-
 # Description in English
 
-----------------------------------------------
+Edited Bomber
 
- Edited Bomber
-
- There is fixed with some changes version of SMSBomber
-
-----------------------------------------------
-
+There is fixed with some changes version of SMSBomber
+ 
 For ***smooth*** installation required: 
 
 - PC: Linux (Ubuntu-based; Maybe just apt-based, i don't know)
 
 - Mobile: Android (With termux)
-
-----------------------------------------------
 
 ***Smooth*** installation:
 
@@ -44,8 +32,6 @@ For ***smooth*** installation required:
 
 5. bash EBomber.sh
 
-----------------------------------------------
-
 For ***manual*** install you need:
 
 - bash (Maybe something else, i don't know)
@@ -56,7 +42,7 @@ For ***manual*** install you need:
 
 - Python3
 
-- pip (from python3)
+- pip3 or python3-pip (in general, pip3 from python3)
 
 - pip3 install -r $HOME/EBomber/config/requirements
 
@@ -66,29 +52,19 @@ For ***manual*** install you need:
 
 ----------------------------------------------
 
--<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-
-
-----------------------------------------------
-
 # Описание на Русском
 
-----------------------------------------------
+Улучшенный бомбер
+ 
+Это - пофиксенная с некоторыми изменениями версия SMSBomber'а
 
- Edited Bomber
+Для ***гладкой*** установки необходимо:
 
- There is fixed with some changes version of SMSBomber
+- ПК: Линукс (Убунту-подобный; Либо apt-based, точно не знаю)
 
-----------------------------------------------
+- Мобильные: Андроид (С термуксом)
 
-For ***smooth*** installation required: 
-
-- PC: Linux (Ubuntu-based; Maybe just apt-based, i don't know)
-
-- Mobile: Android (With termux)
-
-----------------------------------------------
-
-***Smooth*** installation:
+***Гладкая*** установка:
 
 0. apt-get update 
 
@@ -100,19 +76,17 @@ For ***smooth*** installation required:
 
 5. bash EBomber.sh
 
-----------------------------------------------
+Для ***ручной*** установки вам нужно:
 
-For ***manual*** install you need:
-
-- bash (Maybe something else, i don't know)
+- bash (Может что-то другое, точно не знаю)
 
 - git
 
-- git clone https://github.com/ddan9/EBomber into $HOME
+- git clone https://github.com/ddan9/EBomber в вашу $HOME
 
 - Python3
 
-- pip (from python3)
+- pip3 или python3-pip (в общем, pip из python3)
 
 - pip3 install -r $HOME/EBomber/config/requirements
 
