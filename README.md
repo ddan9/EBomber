@@ -4,19 +4,19 @@
 
 ### Language translations
 
-- [Description in English](#Description-in-English)
-
-- [Описание на Русском](#Описание-на-Русском)
+> - [Description in English](#Description-in-English)
+>
+> - [Описание на Русском](#Описание-на-Русском)
 
 ----------------------------------------------
 
 ### Description in English 
 
-- [Go up](#Language-translations)
+> - [Go up](#Language-translations)
 
 #### Edited Bomber
 
-There is fixed with some changes version of SMSBomber
+> There is fixed with some changes version of SMSBomber
 
 #### For ***smooth*** installation required: 
 
@@ -26,9 +26,9 @@ There is fixed with some changes version of SMSBomber
 
 #### ***Smooth*** installation:
 
-> 0. apt-get update <
+> 0. apt-get update
 >
-> 1. apt-get install -y git >
+> 1. apt-get install -y git
 >
 > 2. git clone https://github.com/ddan9/EBomber
 >
@@ -38,23 +38,23 @@ There is fixed with some changes version of SMSBomber
 
 #### For ***manual*** install you need:
 
-- do it in docker whenever possible
-
-- bash (Maybe something else, i don't know)
-
-- git
-
-- git clone https://github.com/ddan9/EBomber into $HOME
-
-- Python3
-
-- pip3 or python3-pip (in general, pip from python3)
-
-- pip3 install -r $HOME/EBomber/config/requirements
-
-- ln -s $HOME/EBomber/start.sh $HOME/Ebomber.sh
-
-- bash EBomber.sh
+> - do it in docker whenever possible
+>
+> - bash (Maybe something else, i don't know)
+> 
+> - git
+>
+> - git clone https://github.com/ddan9/EBomber into $HOME
+>
+> - Python3
+>
+> - pip3 or python3-pip (in general, pip from python3)
+>
+> - pip3 install -r $HOME/EBomber/config/requirements
+>
+> - ln -s $HOME/EBomber/start.sh $HOME/Ebomber.sh
+>
+> - bash EBomber.sh
 
 #### Authors
 
