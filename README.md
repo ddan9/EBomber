@@ -1,6 +1,6 @@
-# EBomber
+#EBomber
 
-#English
+# English
 
 -----------------------------------------------
 
@@ -52,4 +52,4 @@ For ***manual*** install you need:
 
 -----------------------------------------------
 
-#Russian
+# Russian
