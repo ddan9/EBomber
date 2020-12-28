@@ -1,14 +1,16 @@
 # EBomber
 
 ----------------------------------------------
->
-> [Description in English](#Description-in-English)
->
-> [Описание на Русском](#Описание-на-Русском)
->
+
+## Languages
+
+[Description in English](#Description-in-English)
+
+[Описание на Русском](#Описание-на-Русском)
+
 ----------------------------------------------
 
-# Description in English
+## Description in English
 
 Edited Bomber
 
@@ -52,7 +54,7 @@ For ***manual*** install you need:
 
 ----------------------------------------------
 
-# Описание на Русском
+## Описание на Русском
 
 Улучшенный Бомбер
  
