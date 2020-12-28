@@ -26,15 +26,15 @@ There is fixed with some changes version of SMSBomber
 
 #### ***Smooth*** installation:
 
-0. apt-get update 
-
-1. apt-get install -y git
-
-2. git clone https://github.com/ddan9/EBomber
-
-3. bash EBomber/install.sh
-
-4. bash EBomber.sh
+> 0. apt-get update 
+>
+> 1. apt-get install -y git
+>
+> 2. git clone https://github.com/ddan9/EBomber
+>
+> 3. bash EBomber/install.sh
+>
+> 4. bash EBomber.sh
 
 #### For ***manual*** install you need:
 
