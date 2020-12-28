@@ -1,8 +1,8 @@
-# EBomber
+### EBomber
 
 ----------------------------------------------
 
-## Language translations
+### Language translations
 
 - [Description in English](#Description-in-English)
 
@@ -10,7 +10,7 @@
 
 ----------------------------------------------
 
-## Description in English 
+### Description in English 
 
 - [go up](#Language-translations)
 
