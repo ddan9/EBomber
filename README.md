@@ -26,8 +26,6 @@ There is fixed with some changes version of SMSBomber
 
 ```bash
 
-cd
-
 0. apt-get update 
 
 1. apt-get install -y git
@@ -76,8 +74,6 @@ cd
 
 ```bash
 
-cd
-
 0. apt-get update 
 
 1. apt-get install -y git
@@ -91,6 +87,8 @@ cd
 ```
 
 #### Для ***ручной*** установки вам нужно:
+
+```markdown
 
 - bash (Может что-то другое, точно не знаю)
 
@@ -107,3 +105,5 @@ cd
 - ln -s $HOME/EBomber/start.sh $HOME/Ebomber.sh
 
 - bash EBomber.sh
+
+```
