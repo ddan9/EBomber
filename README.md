@@ -1,11 +1,11 @@
 # EBomber
 
-[English req](#English)
+[Description in English](#Description in English)
 
-[Russian req](#Russian)
+[Описание на русском](#Описание на русском)
 
 
-# English
+# Description in English
 
 -----------------------------------------------
 
@@ -57,4 +57,4 @@ For ***manual*** install you need:
 
 -----------------------------------------------
 
-# Russian
+# Описание на русском
