@@ -22,7 +22,7 @@ There is fixed with some changes version of SMSBomber
 
 #### For ***smooth*** installation required: 
 
-```
+```markdown
 
 - PC: Linux (Ubuntu-based; Latest version; Maybe just apt-based, i don't know)
 
@@ -74,13 +74,21 @@ There is fixed with some changes version of SMSBomber
 
 ### Улучшенный Бомбер
  
+```
+ 
 Это - пофиксенная с некоторыми изменениями версия SMSBomber'а
 
+```
+
 #### Для ***гладкой*** установки необходимо:
+
+```markdown
 
 - ПК: Линукс (Убунту-подобный; Последняя версия; Либо просто apt-based, точно не знаю)
 
 - Мобильные: Андроид (С термуксом)
+
+```
 
 #### ***Гладкая*** установка:
 
