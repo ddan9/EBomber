@@ -26,9 +26,9 @@ There is fixed with some changes version of SMSBomber
 
 #### ***Smooth*** installation:
 
-> 0. apt-get update 
+> 0. apt-get update <
 >
-> 1. apt-get install -y git
+> 1. apt-get install -y git >
 >
 > 2. git clone https://github.com/ddan9/EBomber
 >
