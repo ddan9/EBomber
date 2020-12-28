@@ -24,7 +24,8 @@
 
 #### Edited Bomber
 
-There is fixed with some changes version of SMSBomber
+There is fixed with some changes version of SMSBomber  
+
 
 #### For ***smooth*** installation required: 
 
