@@ -20,6 +20,8 @@ For ***smooth*** installation required:
 
 ***Smooth*** installation:
 
+```bash
+
 0. apt-get update 
 
 1. apt-get install -y git
@@ -29,6 +31,8 @@ For ***smooth*** installation required:
 4. bash EBomber/install.sh
 
 5. bash EBomber.sh
+
+```
 
 -----------------------------------------------
 
