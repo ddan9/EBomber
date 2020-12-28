@@ -70,9 +70,7 @@ Creator of distribution: https://github.com/ddan9
 
 ----------------------------------------------
 
-### Описание на Русском
-
-[Наверх](#Language-translations)
+### Описание на Русском | [Наверх](#Language-translations)
 
 #### Улучшенный Бомбер
  
