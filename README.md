@@ -14,7 +14,11 @@
 
 - [Описание на Русском](#Описание-на-Русском)
 
+``` ```
+
 ---
+
+``` ```
 
 ### Description in English
 
@@ -70,7 +74,7 @@ There is fixed with some changes version of SMSBomber
 >
 > - bash EBomber.sh
 
-```
+``` ```
 
 #### Authors
 
@@ -80,23 +84,31 @@ Creator of effects: https://vk.com/psih.odinochka
 
 Creator of distribution: https://github.com/ddan9
 
-```
+``` ```
 
 ---
+
+``` ```
 
 ### Описание на Русском
 
 [Наверх](#Language-translations)
 
+``` ```
+
 #### Улучшенный Бомбер
  
 Это - пофиксенная с некоторыми изменениями версия SMSBomber'а
+
+``` ```
 
 #### Для ***гладкой*** установки необходимо:
 
 - ПК: Линукс (Убунту-подобный; Последняя версия; Либо просто apt-based, точно не знаю)
 
 - Мобильные: Андроид (С термуксом)
+
+``` ```
 
 #### ***Гладкая*** установка:
 
@@ -109,6 +121,8 @@ Creator of distribution: https://github.com/ddan9
 > 3. bash EBomber/install.sh
 >
 > 4. bash EBomber.sh
+
+``` ```
 
 #### Для ***ручной*** установки вам нужно:
 
@@ -129,6 +143,8 @@ Creator of distribution: https://github.com/ddan9
 > - ln -s $HOME/EBomber/start.sh $HOME/Ebomber.sh
 >
 > - bash EBomber.sh
+
+``` ```
 
 #### Авторы
 
