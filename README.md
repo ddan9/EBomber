@@ -72,11 +72,11 @@ There is fixed with some changes version of SMSBomber
 
 #### Authors
 
-Creator of original: https://github.com/Ivan-Hacker-700
+- Creator of original: https://github.com/Ivan-Hacker-700
 
-Creator of effects: https://vk.com/psih.odinochka
+- Creator of effects: https://vk.com/psih.odinochka
 
-Creator of distribution: https://github.com/ddan9
+- Creator of distribution: https://github.com/ddan9
 
 ----------------------------------------------
 
@@ -142,8 +142,8 @@ Creator of distribution: https://github.com/ddan9
 
 #### Авторы
 
-Создатель оригинала: https://github.com/Ivan-Hacker-700
+- Создатель оригинала: https://github.com/Ivan-Hacker-700
 
-Создатель спец. эффектов: https://vk.com/psih.odinochka
+- Создатель спец. эффектов: https://vk.com/psih.odinochka
 
-Создатель дистрибутива: https://github.com/ddan9
+- Создатель дистрибутива: https://github.com/ddan9
