@@ -10,17 +10,17 @@
 
 ### Language translations
 
-- [🇺🇸 Description in English](#Description-in-English-🇺🇸)
+- [🇺🇸 Description in English](#Description-in-English)
 
-- [🇷🇺 Описание на Русском](#Описание-на-Русском-🇷🇺)
+- [🇷🇺 Описание на Русском](#Описание-на-Русском)
 
 <br />
 
 ---
 
-### Description in English 🇺🇸
+### Description in English
 
-[🔝 Go up](#Language-translations)
+[🇺🇸 🔝 Go up](#Language-translations)
 
 <br />
 
@@ -86,9 +86,9 @@ Creator of distribution: https://github.com/ddan9
 
 ---
 
-### Описание на Русском 🇷🇺
+### Описание на Русском
 
-[🔝 Наверх](#Language-translations)
+[🇷🇺 🔝 Наверх](#Language-translations)
 
 <br />
 
