@@ -68,6 +68,8 @@ There is fixed with some changes version of SMSBomber
 
 ## Описание на Русском
 
+[> вверх <](#Language-translations)
+
 ### Улучшенный Бомбер
  
 Это - пофиксенная с некоторыми изменениями версия SMSBomber'а
