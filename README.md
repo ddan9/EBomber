@@ -1,7 +1,5 @@
 # EBomber
 
-```markdown
-
 -----------------------------------------------
 
  Edited Bomber
@@ -51,5 +49,3 @@ For ***manual*** install you need:
 - bash EBomber.sh
 
 -----------------------------------------------
-
-```
