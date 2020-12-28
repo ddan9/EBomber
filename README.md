@@ -8,8 +8,6 @@
 
 ```
 
-----------------------------------------------
-
 ### Language translations
 
 - [Description in English](#Description-in-English)
