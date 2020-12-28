@@ -10,9 +10,9 @@
 
 ### Language translations
 
-- [Description in English](#Description-in-English)
+- [🇺🇸 Description in English](#Description-in-English)
 
-- [Описание на Русском](#Описание-на-Русском)
+- [🇷🇺 Описание на Русском](#Описание-на-Русском)
 
 <br />
 
@@ -32,9 +32,9 @@ There is fixed with some changes version of SMSBomber
 
 #### For ***smooth*** installation required: 
 
-- PC: Linux (Ubuntu-based; Latest version; Maybe just apt-based, i don't know)
+- 💻 PC: Linux (Ubuntu-based; Latest version; Maybe just apt-based, i don't know)
   
-- Mobile: Android (With termux)
+- 📱 Mobile: Android (With termux)
 
 <br />
 
@@ -100,9 +100,9 @@ Creator of distribution: https://github.com/ddan9
 
 #### Для ***гладкой*** установки необходимо:
 
-- ПК: Линукс (Убунту-подобный; Последняя версия; Либо просто apt-based, точно не знаю)
+- 💻 ПК: Линукс (Убунту-подобный; Последняя версия; Либо просто apt-based, точно не знаю)
 
-- Мобильные: Андроид (С термуксом)
+- 📱 Мобильные: Андроид (С термуксом)
 
 <br />
 
