@@ -4,9 +4,9 @@
 
 ### Language translations
 
-> - [Description in English](#Description-in-English)
->
-> - [Описание на Русском](#Описание-на-Русском)
+- [Description in English](#Description-in-English)
+
+- [Описание на Русском](#Описание-на-Русском)
 
 ----------------------------------------------
 
