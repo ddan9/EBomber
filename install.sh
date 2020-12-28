@@ -123,8 +123,9 @@ if [[ $lang = "" ]]
 						echo ""
 
 						sleep 10
-
-						clear
+						
+						echo "$spacing"
+						echo ""
 
 						apt-get update
 
@@ -135,6 +136,8 @@ if [[ $lang = "" ]]
 						pip install -r $HOME/EBomber/config/requirements
 
 						ln -s $HOME/EBomber/start.sh $HOME/EBomber.sh
+						
+						sleep 10
 
 					else
 
@@ -153,7 +156,8 @@ if [[ $lang = "" ]]
 
 						sleep 10
 
-						clear
+						echo "$spacing"
+						echo ""
 
 						apt install -y sudo
 
@@ -166,6 +170,8 @@ if [[ $lang = "" ]]
 						pip3 install -r $HOME/EBomber/config/requirements
 
 						ln -s $HOME/EBomber/start.sh $HOME/EBomber.sh
+						
+						sleep 10
 
 					else
 
@@ -173,7 +179,8 @@ if [[ $lang = "" ]]
 
 				fi
 
-				sleep 10
+				echo "$spacing"
+				echo ""
 
 				clear
 
@@ -250,7 +257,8 @@ if [[ $lang = "" ]]
 
 						sleep 10
 
-						clear
+						echo "$spacing"
+						echo ""
 						
 						apt-get update
 
@@ -261,6 +269,8 @@ if [[ $lang = "" ]]
 						pip install -r $HOME/EBomber/config/requirements
 
 						ln -s $HOME/EBomber/start.sh $HOME/EBomber.sh
+						
+						sleep 10
 
 					else
 
@@ -279,7 +289,8 @@ if [[ $lang = "" ]]
 
 						sleep 10
 
-						clear
+						echo "$spacing"
+						echo ""
 						
 						apt install -y sudo
 
@@ -292,14 +303,17 @@ if [[ $lang = "" ]]
 						pip3 install -r $HOME/EBomber/config/requirements
 
 						ln -s $HOME/EBomber/start.sh $HOME/EBomber.sh
+						
+						sleep 10
 
 					else
 
 						echo ""
 
 				fi
-
-				sleep 10
+			
+				echo "$spacing"
+				echo ""
 
 				clear
 
