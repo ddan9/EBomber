@@ -14,25 +14,15 @@
 
 ### Edited Bomber
 
-```
-
 There is fixed with some changes version of SMSBomber
 
-```
-
 #### For ***smooth*** installation required: 
-
-```markdown
 
 - PC: Linux (Ubuntu-based; Latest version; Maybe just apt-based, i don't know)
 
 - Mobile: Android (With termux)
 
-```
-
 #### ***Smooth*** installation:
-
-```bash
 
 0. apt-get update 
 
@@ -44,11 +34,7 @@ There is fixed with some changes version of SMSBomber
 
 4. bash EBomber.sh
 
-```
-
 #### For ***manual*** install you need:
-
-```markdown
 
 - do it in docker whenever possible
 
@@ -68,8 +54,6 @@ There is fixed with some changes version of SMSBomber
 
 - bash EBomber.sh
 
-```
-
 #### Authors
 
 - Creator of original: https://github.com/Ivan-Hacker-700
@@ -84,25 +68,15 @@ There is fixed with some changes version of SMSBomber
 
 ### Улучшенный Бомбер
  
-```
- 
 Это - пофиксенная с некоторыми изменениями версия SMSBomber'а
 
-```
-
 #### Для ***гладкой*** установки необходимо:
-
-```markdown
 
 - ПК: Линукс (Убунту-подобный; Последняя версия; Либо просто apt-based, точно не знаю)
 
 - Мобильные: Андроид (С термуксом)
 
-```
-
 #### ***Гладкая*** установка:
-
-```bash
 
 0. apt-get update 
 
@@ -114,11 +88,7 @@ There is fixed with some changes version of SMSBomber
 
 4. bash EBomber.sh
 
-```
-
 #### Для ***ручной*** установки вам нужно:
-
-```markdown
 
 - по возможности делать в докере
 
@@ -137,8 +107,6 @@ There is fixed with some changes version of SMSBomber
 - ln -s $HOME/EBomber/start.sh $HOME/Ebomber.sh
 
 - bash EBomber.sh
-
-```
 
 #### Авторы
 
