@@ -34,7 +34,7 @@ There is fixed with some changes version of SMSBomber
 
 5. bash EBomber.sh
 
-For ***manual*** install you need:
+#### For ***manual*** install you need:
 
 - bash (Maybe something else, i don't know)
 
@@ -56,17 +56,19 @@ For ***manual*** install you need:
 
 ## Описание на Русском
 
-Улучшенный Бомбер
+### Улучшенный Бомбер
  
 Это - пофиксенная с некоторыми изменениями версия SMSBomber'а
 
-Для ***гладкой*** установки необходимо:
+#### Для ***гладкой*** установки необходимо:
 
 - ПК: Линукс (Убунту-подобный; Либо apt-based, точно не знаю)
 
 - Мобильные: Андроид (С термуксом)
 
-***Гладкая*** установка:
+#### ***Гладкая*** установка:
+
+```sh
 
 0. apt-get update 
 
@@ -78,7 +80,9 @@ For ***manual*** install you need:
 
 5. bash EBomber.sh
 
-Для ***ручной*** установки вам нужно:
+```
+
+#### Для ***ручной*** установки вам нужно:
 
 - bash (Может что-то другое, точно не знаю)
 
