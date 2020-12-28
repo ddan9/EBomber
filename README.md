@@ -18,8 +18,6 @@
 
 ---
 
-<br />
-
 ### Description in English
 
 [Go up](#Language-translations)
@@ -87,8 +85,6 @@ Creator of distribution: https://github.com/ddan9
 <br />
 
 ---
-
-<br />
 
 ### Описание на Русском
 
