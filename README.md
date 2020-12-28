@@ -20,9 +20,7 @@
 
 <br />
 
-### Description in English
-
-[Go up](#Language-translations)
+<h3> Description in English </h3> | [Go up](#Language-translations)
 
 <br />
 
