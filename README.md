@@ -14,7 +14,7 @@
 
 - [Описание на Русском](#Описание-на-Русском)
 
-----------------------------------------------
+---
 
 ### Description in English
 
@@ -48,6 +48,8 @@ There is fixed with some changes version of SMSBomber
 >
 > 4. bash EBomber.sh
 
+``` ```
+
 #### For ***manual*** install you need:
 
 > - do it in docker whenever possible
@@ -68,6 +70,8 @@ There is fixed with some changes version of SMSBomber
 >
 > - bash EBomber.sh
 
+```
+
 #### Authors
 
 Creator of original: https://github.com/Ivan-Hacker-700
@@ -76,7 +80,9 @@ Creator of effects: https://vk.com/psih.odinochka
 
 Creator of distribution: https://github.com/ddan9
 
-----------------------------------------------
+```
+
+---
 
 ### Описание на Русском
 
