@@ -8,8 +8,6 @@
 
 ```
 
-``` ```
-
 ### Language translations
 
 - [Description in English](#Description-in-English)
@@ -20,19 +18,19 @@
 
 ---
 
-``` ```
+<br />
 
 ### Description in English
 
 [Go up](#Language-translations)
 
-``` ```
+<br />
 
 #### Edited Bomber
 
 There is fixed with some changes version of SMSBomber
 
-``` ```
+<br />
 
 #### For ***smooth*** installation required: 
 
@@ -40,7 +38,7 @@ There is fixed with some changes version of SMSBomber
   
 - Mobile: Android (With termux)
 
-``` ```
+<br />
 
 #### ***Smooth*** installation:
 
@@ -54,7 +52,7 @@ There is fixed with some changes version of SMSBomber
 >
 > 4. bash EBomber.sh
 
-``` ```
+<br />
 
 #### For ***manual*** install you need:
 
@@ -76,7 +74,7 @@ There is fixed with some changes version of SMSBomber
 >
 > - bash EBomber.sh
 
-``` ```
+<br />
 
 #### Authors
 
@@ -86,23 +84,23 @@ Creator of effects: https://vk.com/psih.odinochka
 
 Creator of distribution: https://github.com/ddan9
 
-``` ```
+<br />
 
 ---
 
-``` ```
+<br />
 
 ### Описание на Русском
 
 [Наверх](#Language-translations)
 
-``` ```
+<br />
 
 #### Улучшенный Бомбер
  
 Это - пофиксенная с некоторыми изменениями версия SMSBomber'а
 
-``` ```
+<br />
 
 #### Для ***гладкой*** установки необходимо:
 
@@ -110,7 +108,7 @@ Creator of distribution: https://github.com/ddan9
 
 - Мобильные: Андроид (С термуксом)
 
-``` ```
+<br />
 
 #### ***Гладкая*** установка:
 
@@ -124,7 +122,7 @@ Creator of distribution: https://github.com/ddan9
 >
 > 4. bash EBomber.sh
 
-``` ```
+<br />
 
 #### Для ***ручной*** установки вам нужно:
 
@@ -146,7 +144,7 @@ Creator of distribution: https://github.com/ddan9
 >
 > - bash EBomber.sh
 
-``` ```
+<br />
 
 #### Авторы
 
