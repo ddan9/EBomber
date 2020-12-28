@@ -14,9 +14,11 @@
 
 [Go up](#Language-translations)
 
+
 #### Edited Bomber
 
 There is fixed with some changes version of SMSBomber
+
 
 #### For ***smooth*** installation required: 
 
