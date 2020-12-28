@@ -2,7 +2,7 @@
 
 ----------------------------------------------
 
-## Languages
+## Language translations
 
 [Description in English](#Description-in-English)
 
@@ -95,5 +95,3 @@ For ***manual*** install you need:
 - ln -s $HOME/EBomber/start.sh $HOME/Ebomber.sh
 
 - bash EBomber.sh
-
-----------------------------------------------
