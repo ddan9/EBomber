@@ -10,7 +10,7 @@
 
 ----------------------------------------------
 
-## Description in English [[go up]](#Language-translations)
+## Description in English ## [[go up]](#Language-translations)
 
 ### Edited Bomber
 
