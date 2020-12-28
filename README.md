@@ -12,7 +12,7 @@
 
 ## Description in English 
 
-- [> go up <](#Language-translations) -
+- [go up](#Language-translations)
 
 ### Edited Bomber
 
@@ -68,7 +68,7 @@ There is fixed with some changes version of SMSBomber
 
 ## Описание на Русском
 
-[> вверх <](#Language-translations)
+- [вверх](#Language-translations)
 
 ### Улучшенный Бомбер
  
