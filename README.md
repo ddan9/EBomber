@@ -40,6 +40,8 @@ There is fixed with some changes version of SMSBomber
 
 #### For ***manual*** install you need:
 
+```markdown
+
 - bash (Maybe something else, i don't know)
 
 - git
@@ -55,6 +57,8 @@ There is fixed with some changes version of SMSBomber
 - ln -s $HOME/EBomber/start.sh $HOME/Ebomber.sh
 
 - bash EBomber.sh
+
+```
 
 ----------------------------------------------
 
