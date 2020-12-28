@@ -1,8 +1,8 @@
 # EBomber
 
-[Description in English](#Description in English)
+[Description in English](#Description-in-English)
 
-[Описание на русском](#Описание на русском)
+[Описание на Русском](#Описание-на-Русском)
 
 
 # Description in English
@@ -57,4 +57,4 @@ For ***manual*** install you need:
 
 -----------------------------------------------
 
-# Описание на русском
+# Описание на Русском
