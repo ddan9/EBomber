@@ -70,6 +70,14 @@ There is fixed with some changes version of SMSBomber
 
 ```
 
+#### Authors
+
+Creator of original: https://github.com/Ivan-Hacker-700
+
+Creator of effects: https://vk.com/psih.odinochka
+
+Creator of distribution: https://github.com/ddan9
+
 ----------------------------------------------
 
 ## Описание на Русском
@@ -131,3 +139,11 @@ There is fixed with some changes version of SMSBomber
 - bash EBomber.sh
 
 ```
+
+#### Авторы
+
+Создатель оригинала: https://github.com/Ivan-Hacker-700
+
+Создатель спец. эффектов: https://vk.com/psih.odinochka
+
+Создатель дистрибутива: https://github.com/ddan9
