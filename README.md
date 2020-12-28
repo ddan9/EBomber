@@ -20,7 +20,7 @@
 
 ### Description in English
 
-[🠕 Go up](#Language-translations)
+[🔝 Go up](#Language-translations)
 
 <br />
 
