@@ -17,7 +17,7 @@ For ***smooth*** installation required:
 
 -----------------------------------------------
 
-***Smooth*** installation:
+<***Smooth*** installation:
 
 0. apt-get update 
 
@@ -27,7 +27,7 @@ For ***smooth*** installation required:
 
 4. bash EBomber/install.sh
 
-5. bash EBomber.sh
+5. bash EBomber.sh>
 
 -----------------------------------------------
 
