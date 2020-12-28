@@ -50,7 +50,7 @@ There is fixed with some changes version of SMSBomber
 
 - Python3
 
-- pip3 or python3-pip (in general, pip3 from python3)
+- pip3 or python3-pip (in general, pip from python3)
 
 - pip3 install -r $HOME/EBomber/config/requirements
 
