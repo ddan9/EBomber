@@ -128,14 +128,24 @@ if [[ $lang = "" ]]
 						echo ""
 
 						apt-get update
+						
+						echo ""
 
 						apt-get upgrade -y
+						
+						echo ""
 
 						apt-get install -y python
 						
-						apt-get upgrade -y
+						echo ""
+						
+						apt-get dist-upgrade -y
+						
+						echo ""
 						
 						pip install --upgrade pip
+						
+						echo ""
 
 						pip install -r $HOME/EBomber/config/requirements
 
@@ -164,18 +174,32 @@ if [[ $lang = "" ]]
 						echo ""
 
 						apt install -y sudo
+						
+						echo ""
 
 						sudo apt update
+						
+						echo ""
 
 						sudo apt upgrade -y
+						
+						echo ""
 
 						sudo apt install -y python3 python3-pip
 						
-						sudo apt upgrade -y
+						echo ""
+						
+						sudo apt dist-upgrade -y
+						
+						echo ""
 						
 						sudo pip3 install --upgrade pip
+						
+						echo ""
 
 						pip3 install -r $HOME/EBomber/config/requirements
+						
+						echo ""
 
 						ln -s $HOME/EBomber/start.sh $HOME/EBomber.sh
 						
@@ -272,16 +296,28 @@ if [[ $lang = "" ]]
 						echo ""
 						
 						apt-get update
+						
+						echo ""
 
 						apt-get upgrade -y
+						
+						echo ""
 
 						apt-get install -y python
 						
-						apt-get upgrade -y
+						echo ""
+						
+						apt-get dist-upgrade -y
+						
+						echo ""
 						
 						pip install --upgrade pip
+						
+						echo ""
 
 						pip install -r $HOME/EBomber/config/requirements
+						
+						echo ""
 
 						ln -s $HOME/EBomber/start.sh $HOME/EBomber.sh
 						
@@ -308,18 +344,32 @@ if [[ $lang = "" ]]
 						echo ""
 						
 						apt install -y sudo
+						
+						echo ""
 
 						sudo apt update
+						
+						echo ""
 
 						sudo apt upgrade -y
+						
+						echo ""
 
 						sudo apt install -y python3 python3-pip
 						
-						sudo apt upgrade -y
+						echo ""
+						
+						sudo apt dist-upgrade -y
+						
+						echo ""
 						
 						sudo pip3 install --upgrade pip
 						
+						echo ""
+						
 						pip3 install -r $HOME/EBomber/config/requirements
+
+						echo ""
 
 						ln -s $HOME/EBomber/start.sh $HOME/EBomber.sh
 						
