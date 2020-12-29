@@ -191,7 +191,7 @@ if [[ $lang = "" ]]
 				echo "$spacing"
 				echo ""
 
-				sleep 5
+				sleep 2
 
 				clear
 
@@ -335,7 +335,7 @@ if [[ $lang = "" ]]
 				echo "$spacing"
 				echo ""
 
-				sleep 5
+				sleep 2
 
 				clear
 
