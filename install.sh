@@ -119,7 +119,7 @@ if [[ $lang = "" ]]
 
 						echo " Preparing to install Mobile version..."
 						echo ""
-						echo " If given a choice during installation, select and enter: y"
+						echo " If given a choice during installation, select and enter: Y"
 						echo ""
 
 						sleep 10
@@ -155,7 +155,7 @@ if [[ $lang = "" ]]
 
 						echo " Preparing to install Desktop version..."
 						echo ""
-						echo " If given a choice during installation, select and enter: y"
+						echo " If given a choice during installation, select and enter: Y"
 						echo ""
 
 						sleep 10
@@ -263,7 +263,7 @@ if [[ $lang = "" ]]
 
 						echo " Подготовка к установке мобильной версии..."
 						echo ""
-						echo " Если во время установки вам будут давать выбор, выбирайте и вводите: y"
+						echo " Если во время установки вам будут давать выбор, выбирайте и вводите: Y"
 						echo ""
 
 						sleep 10
@@ -299,7 +299,7 @@ if [[ $lang = "" ]]
 
 						echo " Подготовка к установке компьютерной версии..."
 						echo ""
-						echo " Если во время установки вам будут давать выбор, выбирайте и вводите: y"
+						echo " Если во время установки вам будут давать выбор, выбирайте и вводите: Y"
 						echo ""
 
 						sleep 10
