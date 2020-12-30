@@ -40,19 +40,19 @@ if [[ $version != "Mobile" ]] && [[ $version != "Desktop" ]]
 
 		echo " Выберите тип устройства: "
 		echo ""
-		echo " 1 | Телефон " 
+		echo " 0 | Телефон " 
 		echo ""
-		echo " 2 | Компьютер "
+		echo " 1 | Компьютер "
 		echo ""
 		read -p " Какой тип устройства вы используете? > " choose
 
 		case "$choose" in
 
-			"1" )
+			"0" )
 			echo Mobile > $HOME/EBomber/config/version; clear; bash $HOME/EBomber.sh
 			;;
 
-			"2" )
+			"1" )
 			echo Desktop > $HOME/EBomber/config/version; clear; bash $HOME/EBomber.sh
 			;;
 
