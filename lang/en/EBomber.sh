@@ -61,7 +61,7 @@ if [[ $version != "Mobile" ]] && [[ $version != "Desktop" ]]
 
 	else
 
-		echo " Using version: $version $number"
+		echo " Using version: $number $version"
 		echo ""
 		echo " Using language: English"
 		echo ""
