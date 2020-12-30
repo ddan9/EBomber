@@ -5,6 +5,7 @@ sleeptime=0.4
 version=$(cat $HOME/EBomber/config/version)
 name=$(cat $HOME/EBomber/config/name)
 logo=$HOME/EBomber/config/logo.sh
+number=$(cat $HOME/EBomber/config/number)
 
 clear
 
@@ -60,7 +61,7 @@ if [[ $version != "Mobile" ]] && [[ $version != "Desktop" ]]
 
 	else
 
-		echo " Используемая версия: $version "
+		echo " Используемая версия: $number $version "
 		echo ""
 		echo " Используемый язык: Русский"
 		echo ""
