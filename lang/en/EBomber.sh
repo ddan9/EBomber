@@ -40,19 +40,19 @@ if [[ $version != "Mobile" ]] && [[ $version != "Desktop" ]]
 
 		echo " Choose the version: "
 		echo ""
-		echo " 1 | Mobile " 
+		echo " 0 | Mobile " 
 		echo ""
-		echo " 2 | Desktop "
+		echo " 1 | Desktop "
 		echo ""
 		read -p " What version do you use? > " choose
 
 		case "$choose" in
 
-			"1" )
+			"0" )
 			echo Mobile > $HOME/EBomber/config/version; clear; bash $HOME/EBomber.sh
 			;;
 
-			"2" )
+			"1" )
 			echo Desktop > $HOME/EBomber/config/version; clear; bash $HOME/EBomber.sh
 			;;
 
