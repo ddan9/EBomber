@@ -52,6 +52,24 @@ There is fixed with some changes version of SMSBomber
 
 <br />
 
+#### For update: 
+
+> 0. rm -rf EBomber
+>
+> 1. git clone https://github.com/ddan9/EBomber
+>
+> 2. bash EBomber.sh
+
+<br />
+
+#### For uninstall:
+
+> 0. rm -rf EBomber
+>
+> 1. rm -rf EBomber.sh
+
+<br />
+
 #### For ***manual*** install you need:
 
 > - do it in docker whenever possible
@@ -117,6 +135,24 @@ Creator of distribution: https://github.com/ddan9
 > 3. bash EBomber/install.sh
 >
 > 4. bash EBomber.sh
+
+<br />
+
+#### Для обновления:
+
+> 0. rm -rf EBomber
+>
+> 1. git clone https://github.com/ddan9/EBomber
+>
+> 2. bash EBomber
+
+<br />
+
+#### Для удаления:
+
+> 0. rm -rf EBomber
+>
+> 1. rm -rf EBomber.sh
 
 <br />
 
