@@ -89,7 +89,7 @@ There is fixed with some changes version of SMSBomber
 
 #### For ***manual*** install you need:
 
-> - do it in docker whenever possible
+> - Do it in docker whenever possible!
 >
 > - bash (Maybe something else, i don't know)
 > 
@@ -143,6 +143,8 @@ Creator of distribution: https://github.com/ddan9
 
 #### ***Гладкая*** установка:
 
+> ***Шаг за шагом:***
+>
 > 0. apt-get update 
 >
 > 1. apt-get install -y git
@@ -152,30 +154,46 @@ Creator of distribution: https://github.com/ddan9
 > 3. bash EBomber/install.sh
 >
 > 4. bash EBomber.sh
+>
+> ***Или одной командой:***
+>
+> - apt-get update && apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
 
 <br />
 
 #### Для обновления:
 
+> ***Шаг за шагом:***
+>
 > 0. rm -rf EBomber
 >
 > 1. git clone https://github.com/ddan9/EBomber
 >
 > 2. bash EBomber
+> 
+> ***Или одной командой:***
+>
+> - rm -rf EBomber && git clone https://github.com/ddan9/EBomber && bash EBomber.sh
 
 <br />
 
 #### Для удаления:
 
+> ***Шаг за шагом:***
+>
 > 0. rm -rf EBomber
 >
 > 1. rm -rf EBomber.sh
+>
+> ***Или одной командой:***
+>
+> - rm -rf EBomber && rm -rf EBomber.sh
 
 <br />
 
 #### Для ***ручной*** установки вам нужно:
 
-> - по возможности делать в докере
+> - По возможности делать в докере!
 >
 > - bash (Может что-то другое, точно не знаю)
 >
