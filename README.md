@@ -39,7 +39,7 @@ There is fixed with some changes version of SMSBomber
 
 #### ***Smooth*** installation:
 
-> Step by step:
+> ***Step by step:***
 >
 > 0. apt-get update
 >
@@ -51,7 +51,7 @@ There is fixed with some changes version of SMSBomber
 >
 > 4. bash EBomber.sh
 >
-> Or by one command:
+> ***Or by one command:***
 >
 > 0. apt-get update && apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
 
