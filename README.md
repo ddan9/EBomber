@@ -48,6 +48,10 @@ There is fixed with some changes version of SMSBomber
 > 3. bash EBomber/install.sh
 >
 > 4. bash EBomber.sh
+>
+> Or by one command:
+>
+> apt-get update && apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
 
 <br />
 
