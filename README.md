@@ -53,7 +53,7 @@ There is fixed with some changes version of SMSBomber
 >
 > ***Or by one command:***
 >
-> 0. apt-get update && apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
+> - apt-get update && apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
 
 <br />
 
