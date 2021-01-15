@@ -59,19 +59,31 @@ There is fixed with some changes version of SMSBomber
 
 #### For update: 
 
+> ***Step by step:***
+>
 > 0. rm -rf EBomber
 >
 > 1. git clone https://github.com/ddan9/EBomber
 >
 > 2. bash EBomber.sh
+>
+> ***Or by one command:***
+>
+> - rm -rf EBomber && git clone https://github.com/ddan9/EBomber && bash EBomber.sh
 
 <br />
 
 #### For uninstall:
 
+> ***Step by step:***
+>
 > 0. rm -rf EBomber
 >
 > 1. rm -rf EBomber.sh
+>
+> ***Or by one command:***
+>
+> - rm -rf EBomber && rm -rf EBomber.sh
 
 <br />
 
