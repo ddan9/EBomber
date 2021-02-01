@@ -315,7 +315,7 @@ Creator of distribution: https://github.com/ddan9 👈
 >
 > - bash EBomber.sh
 
-[🔝 Меню](#Меню)
+[🔙 Меню](#Меню)
 
 <br />
 
