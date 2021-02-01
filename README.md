@@ -195,13 +195,15 @@ Creator of distribution: https://github.com/ddan9
 
 - Ручная установка
 
-- Авторы
+- [Авторы](#Авторы)
 
 <br />
 
 #### Улучшенный Бомбер
  
 Это - пофиксенная с некоторыми изменениями версия SMSBomber'а
+
+[🔝 Меню](#Меню)
 
 <br />
 
@@ -210,6 +212,8 @@ Creator of distribution: https://github.com/ddan9
 - 💻 ПК: Линукс (Убунту-подобный; Последняя версия; Либо просто apt-based, точно не знаю)
 
 - 📱 Мобильные: Андроид (С термуксом)
+
+[🔝 Меню](#Меню)
 
 <br />
 
@@ -231,6 +235,8 @@ Creator of distribution: https://github.com/ddan9
 >
 > - sudo apt-get update && sudo apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
 
+[🔝 Меню](#Меню)
+
 <br />
 
 #### ***Гладкая*** установка на Мобильные:
@@ -251,6 +257,8 @@ Creator of distribution: https://github.com/ddan9
 >
 > - apt-get update && apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
 
+[🔝 Меню](#Меню)
+
 <br />
 
 #### Для обновления:
@@ -267,6 +275,8 @@ Creator of distribution: https://github.com/ddan9
 >
 > - rm -rf EBomber && git clone https://github.com/ddan9/EBomber && bash EBomber.sh
 
+[🔝 Меню](#Меню)
+
 <br />
 
 #### Для удаления:
@@ -280,6 +290,8 @@ Creator of distribution: https://github.com/ddan9
 > ***Или одной командой:***
 >
 > - rm -rf EBomber && rm -rf EBomber.sh
+
+[🔝 Меню](#Меню)
 
 <br />
 
@@ -303,6 +315,8 @@ Creator of distribution: https://github.com/ddan9
 >
 > - bash EBomber.sh
 
+[🔝 Меню](#Меню)
+
 <br />
 
 #### Авторы
@@ -312,3 +326,5 @@ Creator of distribution: https://github.com/ddan9
 Создатель спец. эффектов: https://vk.com/psih.odinochka
 
 Создатель дистрибутива: https://github.com/ddan9
+
+[🔝 Меню](#Меню)
