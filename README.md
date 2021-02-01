@@ -169,7 +169,7 @@ Creator of effects: https://vk.com/psih.odinochka 👈
 
 Creator of distribution: https://github.com/ddan9 👈
 
-[🔝 Menu](#Menu)
+[🔙 Menu](#Menu)
 
 <br />
 
