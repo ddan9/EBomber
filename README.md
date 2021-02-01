@@ -42,6 +42,7 @@
 <br />
 
 #### Edited Bomber
+
 [🔝 Go up](#Menu)
 
 There is fixed with some changes version of SMSBomber
