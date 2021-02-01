@@ -21,6 +21,22 @@
 
 [🇺🇸 🔝 Go up](#Language-translations)
 
+- [Description](#Edited-Bomber)
+
+- System requirements
+
+- Installation on PC
+
+- Installation on Mobile
+
+- Update
+
+- Uninstall
+
+- Manual installation
+
+- Authors
+
 <br />
 
 #### Edited Bomber
@@ -37,7 +53,27 @@ There is fixed with some changes version of SMSBomber
 
 <br />
 
-#### ***Smooth*** installation:
+#### ***Smooth*** installation on PC:
+
+> ***Step by step:***
+>
+> 0. sudo apt-get update
+>
+> 1. sudo apt-get install -y git
+>
+> 2. git clone https://github.com/ddan9/EBomber
+>
+> 3. bash EBomber/install.sh
+>
+> 4. bash EBomber.sh
+>
+> ***Or by one command:***
+>
+> - sudo apt-get update && sudo apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
+
+<br />
+
+#### ***Smooth*** installation on Mobile:
 
 > ***Step by step:***
 >
