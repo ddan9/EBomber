@@ -23,21 +23,21 @@
 
 #### Menu:
 
-- [Description](#Edited-Bomber)
+- [Description 🔚](#Edited-Bomber)
 
-- [System requirements](#For-smooth-installation-required)
+- [System requirements 🔚](#For-smooth-installation-required)
 
-- [Installation on PC](#Smooth-installation-on-PC)
+- [Installation on PC 🔚](#Smooth-installation-on-PC)
 
-- [Installation on Mobile](#Smooth-installation-on-Mobile)
+- [Installation on Mobile 🔚](#Smooth-installation-on-Mobile)
 
-- [Update](#For-update)
+- [Update 🔚](#For-update)
 
-- [Uninstall](#For-uninstall)
+- [Uninstall 🔚](#For-uninstall)
 
-- [Manual installation](#For-manual-install-you-need)
+- [Manual installation 🔚](#For-manual-install-you-need)
 
-- [Authors](#Authors)
+- [Authors 🔚](#Authors)
 
 <br />
 
@@ -181,21 +181,21 @@ Creator of distribution: https://github.com/ddan9
 
 #### Меню:
 
-- [Описание](#Улучшенный-бомбер)
+- [Описание 🔚](#Улучшенный-бомбер)
 
-- [Системные требования](#Для-гладкой-установки-необходимо)
+- [Системные требования 🔚](#Для-гладкой-установки-необходимо)
 
-- [Установка на ПК](#Гладкая-установка-на-ПК)
+- [Установка на ПК 🔚](#Гладкая-установка-на-ПК)
 
-- [Установка на Мобильные](#Гладкая-установка-на-Мобильные)
+- [Установка на Мобильные 🔚](#Гладкая-установка-на-Мобильные)
 
-- [Обновление](#Для-обновления)
+- [Обновление 🔚](#Для-обновления)
 
-- [Удаление](#Для-удаления)
+- [Удаление 🔚](#Для-удаления)
 
-- [Ручная установка](#Для-ручной-установки-вам-нужно)
+- [Ручная установка 🔚](#Для-ручной-установки-вам-нужно)
 
-- [Авторы](#Авторы)
+- [Авторы 🔚](#Авторы)
 
 <br />
 
@@ -327,6 +327,4 @@ Creator of distribution: https://github.com/ddan9
 
 Создатель дистрибутива: https://github.com/ddan9
 
-[🔝 Меню](#Меню)
-
-🔙🔚🔜
+[🔜 Меню](#Меню)
