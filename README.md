@@ -43,9 +43,9 @@
 
 #### Edited Bomber
 
-[🔝 Go up](#Menu)
-
 There is fixed with some changes version of SMSBomber
+
+[🔝 Go up](#Menu)
 
 <br />
 
@@ -54,6 +54,8 @@ There is fixed with some changes version of SMSBomber
 - 💻 PC: Linux (Ubuntu-based; Latest version; Maybe just apt-based, i don't know)
   
 - 📱 Mobile: Android (With termux)
+
+[🔝 Go up](#Menu)
 
 <br />
 
