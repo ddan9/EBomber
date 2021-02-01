@@ -173,7 +173,7 @@ if [[ $lang = "" ]]
 						echo "$spacing"
 						echo ""
 
-						apt install -y sudo
+						sudo apt install -y sudo
 						
 						echo ""
 
@@ -343,7 +343,7 @@ if [[ $lang = "" ]]
 						echo "$spacing"
 						echo ""
 						
-						apt install -y sudo
+						sudo apt install -y sudo
 						
 						echo ""
 
