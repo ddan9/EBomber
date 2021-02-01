@@ -45,7 +45,7 @@
 
 There is fixed with some changes version of SMSBomber
 
-[🔝 Go up](#Menu)
+[🔝 Menu](#Menu)
 
 <br />
 
@@ -55,7 +55,7 @@ There is fixed with some changes version of SMSBomber
   
 - 📱 Mobile: Android (With termux)
 
-[🔝 Go up](#Menu)
+[🔝 Menu](#Menu)
 
 <br />
 
