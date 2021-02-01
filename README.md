@@ -77,6 +77,8 @@ There is fixed with some changes version of SMSBomber
 >
 > - sudo apt-get update && sudo apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
 
+[🔝 Menu](#Menu)
+
 <br />
 
 #### ***Smooth*** installation on Mobile:
@@ -97,6 +99,8 @@ There is fixed with some changes version of SMSBomber
 >
 > - apt-get update && apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
 
+[🔝 Menu](#Menu)
+
 <br />
 
 #### For update: 
@@ -113,6 +117,8 @@ There is fixed with some changes version of SMSBomber
 >
 > - rm -rf EBomber && git clone https://github.com/ddan9/EBomber && bash EBomber.sh
 
+[🔝 Menu](#Menu)
+
 <br />
 
 #### For uninstall:
@@ -126,6 +132,8 @@ There is fixed with some changes version of SMSBomber
 > ***Or by one command:***
 >
 > - rm -rf EBomber && rm -rf EBomber.sh
+
+[🔝 Menu](#Menu)
 
 <br />
 
@@ -149,6 +157,8 @@ There is fixed with some changes version of SMSBomber
 >
 > - bash EBomber.sh
 
+[🔝 Menu](#Menu)
+
 <br />
 
 #### Authors
@@ -158,6 +168,8 @@ Creator of original: https://github.com/Ivan-Hacker-700
 Creator of effects: https://vk.com/psih.odinochka
 
 Creator of distribution: https://github.com/ddan9
+
+[🔝 Menu](#Menu)
 
 <br />
 
