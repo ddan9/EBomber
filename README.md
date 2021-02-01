@@ -45,7 +45,7 @@
 
 There is fixed with some changes version of SMSBomber
 
-[🔝 Menu](#Menu)
+[🔙 Menu](#Menu)
 
 <br />
 
@@ -55,7 +55,7 @@ There is fixed with some changes version of SMSBomber
   
 - 📱 Mobile: Android (With termux)
 
-[🔝 Menu](#Menu)
+[🔙 Menu](#Menu)
 
 <br />
 
@@ -77,7 +77,7 @@ There is fixed with some changes version of SMSBomber
 >
 > - sudo apt-get update && sudo apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
 
-[🔝 Menu](#Menu)
+[🔙 Menu](#Menu)
 
 <br />
 
@@ -99,7 +99,7 @@ There is fixed with some changes version of SMSBomber
 >
 > - apt-get update && apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
 
-[🔝 Menu](#Menu)
+[🔙 Menu](#Menu)
 
 <br />
 
@@ -117,7 +117,7 @@ There is fixed with some changes version of SMSBomber
 >
 > - rm -rf EBomber && git clone https://github.com/ddan9/EBomber && bash EBomber.sh
 
-[🔝 Menu](#Menu)
+[🔙 Menu](#Menu)
 
 <br />
 
@@ -133,7 +133,7 @@ There is fixed with some changes version of SMSBomber
 >
 > - rm -rf EBomber && rm -rf EBomber.sh
 
-[🔝 Menu](#Menu)
+[🔙 Menu](#Menu)
 
 <br />
 
@@ -157,7 +157,7 @@ There is fixed with some changes version of SMSBomber
 >
 > - bash EBomber.sh
 
-[🔝 Menu](#Menu)
+[🔙 Menu](#Menu)
 
 <br />
 
