@@ -328,3 +328,6 @@ Creator of distribution: https://github.com/ddan9
 Создатель дистрибутива: https://github.com/ddan9
 
 [🔜 Меню](#Меню)
+
+
+👈🔙◀⏪⏮
