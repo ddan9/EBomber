@@ -27,17 +27,17 @@
 
 - [System requirements](#For-smooth-installation-required)
 
-- Installation on PC
+- [Installation on PC](#Smooth-installation-on-PC)
 
-- Installation on Mobile
+- [Installation on Mobile](#Smooth-installation-on-Mobile)
 
-- Update
+- [Update](#For-update)
 
-- Uninstall
+- [Uninstall](#For-uninstall)
 
-- Manual installation
+- [Manual installation](#For-manual-install-you-need)
 
-- Authors
+- [Authors](#Authors)
 
 <br />
 
