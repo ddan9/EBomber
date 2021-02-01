@@ -21,11 +21,11 @@
 
 [🇺🇸 🔝 Go up](#Language-translations)
 
-Menu:
+#### Menu:
 
 - [Description](#Edited-Bomber)
 
-- System requirements
+- [System requirements](#For-smooth-installation-required)
 
 - Installation on PC
 
