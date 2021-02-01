@@ -203,7 +203,7 @@ Creator of distribution: https://github.com/ddan9 👈
  
 Это - пофиксенная с некоторыми изменениями версия SMSBomber'а
 
-[🔝 Меню](#Меню)
+[🔙 Меню](#Меню)
 
 <br />
 
@@ -213,7 +213,7 @@ Creator of distribution: https://github.com/ddan9 👈
 
 - 📱 Мобильные: Андроид (С термуксом)
 
-[🔝 Меню](#Меню)
+[🔙 Меню](#Меню)
 
 <br />
 
@@ -235,7 +235,7 @@ Creator of distribution: https://github.com/ddan9 👈
 >
 > - sudo apt-get update && sudo apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
 
-[🔝 Меню](#Меню)
+[🔙 Меню](#Меню)
 
 <br />
 
@@ -257,7 +257,7 @@ Creator of distribution: https://github.com/ddan9 👈
 >
 > - apt-get update && apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
 
-[🔝 Меню](#Меню)
+[🔙 Меню](#Меню)
 
 <br />
 
@@ -275,7 +275,7 @@ Creator of distribution: https://github.com/ddan9 👈
 >
 > - rm -rf EBomber && git clone https://github.com/ddan9/EBomber && bash EBomber.sh
 
-[🔝 Меню](#Меню)
+[🔙 Меню](#Меню)
 
 <br />
 
@@ -291,7 +291,7 @@ Creator of distribution: https://github.com/ddan9 👈
 >
 > - rm -rf EBomber && rm -rf EBomber.sh
 
-[🔝 Меню](#Меню)
+[🔙 Меню](#Меню)
 
 <br />
 
