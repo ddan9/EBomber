@@ -51,7 +51,7 @@ There is fixed with some changes version of SMSBomber
 
 #### For ***smooth*** installation required: 
 
-- 💻 PC: Linux (Ubuntu-based; Latest version; Maybe just sudo and apt-based, i don't know)
+- 💻 PC: Linux (Ubuntu-based; 20.04 and higher; Maybe just sudo and apt-based, i don't know)
   
 - 📱 Mobile: Android (With termux)
 
@@ -209,7 +209,7 @@ Creator of distribution: https://github.com/ddan9 👈
 
 #### Для ***гладкой*** установки необходимо:
 
-- 💻 ПК: Линукс (Убунту-подобный; Последняя версия; Либо просто sudo и apt-based, точно не знаю)
+- 💻 ПК: Линукс (Убунту-подобный; 20.04 и выше; Либо просто sudo и apt-based, точно не знаю)
 
 - 📱 Мобильные: Андроид (С термуксом)
 
