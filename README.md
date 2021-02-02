@@ -53,7 +53,7 @@ There is fixed with some changes version of SMSBomber
 
 - 💻 PC: Linux (Ubuntu-based; Latest version; Maybe just sudo and apt-based, i don't know)
   
-- 📱 Mobile: Android (With latest termux)
+- 📱 Mobile: Android (With termux)
 
 [🔙 Menu](#Menu)
 
@@ -211,7 +211,7 @@ Creator of distribution: https://github.com/ddan9 👈
 
 - 💻 ПК: Линукс (Убунту-подобный; Последняя версия; Либо просто sudo и apt-based, точно не знаю)
 
-- 📱 Мобильные: Андроид (С термуксом последней версии)
+- 📱 Мобильные: Андроид (С термуксом)
 
 [🔙 Меню](#Меню)
 
