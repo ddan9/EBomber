@@ -167,7 +167,7 @@ Creator of original: https://github.com/Ivan-Hacker-700 👈
 
 Creator of effects: https://vk.com/psih.odinochka 👈
 
-Creator of distribution: https://github.com/ddan9 👈
+Creator of distribution: https://ddan9.github.io 👈
 
 [🔙 Menu](#Menu)
 
@@ -325,6 +325,6 @@ Creator of distribution: https://github.com/ddan9 👈
 
 Создатель спец. эффектов: https://vk.com/psih.odinochka 👈
 
-Создатель дистрибутива: https://github.com/ddan9 👈
+Создатель дистрибутива: https://ddan9.github.io 👈
 
 [🔙 Меню](#Меню)
