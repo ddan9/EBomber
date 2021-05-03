@@ -173,23 +173,23 @@ if [[ $lang = "" ]]
 						echo "$spacing"
 						echo ""
 
-						sudo apt install -y sudo
+						sudo apt-get install -y sudo
 						
 						echo ""
 
-						sudo apt update
+						sudo apt-get update
 						
 						echo ""
 
-						sudo apt upgrade -y
+						sudo apt-get upgrade -y
 						
 						echo ""
 
-						sudo apt install -y python3 python3-pip
+						sudo apt-get install -y python3 python3-pip
 						
 						echo ""
 						
-						sudo apt dist-upgrade -y
+						sudo apt-get dist-upgrade -y
 						
 						echo ""
 						
@@ -343,23 +343,23 @@ if [[ $lang = "" ]]
 						echo "$spacing"
 						echo ""
 						
-						sudo apt install -y sudo
+						sudo apt-get install -y sudo
 						
 						echo ""
 
-						sudo apt update
+						sudo apt-get update
 						
 						echo ""
 
-						sudo apt upgrade -y
+						sudo apt-get upgrade -y
 						
 						echo ""
 
-						sudo apt install -y python3 python3-pip
+						sudo apt-get install -y python3 python3-pip
 						
 						echo ""
 						
-						sudo apt dist-upgrade -y
+						sudo apt-get dist-upgrade -y
 						
 						echo ""
 						
