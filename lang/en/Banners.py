@@ -15,9 +15,7 @@ def banner3():
 |  __| |  _ ( | | | || \  / ||  _ ( |  __| |  _ (
 | |___ | |_| )| |_| || |\/| || |_| )| |___ | | \ \\
 |_____||_____||_____||_|  |_||_____||_____||_|  \_\\
-
-                    System - Linux/Android   
-                            Services - \033[32m320 
+ 
                                                         """
   for char in banner2:
     sys.stdout.write(char)
@@ -73,9 +71,6 @@ def banner1an():
 | |___ | |_| )| |_| || |\/| || |_| )| |___ | | \ \\
 |_____||_____||_____||_|  |_||_____||_____||_|  \_\\
 
-                      (Distributor: ddan9)
-                       (System - Linux/Android)
-                        (Services - 320)
 """
     r=0
     while True:
