@@ -215,6 +215,6 @@ def banner_atack2():
   print ("[====================] \033[94m100%\033[0m")
   time.sleep(2)
   print(Fore.RED)
-  print("Starting attacking || " + str(_phone)+ " || \033[94mDDOS SMS Attack\033[0m")
+  print("Starting attacking || " + str(_phone)+ " || \033[94mDDOS SMS Attack\033[0m \n\nIf stuck, press Ctrl+C")
 
 
