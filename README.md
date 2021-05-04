@@ -7,6 +7,8 @@
 |_____||_____||_____||_|  |_||_____||_____||_|  \_\ 
 ```
 
+![ < EBomber example of work > ](EBomber.gif)
+
 ### Language translations
 
 - [🇺🇸 Description in English](#Description-in-English)
