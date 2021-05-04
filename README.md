@@ -43,7 +43,7 @@
 
 #### Edited Bomber
 
-There is fixed with some changes version of SMSBomber. Allows you to attack a phone number using SMS spam. The program was created for educational and research purposes. The authors of this program are not responsible for your actions. You are personally responsible for your actions.
+There is fixed with some changes version of SMSBomber. This is stable version of program. Allows you to attack a phone number using SMS spam. The program was created for educational and research purposes. The authors of this program are not responsible for your actions. You are personally responsible for your actions.
 
 [🔙 Menu](#Menu)
 
@@ -201,7 +201,7 @@ Creator of distribution: https://ddan9.github.io 👈
 
 #### Улучшенный Бомбер
  
-Это - пофиксенная с некоторыми изменениями версия SMSBomber'а. Позволяет атаковать номер телефона с помощью СМС спама. Программа создана в образовательных и исследовательских целях. Авторы данной программы не несут ответственность за ваши действия. За ваши действия несёте ответственность лично вы
+Это - пофиксенная с некоторыми изменениями версия SMSBomber'а. Это стабильная версия программы. Позволяет атаковать номер телефона с помощью СМС спама. Программа создана в образовательных и исследовательских целях. Авторы данной программы не несут ответственность за ваши действия. За ваши действия несёте ответственность лично вы
 
 [🔙 Меню](#Меню)
 
