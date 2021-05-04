@@ -167,7 +167,7 @@ else:
 
 print(Fore.RED)
 _phone = input('\n \033[31mВведите номер (Без +) > \033[0m\033[94m')
-message4 =  "Начинаем атаку на || " + str(_phone)+ " || \033[94mDDOS SMS Атака\033[0m \n"
+message4 =  "Начинаем атаку на || " + str(_phone)+ " || \033[94mDDOS SMS Атака \n\nЕсли застряло, нажмите Ctrl+C \033[0m \n"
 
 if _phone[0] == '+':
 
