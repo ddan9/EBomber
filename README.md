@@ -173,6 +173,8 @@ Creator of effects: https://vk.com/psih.odinochka 👈
 
 Creator of distribution: https://ddan9.github.io 👈
 
+Keywords generator: https://keywordtool.io 👈
+
 [🔙 Menu](#Menu)
 
 <br />
@@ -332,6 +334,8 @@ Creator of distribution: https://ddan9.github.io 👈
 Создатель спец. эффектов: https://vk.com/psih.odinochka 👈
 
 Создатель дистрибутива: https://ddan9.github.io 👈
+
+Генератор ключевых слов: https://keywordtool.io 👈
 
 [🔙 Меню](#Меню)
 
