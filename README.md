@@ -35,6 +35,8 @@
 
 - [Installation on Mobile ⏪](#Smooth-installation-on-Mobile)
 
+- [Usage ⏪](#Usage)
+
 - [Update ⏪](#For-update)
 
 - [Uninstall ⏪](#For-uninstall)
@@ -114,6 +116,16 @@ There is fixed with some changes version of SMSBomber. This is stable version of
 > ***Or by one command:***
 >
 > - apt-get update && apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
+
+[🔙 Menu](#Menu)
+
+<br />
+
+#### Usage:
+
+- First
+
+- Second
 
 [🔙 Menu](#Menu)
 
@@ -209,6 +221,8 @@ Keywords generator: https://keywordtool.io 👈
 
 - [Установка на Мобильные ⏪](#Гладкая-установка-на-Мобильные)
 
+- [Использование ⏪](#Использвание)
+
 - [Обновление ⏪](#Для-обновления)
 
 - [Удаление ⏪](#Для-удаления)
@@ -288,6 +302,16 @@ Keywords generator: https://keywordtool.io 👈
 > ***Или одной командой:***
 >
 > - apt-get update && apt-get install -y git && git clone https://github.com/ddan9/EBomber && bash EBomber/install.sh && bash EBomber.sh
+
+[🔙 Меню](#Меню)
+
+<br />
+
+#### Использование:
+
+- Первая
+
+- Вторая
 
 [🔙 Меню](#Меню)
 
