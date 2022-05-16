@@ -191,7 +191,7 @@ There is fixed with some changes version of SMSBomber. This is stable version of
 
 #### Authors:
 
-Creator of original: https://github.com/Ivan-Hacker-700 👈
+Creator of original: https://github.com/Ivan-Zaitsev 👈
 
 Creator of effects: https://vk.com/psih.odinochka 👈
 
@@ -385,7 +385,7 @@ Keywords generator: https://keywordtool.io 👈
 
 #### Авторы:
 
-Создатель оригинала: https://github.com/Ivan-Hacker-700 👈
+Создатель оригинала: https://github.com/Ivan-Zaitsev 👈
 
 Создатель спец. эффектов: https://vk.com/psih.odinochka 👈
 
