@@ -43,6 +43,8 @@
 
 - [Manual installation ⏪](#For-manual-install-you-need)
 
+- [Tools ⏪](#Tools)
+
 - [Authors ⏪](#Authors)
 
 - [Keywords ⏪](#Keywords)
@@ -189,6 +191,14 @@ There is fixed with some changes version of [SMSBomber](https://github.com/Ivan-
 
 <br />
 
+#### Tools:
+
+- Keywords generator: https://keywordtool.io 👈
+
+[🔙 Menu](#Menu)
+
+<br />
+
 #### Authors:
 
 Creator of original: https://github.com/Ivan-Zaitsev 👈
@@ -196,8 +206,6 @@ Creator of original: https://github.com/Ivan-Zaitsev 👈
 Creator of effects: https://vk.com/psih.odinochka 👈
 
 Creator of distribution: https://ddan9.github.io 👈
-
-Keywords generator: https://keywordtool.io 👈
 
 [🔙 Menu](#Menu)
 
@@ -228,6 +236,8 @@ Keywords generator: https://keywordtool.io 👈
 - [Удаление ⏪](#Для-удаления)
 
 - [Ручная установка ⏪](#Для-ручной-установки-вам-нужно)
+
+- [Инструменты ⏪](#Инструменты)
 
 - [Авторы ⏪](#Авторы)
 
