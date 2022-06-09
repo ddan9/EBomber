@@ -51,7 +51,7 @@
 
 #### Edited Bomber
 
-There is fixed with some changes version of SMSBomber. This is stable version of program. Allows you to attack a phone number using SMS spam. The program was created for educational and research purposes. The authors of this program are not responsible for your actions. You are personally responsible for your actions.
+There is fixed with some changes version of [SMSBomber](https://github.com/Ivan-Zaitsev/SMSBomber300). This is stable version of program. Allows you to attack a phone number using SMS spam. The program was created for educational and research purposes. The authors of this program are not responsible for your actions. You are personally responsible for your actions.
 
 [🔙 Menu](#Menu)
 
