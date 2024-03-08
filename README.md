@@ -9,6 +9,8 @@
 
 ![ < EBomber example of work > ](EBomber.gif)
 
+[![Stargazers over time](https://starchart.cc/ddan9/EBomber.svg?variant=adaptive)](https://starchart.cc/ddan9/EBomber)
+
 ### Language translations
 
 - [🇺🇸 Description in English](#Description-in-English)
